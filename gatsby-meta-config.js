@@ -3,7 +3,7 @@ module.exports = {
   description: ``,
   author: `코딩하는펭귄`,
   introduction: `건강한 개발자(Healthy Developer)를 꿈꾸고 있습니다🏃‍♀️`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://cooding-penguin.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `CoodingPenguin`, // Your GitHub account
@@ -22,10 +22,10 @@ module.exports = {
     countOfInitialPost: 10, // Config your initial count of post
   },
   sponsor: {
-    buyMeACoffeeId: '',
+    buyMeACoffeeId: ``,
   },
   share: {
-    facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
+    facebookAppId: process.env.FB_APP_ID, // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: process.env.GOOGLE_ANALYTICS_ID, // Add your google analytics tranking ID
 }
