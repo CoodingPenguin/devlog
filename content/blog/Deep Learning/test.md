@@ -9,3 +9,4 @@ draft: false
 ![thumbnail.png](./images/thumbnail.png)
 
 test
+test2
