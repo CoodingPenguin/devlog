@@ -1,5 +1,5 @@
 // app
-$theme-gradient: linear-gradient(72deg, #291e95, #cc007a);
+$theme-gradient: linear-gradient(72deg, #783cb4, #a078c8);
 $top-header-text-color: #fff;
 
 /**
@@ -13,19 +13,19 @@ $light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 
 // index
 $dimmed-color: #eef5db;
-$light-link-color: #000080;
+$light-link-color: #6e3c8c;
 $dark-gray: #333;
 $middle-gray: #7d7d7d;
 $light-gray: #aaa;
 
 // blog-templates
-$navigator-text-color: #cc007a;
-$navigator-background-color: #fceff7;
+$navigator-text-color: #fff;
+$navigator-background-color: #82c8f0;
 $blockquote-text-color: #999;
 
 // code
-$inline-dimmed-color: #fffbfe;
-$inline-text-color: #da3a6a;
+$inline-dimmed-color: #eff6fc;
+$inline-text-color: #61b8eb;
 
 // category
 $light-category-border-color: #ecf0f2;
@@ -39,7 +39,7 @@ $light-category-item-color: #fff;
  * @dark theme
  */
 $dark-background-color: #282c35;
-$dark-link-color: #bb72ec;
+$dark-link-color: #c8afff;
 
 $dark-lightest-font-color: #fff;
 $dark-light-font-color: #eeeeee;
