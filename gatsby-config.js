@@ -8,7 +8,8 @@ module.exports = {
       options: {
         host: 'https://cooding-penguin.netlify.com',
         sitemap: 'https://cooding-penguin.netlify.com/sitemap.xml',
-        policy: [{userAgent: '*', allow: '/}]
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
