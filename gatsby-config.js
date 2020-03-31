@@ -4,6 +4,13 @@ module.exports = {
   siteMetadata: metaConfig,
   plugins: [
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://cooding-penguin.netlify.com',
+        sitemap: 'https://cooding-penguin.netlify.com/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/}]
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
