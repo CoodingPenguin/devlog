@@ -6,4 +6,6 @@ thumbnail: './images/thumbnail.png'
 draft: false
 ---
 
+![thumbnail.png](./images/thumbnail.png)
+
 test
