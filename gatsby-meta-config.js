@@ -13,7 +13,17 @@ module.exports = {
     instagram: `cooding_penguin`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [
+    `blog`,
+    `python`,
+    `javascript`,
+    `web`,
+    `machine learning`,
+    `deep learning`,
+    `computer vision`,
+    `backend`,
+    `development`,
+  ],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 'CoodingPenguin/devlog', // Your repository for archive comment
