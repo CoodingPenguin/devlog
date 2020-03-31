@@ -5,3 +5,7 @@ category: deep-learning
 thumbnail: './images/test.png'
 draft: false
 ---
+
+test
+
+![test](./images/test.png)
