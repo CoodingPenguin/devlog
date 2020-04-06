@@ -17,7 +17,7 @@ module.exports = {
   resume: {
     title: `About COODINGPENGUIN`,
     description: `건강한 개발자(Healthy Developer)🏃‍♀️가 꿈입니다`,
-    thumbnail: `content/assets.thumbnail.png`,
+    thumbnail: `content/assets/thumbnail.png`,
   },
   keywords: [
     `blog`,
