@@ -4,10 +4,9 @@ date: 2019-1-27 16:21:13
 lang: 'en'
 ---
 
-# Your name
+# 코딩하는펭귄
 
 <div align="center">
-
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+    <img src="./coodingpenguin.png">
 
 </div>
