@@ -18,7 +18,7 @@ lang: 'ko'
 | :-----------: | ----------------------------------- |
 |  **GitHub**   | https://github.com/CoodingPenguin   |
 |   **Blog**    | https://cooding-penguin.netlify.com |
-| **Instagram** | @coodingpenguin                     |
+| **Instagram** | @cooding_penguin                    |
 |  **Contact**  | coodingpenguin@gmail.com            |
 
 <br />
