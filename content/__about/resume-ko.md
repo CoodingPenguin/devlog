@@ -23,7 +23,7 @@ lang: 'ko'
 
 <br />
 
-# Projects
+# PROJECTS
 
 ## [사용자 맞춤 악성 댓글 필터링 서비스](https://github.com/IamGroooooot/customized-toxic-comment-filtering)
 
@@ -49,7 +49,7 @@ lang: 'ko'
 
 <br />
 
-# Education
+# EDUCATION
 
 ### 부스트코스 : 파이토치로 시작하는 딥러닝 기초
 
