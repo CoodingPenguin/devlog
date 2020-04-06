@@ -3,15 +3,17 @@
     margin-top: 2em;
     font-size: 2.15em;
     letter-spacing: -1px;
+    padding: 2px 0px 0px 2px;
+    background-color: #a3ddff;
     border-bottom: transparent !important;
   }
 
   h2 {
     margin-top: 1.5em;
-    margin-bottom: 0px;
+    margin-bottom: 0.5em;
     font-size: 1.5em;
     letter-spacing: -1px;
-    border-bottom: transparent !important;
+    border-bottom: 1px ridge #a3ddff;
   }
 
   h3 {
@@ -20,7 +22,6 @@
   }
 
   td:first-child {
-    text-align: right !important;
     font-weight: bolder !important;
   }
 
