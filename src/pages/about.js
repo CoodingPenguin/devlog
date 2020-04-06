@@ -22,6 +22,15 @@ export default ({ data }) => {
         )}`,
       }}
     >
+      <a
+        className="home"
+        href="https://cooding-penguin.netlify.com/"
+        style={{
+          fontSize: rhythm(1.2),
+        }}
+      >
+        🏠
+      </a>
       <div dangerouslySetInnerHTML={{ __html: resume.html }} />
     </div>
   )
