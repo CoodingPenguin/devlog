@@ -13,6 +13,12 @@ module.exports = {
     instagram: `cooding_penguin`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
+  thumbnail: `content/assets/thumbnail.png`,
+  resume: {
+    title: `About COODINGPENGUIN`,
+    description: `건강한 개발자(Healthy Developer)🏃‍♀️가 꿈입니다`,
+    thumbnail: `content/assets.thumbnail.png`,
+  },
   keywords: [
     `blog`,
     `python`,
