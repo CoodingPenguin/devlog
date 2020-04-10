@@ -62,6 +62,10 @@ export function Head({ description, lang, meta, keywords, title, thumbnail }) {
                 name: 'google-site-verification',
                 content: 'nmHb33KXzyp4uvN2JevfStSlYpm_ftgAKJrapFpscfY',
               },
+              {
+                name: 'naver-site-verification',
+                content: 'af2c8ea7b0e25d881ce58175546242f5e07a0e12',
+              },
             ]
               .concat(
                 keywords.length > 0
