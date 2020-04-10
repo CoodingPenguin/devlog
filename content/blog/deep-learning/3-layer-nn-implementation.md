@@ -58,4 +58,11 @@ def forward(network, x):
     return y
 ```
 
+```python
+network = init_network()
+x = np.array([1.0, 0.5])
+y = forward(network, x)
+y
+```
+
 <img src="./img/2-1.png">
