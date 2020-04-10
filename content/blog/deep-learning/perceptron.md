@@ -1,6 +1,6 @@
 ---
 title: 🧠 퍼셉트론
-date: 2020-04-10 13:04:18
+date: 2020-01-24 15:59:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'
 draft: false
