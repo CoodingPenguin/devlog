@@ -51,6 +51,10 @@ lang: 'ko'
 
 # EDUCATION
 
+### NodeJS Fullstack Online Bootcamp
+
+`2020.04` 수료 by **Nomad Coders**
+
 ### 부스트코스 : 파이토치로 시작하는 딥러닝 기초
 
 `2020.03` 수료 by **boostcourse**
