@@ -3,7 +3,7 @@ module.exports = {
   description: ``,
   author: `코딩하는펭귄`,
   introduction: `건강한 개발자(Healthy Developer)를 꿈꾸고 있습니다🏃‍♀️`,
-  siteUrl: `https://cooding-penguin.netlify.com`, // Your blog site url
+  siteUrl: `https://cooding-penguin.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `CoodingPenguin`, // Your GitHub account
