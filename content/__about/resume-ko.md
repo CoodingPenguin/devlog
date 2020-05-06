@@ -19,7 +19,7 @@ lang: 'ko'
 |  **GitHub**   | https://github.com/CoodingPenguin   |
 |   **Blog**    | https://cooding-penguin.netlify.com |
 | **Instagram** | @cooding_penguin                    |
-|  **Contact**  | coodingpenguin@gmail.com            |
+|  **Contact**  | coodingpenguin@gmail.app            |
 
 <br />
 
