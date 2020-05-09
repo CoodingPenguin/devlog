@@ -17,9 +17,9 @@ lang: 'ko'
 |               |                                     |
 | :-----------: | ----------------------------------- |
 |  **GitHub**   | https://github.com/CoodingPenguin   |
-|   **Blog**    | https://cooding-penguin.netlify.com |
+|   **Blog**    | https://cooding-penguin.netlify.app |
 | **Instagram** | @cooding_penguin                    |
-|  **Contact**  | coodingpenguin@gmail.app            |
+|  **Contact**  | coodingpenguin@gmail.com            |
 
 <br />
 
@@ -50,6 +50,10 @@ lang: 'ko'
 <br />
 
 # EDUCATION
+
+### Python Online Bootcamp
+
+`2020.05` 수료 by **Nomad Coders**
 
 ### NodeJS Fullstack Online Bootcamp
 
