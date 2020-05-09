@@ -60,7 +60,7 @@ export function Head({ description, lang, meta, keywords, title, thumbnail }) {
               },
               {
                 name: 'google-site-verification',
-                content: 'nmHb33KXzyp4uvN2JevfStSlYpm_ftgAKJrapFpscfY',
+                content: 'uBcgFdEafHGU3IrgfR-YIkzSyfKnn08NjgxZZ4ovpes',
               },
               {
                 name: 'naver-site-verification',
