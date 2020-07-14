@@ -1,6 +1,6 @@
 ---
 title: 🧠 수치 미분과 기울기
-date: 2020-05-16 15:15:00
+date: 2020-01-27 23:06:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'
 draft: false
