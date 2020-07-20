@@ -108,6 +108,10 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 # EDUCATION
 
+### 2020 TOPCIT 특별평가
+
+`2020.07` 419 점 && 수준 3 by **TOPCIT**
+
 ### Python Online Bootcamp
 
 `2020.05` 수료 by **Nomad Coders**
