@@ -18,6 +18,7 @@ lang: 'ko'
 | :-----------: | -------------------------------------------------------------- |
 |  **GitHub**   | https://github.com/CoodingPenguin                              |
 |   **Blog**    | https://cooding-penguin.netlify.app                            |
+|    **TIL**    | https://cooding-penguin-til.netlify.app                        |
 | **Instagram** | [@cooding_penguin](https://www.instagram.com/cooding_penguin/) |
 |  **Contact**  | coodingpenguin@gmail.com                                       |
 

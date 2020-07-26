@@ -7,7 +7,7 @@ import './index.scss'
 export const Bio = () => (
   <StaticQuery
     query={bioQuery}
-    render={data => {
+    render={(data) => {
       const { author, social, introduction } = data.site.siteMetadata
 
       return (
@@ -55,11 +55,7 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
-                  {
-                    <a href="https://www.notion.so/coodingpenguin/Today-I-Learned-c7b0582b6b414adab1a6413a45a64048">
-                      TIL
-                    </a>
-                  }
+                  {<a href="https://cooding-penguin-til.netlify.app/">TIL</a>}
                 </p>
               </div>
             </div>
