@@ -2,7 +2,7 @@
 title: 🐢 또 지각한 2020년 2분기 회고
 date: 2020-07-27 05:45:00
 category: penguin
-thumbnail: ''
+thumbnail: './img/9-0.png'
 draft: false
 ---
 
