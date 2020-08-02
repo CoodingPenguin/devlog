@@ -14,13 +14,13 @@ lang: 'ko'
 
 `Deep Learning` `Computer Vision` `Web Development` `Network`
 
-|               |                                                                |
-| :-----------: | -------------------------------------------------------------- |
-|  **GitHub**   | https://github.com/CoodingPenguin                              |
-|   **Blog**    | https://cooding-penguin.netlify.app                            |
-|    **TIL**    | https://cooding-penguin-til.netlify.app                        |
-| **Instagram** | [@cooding_penguin](https://www.instagram.com/cooding_penguin/) |
-|  **Contact**  | coodingpenguin@gmail.com                                       |
+|               |                                                                       |
+| :-----------: | --------------------------------------------------------------------- |
+|  **GitHub**   | [CoodingPenguin](https://github.com/CoodingPenguin)                   |
+|   **Blog**    | [코딩하는펭귄의 저장소](https://cooding-penguin.netlify.app)          |
+|    **TIL**    | [Today 코딩하는펭귄 Learned](https://cooding-penguin-til.netlify.app) |
+| **Instagram** | [@cooding_penguin](https://www.instagram.com/cooding_penguin/)        |
+|  **Contact**  | coodingpenguin@gmail.com                                              |
 
 <br />
 
