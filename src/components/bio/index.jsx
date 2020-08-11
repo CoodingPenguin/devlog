@@ -55,7 +55,6 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
-                  {<a href="https://cooding-penguin-til.netlify.app/">TIL</a>}
                 </p>
               </div>
             </div>
