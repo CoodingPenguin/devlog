@@ -1,5 +1,5 @@
 ---
-title: 🧠 신경망
+title: 🧠 [밑바닥 딥러닝] 신경망
 date: 2020-01-27 20:43:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'

@@ -1,5 +1,5 @@
 ---
-title: 🧠 순전파와 역전파
+title: 🧠 [밑바닥 딥러닝] 순전파와 역전파
 date: 2020-01-27 23:48:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'

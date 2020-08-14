@@ -1,5 +1,5 @@
 ---
-title: 🧠 신경망 - MNIST 손글씨 숫자 인식
+title: 🧠 [밑바닥 딥러닝] 신경망 - MNIST 손글씨 숫자 인식
 date: 2020-01-27 21:03:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'

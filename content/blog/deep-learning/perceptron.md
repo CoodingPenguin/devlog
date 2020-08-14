@@ -1,5 +1,5 @@
 ---
-title: 🧠 퍼셉트론
+title: 🧠 [밑바닥 딥러닝] 퍼셉트론
 date: 2020-01-24 15:59:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'

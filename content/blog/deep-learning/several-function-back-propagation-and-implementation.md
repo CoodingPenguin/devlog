@@ -1,5 +1,5 @@
 ---
-title: 🧠 여러 함수의 역전파와 오차역전파법 구현
+title: 🧠 [밑바닥 딥러닝] 여러 함수의 역전파와 오차역전파법 구현
 date: 2020-01-28 00:31:00
 category: deep-learning
 thumbnail: './img/thumbnail.png'
