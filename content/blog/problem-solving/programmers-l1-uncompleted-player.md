@@ -30,7 +30,7 @@ PROGRAMMERS Level1 - [완주하지 못한 선수](https://programmers.co.kr/lear
 
 python 내 내장 모듈인 `collections`를 사용한 방법이다! 이 모듈은 *dict, list, set, tuple*과 같은 collections에 대한 **도구(tool)들**을 제공한다.
 
-그 중 `Counter`라는 객체가 있는 데 [Python Documentation](https://docs.python.org/ko/3.7/library/collections.html?highlight=collections#collections.Counter)에 따르면 hashable object를 카운팅하기 위한 *dict의 서브클래스*라고 한다(?) 일단 의미는 모르겠으나 **element는 key값으로, element의 개수는 value값으로 이루어진 딕셔너리**라고 보면 된다. 이것을 이용하면 이번 문제를 정말 쉽게 풀 수 있다!
+그 중 `Counter`라는 객체가 있는 데 [Python Documentation](https://docs.python.org/ko/3.7/library/collections.html?highlight=collections#collections.Counter)에 따르면 hashable object를 카운팅하기 위한 *dict의 서브클래스*라고 한다. 완전히 이해하지는 못했지만, **element는 key값으로, element의 개수는 value값으로 이루어진 딕셔너리**라고 보면 된다. 이것을 이용하면 이번 문제를 정말 쉽게 풀 수 있다!
 
 예를 들면, `['apple', 'banana', 'apple']`라는 리스트가 있다고 하자. 이것을 인수로 Counter 인스턴스를 만들면 `{'apple': 2, 'banana': 1}`으로 저장된다. (실제로 이렇게 저장된다는 의미는 아니다!) 이렇게 만든 Counter 인스턴스는 사칙연산이 가능하데 `-` 연산을 하면 **중복되는 element들의 value는 다 0이 되어 없어지고 남은 element는 1이 될 것**이다.
 
