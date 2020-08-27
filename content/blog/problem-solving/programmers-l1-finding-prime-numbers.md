@@ -1,6 +1,6 @@
 ---
 title: 📝 Programmers - 소수 찾기
-date: 2020-08-27 13:34:00
+date: 2020-08-26 13:34:00
 category: problem-solving
 thumbnail: './img/thumbnail.png'
 draft: false
