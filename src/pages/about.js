@@ -32,7 +32,7 @@ export default ({ data }) => {
       >
         <a
           className="home"
-          href="https://cooding-penguin.netlify.app/"
+          href="../"
           style={{
             fontSize: rhythm(1.2),
           }}
