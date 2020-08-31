@@ -93,5 +93,5 @@ results = list(combinations_with_replacement(nums, m))
 
 for i in results:
   i = map(str, i)
-  print(' '.join(i))s
+  print(' '.join(i))
 ```
