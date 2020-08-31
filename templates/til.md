@@ -1,6 +1,6 @@
 ---
-title: 🐣 2020년 8월 10일 TIL
-date: 2020-08-10 00:00:00
+title: 🐣 2020년 9월 1일 TIL
+date: 2020-09-01 00:00:00
 category: til
 thumbnail: './img/thumbnail.png'
 draft: true
