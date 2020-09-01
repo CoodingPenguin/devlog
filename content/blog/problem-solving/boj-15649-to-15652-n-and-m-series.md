@@ -24,7 +24,7 @@ N과 M 시리즈는 <u>어떤 조건</u> 내에서 수열을 구하는 문제들
 
 <br>
 
-자세한 함수 구현은 [Python Reference](https://docs.python.org/ko/3/library/itertools.html)를 참고하자. 위의 함수를 사용하면 해당 조건에 해당하는 수열 튜플들의 리스트를 반환한다. 이 리스트를 그대로 출력하면 **성공😊**할 수 있다!
+자세한 함수 구현은 [Python Reference](https://docs.python.org/ko/3/library/itertools.html)를 참고하자. 위의 함수를 사용하면 해당 조건에 해당하는 수열 튜플들의 튜플을 반환한다. 이 튜플을 적절히 변환해서 출력하면 된다.
 
 ## 교훈
 
