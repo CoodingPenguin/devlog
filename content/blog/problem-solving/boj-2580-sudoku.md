@@ -12,7 +12,7 @@ BOJ 2580번 : [스도쿠](https://www.acmicpc.net/problem/2580)
 
 ## 접근 방법
 
-[N-Queen](../boj-9663-n-queen) 문제와 비슷한 `백트래킹` 문제이다. 백트래킹의 개념은 이해했지만 그걸 구현하는 것이 익숙하지 않아서 결국 다른 분들의 풀이를 참고하였다. 다음의 풀이는 **[Kim Dojin](https://dojinkimm.github.io/problem_solving/2019/10/16/boj-2580-sudoku.html)님의 풀이**를 참고한 것이다!
+[N-Queen](../boj-9663-n-queen) 문제와 비슷한 `백트래킹` 문제이다. 백트래킹의 개념은 이해했지만 그걸 구현하는 것이 익숙하지 않아서 결국 다른 분들의 풀이를 참고하였다. 다음의 풀이는 [Kim Dojin님의 풀이](https://dojinkimm.github.io/problem_solving/2019/10/16/boj-2580-sudoku.html)를 참고한 것이다!
 
 저번 [N-Queen](../boj-9663-n-queen) 문제를 떠올려보자. 각 행에 퀸이 하나씩 위치할 수 있으며 퀸의 **위치**를 바꿔가면서 <u>퀸이 이 위치에 있을 때 다른 퀸과 상하 혹은 대각선 방향으로 겹치는지</u>를 체크하였다. 이를 동일하게 적용하면 된다.
 
