@@ -1,12 +1,12 @@
 ---
-title: 🐣 2020년 9월 1일 TIL
-date: 2020-09-01 00:00:00
+title: 🐣 2020년 9월 11일 TIL
+date: 2020-09-11 00:00:00
 category: til
 thumbnail: './img/thumbnail.png'
-draft: true
+draft: false
 ---
 
-> TIL의 형식은 [초보몽키의 개발공부로그](https://wayhome25.github.io/)를 참고하였습니다.
+>
 
 ## ✅ 오늘 할 일
 
