@@ -7,7 +7,7 @@ import './index.scss'
 export const Bio = () => (
   <StaticQuery
     query={bioQuery}
-    render={(data) => {
+    render={data => {
       const { author, social, introduction } = data.site.siteMetadata
 
       return (
@@ -55,6 +55,11 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
+                  {
+                    <a href={'https://coodingpenguin.github.io/ai-notebook/'}>
+                      AI Notebook
+                    </a>
+                  }
                 </p>
               </div>
             </div>
