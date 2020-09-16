@@ -82,4 +82,21 @@ body.dark {
   td {
     border-bottom: 1px solid #eee;
   }
+
+  .up-button {
+    background-image: linear-gradient(
+      to right,
+      #9d50bb 0%,
+      #9d50bb 51%,
+      #6e48aa 100%
+    );
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 1px 1px 5px 0 #666666;
+    }
+  }
 }
