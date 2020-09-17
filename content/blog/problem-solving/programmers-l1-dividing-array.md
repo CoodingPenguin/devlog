@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [나누어 떨어지는 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
+PROGRAMMERS Level 1 - [나누어 떨어지는 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
 
 ## 접근 방법
 

@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+PROGRAMMERS Level 1 - [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
 
 ## 접근 방법
 

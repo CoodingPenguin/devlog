@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+PROGRAMMERS Level 1 - [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
 
 ## 접근 방법
 

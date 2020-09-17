@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [비밀 지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+PROGRAMMERS Level 1 - [비밀 지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
 
 ## 접근 방법
 

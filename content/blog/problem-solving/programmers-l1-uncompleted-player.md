@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
+PROGRAMMERS Level 1 - [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 ## 접근 방법
 

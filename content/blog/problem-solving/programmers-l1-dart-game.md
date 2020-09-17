@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
+PROGRAMMERS Level 1 - [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
 
 ## 접근 방법
 

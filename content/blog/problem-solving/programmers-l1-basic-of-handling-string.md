@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
+PROGRAMMERS Level 1 - [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
 
 ## 접근 방법
 

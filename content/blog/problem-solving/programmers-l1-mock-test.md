@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
+PROGRAMMERS Level 1 - [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 
 ## 접근 방법
 

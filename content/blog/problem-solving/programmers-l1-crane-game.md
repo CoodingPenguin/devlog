@@ -8,7 +8,7 @@ draft: false
 
 ## 문제
 
-PROGRAMMERS Level1 - [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
+PROGRAMMERS Level 1 - [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 
 ## 접근 방법
 
