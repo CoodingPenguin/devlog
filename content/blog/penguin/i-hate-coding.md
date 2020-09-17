@@ -1,7 +1,7 @@
 ---
 title: 🐧 I hate coding
 date: 2019-07-28 20:20:00
-thumbnail: './img/penguin-0-0.png'
+thumbnail: './img/thumbnail-1.png'
 category: penguin
 draft: false
 ---
@@ -16,7 +16,7 @@ draft: false
 
 하지만 시험기간과 과제로 인해 종강까지 공구 관련 어떤 활동도 진행이 되지 않았다.
 
-![rabbyte](./img/penguin-0-1.png)
+![rabbyte](./img/1-1.png)
 
 ## 티셔츠 디자인하기 (feat. 난 코딩이 싫어!)
 
@@ -24,7 +24,7 @@ draft: false
 
 문구가 정해지고 나서 **글꼴과 위치 그리고 크기**에 대한 투표를 여러 번 진행하였다! 처음에는 대표적인 코딩 글꼴인 **Monaco**가 선정되었지만..ㅋㅋ 투표한 인원이 많이 없어서 재투표를 하였는데 스포티한 느낌의 글꼴인 **Helvetica Black**이 선정되었다
 
-![rabbyte](./img/penguin-0-2.png)
+![rabbyte](./img/1-2.png)
 
 ## 주문만 넣으면 될 줄 알았더니..
 
@@ -34,10 +34,10 @@ draft: false
 
 티셔츠 공구를 처음해봐서 문구 프린팅은 **나염**으로 하면 되겠다 싶었는데 브랜드 티셔츠의 문구처럼 프린트하려면 **코팅**을 해야하더라고요. 그래도 입어보니까 엄청 이뻤습니다!
 
-![my-taekbae](./img/penguin-0-3.png)
+![my-taekbae](./img/1-3.png)
 
 ## 우린 코딩을 싫어합니다.
 
 회사에 입고 갔는데 그냥 너무 웃겼습니다😂 개발할 때 많이 입고 다닐 것 같아요! 처음 한 공구였는데 따라와준 동아리 친구들한테도 감사하고 잘못 배달된 택배 보관해주신 분도 감사하고 이쁘게 뽑아준 카카오티에게도 감사합니당. 이번에는 스티커 공구 예정인데 하게 되면 또 올리겠습니다. **끝!**
 
-![i-hate-coding](./img/penguin-0-0.png)
+![i-hate-coding](./img/thumbnail-1.png)

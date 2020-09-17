@@ -2,7 +2,7 @@
 title: 🐢 또 지각한 2020년 2분기 회고
 date: 2020-07-27 05:45:00
 category: penguin
-thumbnail: './img/9-0.png'
+thumbnail: './img/thumbnail-10.png'
 draft: false
 ---
 
@@ -38,7 +38,7 @@ draft: false
 
 ## 🐍 노마드코더 파이썬 챌린지
 
-![python-challenge](./img/9-1.png)
+![python-challenge](./img/10-1.png)
 
 > reactjs빼고 다 모았지만 css 챌린지가 또 생겨버렸당..
 
@@ -52,7 +52,7 @@ draft: false
 
 ### 웹 크롤링과 Flask 웹 페이지
 
-![crawling-project](./img/9-2.png)
+![crawling-project](./img/10-2.png)
 
 > 넣은 기능이라곤 pagination뿐이라니..
 
@@ -64,7 +64,7 @@ draft: false
 
 끝나지 않을 것 같던 온라인 강의가 끝이 났다!🎉🎉 종강하는 날 얼마나 기뻤는지 모른다. 뭐 강의의 질은.. 알다 싶이 그렇게 좋지는 않았다. 딱 단 한 분만 제외하고! 다른 강의들은 제처두고 **네트워크 응용 설계 교수님의 강의🌐**는 정말 최고였다. 대면 강의를 하지 못해서 생기는 문제들을 거의 보완을 하셨다. `Application Layer`부터 시작해 `Network Layer`까지 배웠는데, 정말 네트워크를 심도 있게 배울 수 있어서 좋았다. 학교에 입학하고나서 지금까지 최고의 강의로 꼽는다고 해도 과언이 아니다.
 
-![network-homework](./img/9-3.png)
+![network-homework](./img/10-3.png)
 
 > 구현해야 하는 기능 중 하나인 **i hate professor** 필터링 및 유저 차단
 
@@ -83,7 +83,7 @@ draft: false
 
 ### 카페비는 벌었다!
 
-![mukbang-time](./img/9-4.png)
+![mukbang-time](./img/10-4.png)
 
 > 공모전 준비 때마다 먹은 음식들
 
@@ -97,7 +97,7 @@ draft: false
 
 ### Naver AI Rush 2020
 
-![naver-ai-rush-mail](./img/9-5.png)
+![naver-ai-rush-mail](./img/10-5.png)
 
 > 거의 다 풀었는데.. 너무너무 아쉽다
 
@@ -105,7 +105,7 @@ draft: false
 
 ### Boostcamp 2020
 
-![boostcamp-mail](./img/9-6.png)
+![boostcamp-mail](./img/10-6.png)
 
 > 정말 하고 싶었던 대외활동이었는데 많이 아쉽당
 

@@ -2,7 +2,7 @@
 title: 🐨 코알라유니브 2기 활동 후기
 date: 2020-02-02 23:02:00
 category: penguin
-thumbnail: './img/penguin-2-0.png'
+thumbnail: './img/thumbnail-3.png'
 draft: false
 ---
 
@@ -14,7 +14,7 @@ draft: false
 
 ## 코알라 유니브란?
 
-![coala-univ-2](./img/penguin-2-0.png)
+![coala-univ-2](./img/thumbnail-3.png)
 
 코알라 유니브는 **데이터 사이언스에 관심 있는 대학생들을 모아 코딩 기초부터 데이터분석, 머신러닝 교육을 받을 수 있는 프로그램**입니다. 이번에는 14개의 대학교에서 학생들을 모집했고 각 학교마다 2개의 스터디를 운영했었습니다. 자세한 내용은 아래 링크를 참고해주세요!
 
@@ -67,7 +67,7 @@ draft: false
 
 ### 해커톤 발표세션
 
-![certification](./img/penguin-2-1.png)
+![certification](./img/3-1.png)
 
 제출 마감 날에 코드와 발표 PPT를 제출하고 최종 발표팀 명단을 기다렸습니다. 기다리던 중 공공경경 팀이 발표팀으로 선정되었고 발표자로 저희 팀 막내를 보냈습니다🎉🎉 발표 날 공덕역 근처 카페에서 연습을 하였고 **서울창업허브 10층**에서 첫 발표자로 **최종 발표**를 진행하였습니다.
 

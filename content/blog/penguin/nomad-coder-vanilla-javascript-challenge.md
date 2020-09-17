@@ -2,7 +2,7 @@
 title: ✅ 노마드코더 바닐라 자바스크립트 챌린지 2기 우수졸업
 date: 2020-02-24 17:24:00
 category: penguin
-thumbnail: './img/penguin-5-0.png'
+thumbnail: './img/thumbnail-6.png'
 draft: false
 ---
 
@@ -14,7 +14,7 @@ draft: false
 
 ## 챌린지 시-작!
 
-<img src="./img/penguin-5-1.gif" width="100%">
+<img src="./img/6-1.gif" width="100%">
 
 > https://gph.is/28V3BN4
 
@@ -38,12 +38,12 @@ draft: false
 
 이번 챌린지가 끝나고 뱃지를 3개 모았어요! 지금은 유튜브 클론 챌린지를 하고 있는데 아마 끝나면 ReactJS 빼고 다 모을 것 같습니당ㅎㅎ
 
-<img src="./img/penguin-5-2.png" width="100%">
+<img src="./img/6-2.png" width="100%">
 <br>
 
 거기다 이번에는 **우수졸업**까지 하게되었습니다👏👏👏
 
-<img src="./img/penguin-5-3.png" width="100%">
+<img src="./img/6-3.png" width="100%">
 <br>
 
 잘하시는 분들이 워낙 많아서 생각지도 못했는데 정말 기뻤어용. 다른 졸업자분들도 축하드리고 다음에는 **📽<유튜브 클론 챌린지 후기>📽**로 찾아뵐게용

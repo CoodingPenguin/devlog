@@ -2,7 +2,7 @@
 title: 🐧 NHN Forward 2019 참가 후기
 date: 2020-02-03 19:05:00
 category: penguin
-thumbnail: './img/penguin-4-1.png'
+thumbnail: './img/thumbnail-5.png'
 draft: false
 ---
 
@@ -10,7 +10,7 @@ draft: false
 
 ## 파르나스 호텔에 도착!
 
-![nhn-forward-2019](./img/penguin-4-0.png)
+![nhn-forward-2019](./img/5-1.png)
 
 아침 일찍 일어나 지하철을 타고 삼성역으로 향했습니다. 일찍 갔다고 생각했는데 생각보다 사람들이 엄청 많아서.. 코너를 돌고 돌아서 줄이 길게 섰어요. 접수대에 다다라 이름과 이메일을 말하고 개인 참가증을 받았습니당!
 
@@ -22,7 +22,7 @@ draft: false
 
 그리고 기존 추천 시스템을 랩실에서 어떻게 개선시켰는지 이야기해주셨는데 **"사람이 어떤 것에 관심이 있는지"**이 아닌 **"사람이 어떤 것을 싫어하는지"**에 집중해 알고리즘을 짜셨는데 성능이 높게 나와서 신기했어요!
 
-![family-talk](./img/penguin-4-2.png)
+![family-talk](./img/5-2.png)
 
 <br>
 초청 특강이 끝나고 첫 번째 발표 세션 장으로 👉👉
@@ -35,7 +35,7 @@ draft: false
 
 ## 패션 검색: 사진만 줘, 그 옷 찾아줄게
 
-![fashion-search](./img/penguin-4-3.png)
+![fashion-search](./img/5-3.png)
 
 **이미지 검색 그리고 비슷한 옷 추천하는 것**에 관한 내용이었습니다. 발표자 분이 정말 설명을 잘 해주셨는데 `문제 → 원인 → 해결책 → 문제 → ...` 이렇게 꼬리물기 식으로 설명해주셨습니다!
 

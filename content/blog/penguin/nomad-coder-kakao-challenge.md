@@ -2,7 +2,7 @@
 title: 💬 노마드코더 카카오톡 클론 챌린지 4기 졸업
 date: 2020-02-03 00:59:00
 category: penguin
-thumbnail: './img/penguin-3-0.png'
+thumbnail: './img/thumbnail-4.png'
 draft: false
 ---
 
@@ -34,12 +34,12 @@ draft: false
 
 챌린지가 힘들었던 다른 이유로는 `과제`였다. 과제가 생각 이상으로 어려워서 제대로 완성시키지 못한 날도 있었다. 그래도 과제를 완성시킨 날은 뿌듯해하며 몇 번이고 완성품을 봤던 것 같당😆
 
-![homeworks](./img/penguin-3-1.png)
+![homeworks](./img/4-1.png)
 
 ## 축 졸업🎓
 
 <div align="center">
-    <img src="./img/penguin-3-2.gif" width="100%">
+    <img src="./img/4-2.gif" width="100%">
 </div>
 
 > https://gph.is/g/aKnWew6
