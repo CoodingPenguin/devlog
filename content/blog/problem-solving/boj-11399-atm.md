@@ -16,7 +16,7 @@ BOJ 11399번 : [ATM](https://www.acmicpc.net/problem/11399)
 
 <br>
 
-<img src="./img/0-0.png">
+<img src="./img/atm.png">
 
 ## 소스코드
 
