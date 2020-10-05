@@ -42,6 +42,9 @@ table = [0] + [1]*n
 for i in range(1, n+1):
   for j in range(i):
     if lines[i][1] > lines[j][1]:
+        # 아래 2개의 수 중 최대값으로 table[i]를 갱신한다.
+        # 1. 그 전 숫자 j로 인해 갱신된 table[i]
+        # 2. 현재 숫자 j로 인해 갱신될 table[j]+1
         table[i] = max(table[i], table[j]+1)
 
 print(n - max(table))
