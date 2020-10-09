@@ -54,6 +54,6 @@ draft: false
 
 파이썬 챌린지를 끝으로 챌린지는 참여하지 않았다. 정확히 말하면 **1학기 동안**만이다. 파이썬은 내가 이미 공부한 언어라서 챌린지를 병행할 수 있었지만 새로 배우는 `react`를 학기 공부를 병행하면서 하기에는 너무 벅찼다.
 
-졸업 후 6개월이 지난 후 쓰는 후기라 추가로 적자면 여름방학 때 [리액트 챌린지](https://nomadcoders.co/c/reactjs-challenge/lobby)에 도전했다가 포기했다. 사실 이틀만 버티면 졸업이었는데 **"이렇게 졸업해서 의미가 있을까?"** 싶어서 포기했다. [클론코딩 영화 평점 웹서비스](http://www.yes24.com/Product/Goods/90344496?OzSrank=1)를 공부하고 16일 뒤 열리는 다음 챌린지에 참여할 예정이다. 다음에는 [리액트 챌린지](https://nomadcoders.co/c/reactjs-challenge/lobby)를 **우수 졸업🎓**해서 찾아오겠다!
+졸업 후 6개월이 지난 후 쓰는 후기라 추가로 적자면 여름방학 때 [리액트 챌린지](https://nomadcoders.co/c/reactjs-challenge/lobby)에 도전했다가 포기했다. 사실 이틀만 버티면 졸업이었는데, 밤이 되서야 강의 듣고 급하게 과제를 끝내서 **"이렇게 졸업해서 의미가 있을까?"** 생각이 들어 포기했다. [클론코딩 영화 평점 웹서비스](http://www.yes24.com/Product/Goods/90344496?OzSrank=1)를 공부하고 16일 뒤 열리는 다음 챌린지에 참여할 예정이다. 다음에는 [리액트 챌린지](https://nomadcoders.co/c/reactjs-challenge/lobby)를 **우수 졸업🎓**해서 찾아오겠다!
 
 그럼 총총💨
