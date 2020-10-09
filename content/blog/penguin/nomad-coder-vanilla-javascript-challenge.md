@@ -28,13 +28,17 @@ draft: false
 1. 기능을 세분화 한다.
 2. 비슷한 기능은 하나의 그룹으로 묶는다.
 
-이렇게 **구조를 먼저 짜놓고 구현**을 했습니다! 거기다 저번에 배운 CSS를 이용해서 더 예쁘게 꾸몄어용!
+이렇게 **구조를 먼저 짜놓고 구현**을 했습니다! 거기다 저번에 배운 `CSS`를 이용해서 더 예쁘게 꾸몄어용! 로직 짜는 것도 재미있지만 폰트도 넣고 이미지도 삽입하면서 꾸미는 재미도 있었습니다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrCToyTzfEU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 챌린지 뱃지 콜랙터 (feat. 우수졸업)
+
+챌린지가 끝나기 이틀 전 **졸업 과제**를 끝냈습니다. 졸업 과제는 [Momentum 앱](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko&utm_source) 클론입니다. 시간이 많이 남아서 꾸미는 데 더 열을 올렸습니다🔥 지금 보니 뿌듯하네요ㅎㅎ 다만 이미지 크기가 커서 로딩하는데 시간이 걸리더라고요. 나중에 이 부분을 고칠 수 있으면 좋겠네용.
 
 👉 [바닐라 자바스크립트 챌린지 졸업 작품 보러가기](https://github.com/CoodingPenguin/momentum-app-clone)
 
-<iframe width="583" height="358" src="https://www.youtube.com/embed/lq1IEKdoZFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## 챌린지 뱃지 콜랙터 (feat. 우수졸업)
+<br>
 
 이번 챌린지가 끝나고 뱃지를 3개 모았어요! 지금은 유튜브 클론 챌린지를 하고 있는데 아마 끝나면 ReactJS 빼고 다 모을 것 같습니당ㅎㅎ
 
