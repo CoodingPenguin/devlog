@@ -6,13 +6,12 @@ lang: 'ko'
 
 # COODINGPENGUIN
 
-**건강한 개발자(Healthy Developer)를 꿈꾸는 코딩하는펭귄🐧**
+**하고 싶은 것을 찾고 있는 코딩하는펭귄🐧**
 
-현재는 개발자로의 취업을 준비하고 있습니다.  
-**데이터분석**과 **웹개발**에 관심이 많으며 **인공지능 플랫폼** 개발자를 꿈꾸고 있습니다.  
-올해 딥러닝을 활용한 웹서비스를 배포하는 것이 목표입니다.
+번아웃으로 현재는 개발 공부를 쉬엄쉬엄하고 있습니다.    
+**정리하는 것**을 정말 좋아하며 블로그, 인스타, Notion으로 여러 가지를 정리합니다. 데이터분석, 인공지능, 웹개발 공부를 해왔으며 지금은 웹개발에 집중하고 있습니다. 
 
-`Data Analysis` `Kaggle` `Web Development` `Python`
+`Python` `Data Analysis` `Web Development` `React` 
 
 |               |                                                                |
 | :-----------: | -------------------------------------------------------------- |
@@ -24,6 +23,17 @@ lang: 'ko'
 <br />
 
 # PROJECTS
+
+## [우리 동네 국민체력100](https://github.com/CoodingPenguin/data-contest-collection/tree/main/2020-sports-data-application-contest)
+
+**국민체육진흥공단 제 1회 체육종합 데이터 활용 경진대회**      
+부족한 체력인증센터의 단점을 보완하기 위한 출장 서비스 아이디어
+
+|            |                                                                                                |
+| :--------- | ---------------------------------------------------------------------------------------------- |
+| **Period** | 2020.09 - 2020.10                                                                              |
+| **Role**   | ◾ 국민체력측정 현황 데이터 EDA 및 데이터시각화<br>◾ 데이터분석 부분 PPT 개요 작성 |
+| **Tech**   | `Python` `Pandas` `Numpy` `Jupyter Notebook` `Scikit-Learn`                                           |
 
 ## 공공 배달앱 : 소비자를 위한 다다익선
 
@@ -91,6 +101,17 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 | **Period** | 2020.01 - 2020.01                                           |
 | **Role**   | ◾ EDA 및 악성 댓글 필터링 분류기 개발<br>◾ 발표 PPT       |
 | **Tech**   | `Python` `Scikit-Learn` `Numpy` `Pandas` `Jupyter Notebook` |
+
+## [김해시 화재발생 예측모델 개발](https://github.com/CoodingPenguin/data-contest-collection/tree/main/2019-gimhae-fire-prediction)
+
+**COMPAS 김해시 화재발생 예측모델 개발**      
+경상남도 소방 및 건물 관련 데이터를 활용하여 김해시 건축물의 화재 위험도 분석 및 예측 모델 개발
+
+|            |                                                                                                |
+| :--------- | ---------------------------------------------------------------------------------------------- |
+| **Period** | 2019.10 - 2020.11                                                                              |
+| **Role**   | ◾ 데이터 전처리 및 EDA<br>◾ 화재예측 모델 설계 |
+| **Tech**   | `Python` `Pandas` `Numpy` `Jupyter Notebook` `Scikit-Learn`                                          |
 
 ## [프로젝트 Doldam](https://github.com/CoodingPenguin/doldam)
 
