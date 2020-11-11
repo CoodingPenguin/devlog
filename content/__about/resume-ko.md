@@ -25,16 +25,16 @@ lang: 'ko'
 
 # PROJECTS
 
-## [우리 동네 국민체력100](https://github.com/CoodingPenguin/data-contest-collection/tree/main/2020-sports-data-application-contest)
+## [영화평점 서비스 StarWatches](https://starwatches.netlify.app)
 
-**국민체육진흥공단 제 1회 체육종합 데이터 활용 경진대회**      
-부족한 체력인증센터의 단점을 보완하기 위한 출장 서비스 아이디어
+**Nomad Coders ReactJS Challenge 5기 졸업 작품**  
+리액트JS와 TMDB API를 이용한 영화 평점 사이트 클론
 
-|            |                                                                                                |
-| :--------- | ---------------------------------------------------------------------------------------------- |
-| **Period** | 2020.09 - 2020.10                                                                              |
-| **Role**   | ◾ 국민체력측정 현황 데이터 EDA 및 데이터시각화<br>◾ 데이터분석 부분 PPT 개요 작성 |
-| **Tech**   | `Python` `Pandas` `Numpy` `Jupyter Notebook` `Scikit-Learn`                                           |
+|                |                                                                                                                                                       |
+| :------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Period**     | 2020.10 - 2020.11                                                                                                                                     |
+| **What I Did** | ◾ ReactJS로 영화 평점 사이트 프론트엔드 구현<br>◾ axios로 TMDB API 결과 추출 |
+| **Tech**       | `Javascript` `Axios` `ReactJS` `Hooks` |
 
 ## 공공 배달앱 : 소비자를 위한 다다익선
 
