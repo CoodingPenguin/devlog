@@ -55,11 +55,6 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
-                  {
-                    <a href={'https://coodingpenguin.github.io/ai-notebook/'}>
-                      AI Notebook
-                    </a>
-                  }
                 </p>
               </div>
             </div>
