@@ -6,6 +6,7 @@ thumbnail: './img/thumbnail'
 draft: false
 ---
 
+![thumbnail](./img/thumbnail_2.png)
 > 이 글은 필자가 [파이썬 웹 프로그래밍](http://www.yes24.com/Product/Goods/63503495)으로 웹과 Django를 공부하며 정리한 글입니다. 혹시 잘못된 부분이 있다면 친절히 가르쳐주시면 감사하겠습니다:)
 
 ## 웹 프로그래밍이란?
