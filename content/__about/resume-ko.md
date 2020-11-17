@@ -129,6 +129,11 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 # CERTIFICATES
 
+### ReactJS Online Bootcamp
+
+[우수졸업자🎓](https://www.notion.so/nomadcoders/ReactJS-5-c1e7e589824f44a3958db13710e81487)    
+`2020.11` 수료 by **Nomad Coders**
+
 ### 2020 TOPCIT 특별평가
 
 `2020.07` 419 점 && 수준 3 by **TOPCIT**
@@ -147,7 +152,7 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 ### VanillaJS Online Bootcamp
 
-우수졸업자🎓  
+[우수졸업자🎓](https://www.notion.so/VanillaJS-2-ff8005575c4a4077a923648afa400d9a)    
 `2020.02` 수료 by **Nomad Coders**
 
 ### HTML/CSS Online Bootcamp
