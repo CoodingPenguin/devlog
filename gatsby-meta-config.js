@@ -2,7 +2,7 @@ module.exports = {
   title: `코딩하는펭귄의 저장소`,
   description: ``,
   author: `코딩하는펭귄`,
-  introduction: `#React⚛ #Django🎸 #개발자👩‍💻`,
+  introduction: `#React⚛ #Django🎸 #Python🐍 #개발자👩‍💻`,
   siteUrl: `https://cooding-penguin.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -16,7 +16,7 @@ module.exports = {
   thumbnail: `content/assets/thumbnail.png`,
   resume: {
     title: `About COODINGPENGUIN`,
-    description: `건강한 개발자(Healthy Developer)🏃‍♀️가 꿈입니다`,
+    description: `#React⚛ #Django🎸 #Python🐍 #개발자👩‍💻`,
     thumbnail: `content/assets/thumbnail.png`,
   },
   keywords: [
