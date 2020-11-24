@@ -3,7 +3,7 @@ title: 🌏 [파이썬 웹프로그래밍] HTTP 프로토콜
 date: 2020-11-16 01:48:00
 category: django
 thumbnail: './img/thumbnail'
-draft: false
+draft: true
 ---
 
 ![thumbnail](./img/thumbnail_2.png)
