@@ -16,7 +16,11 @@ export const Category = ({ categories, category, selectCategory }) => {
       const targetScollX =
         scrollLeft + refineLeft - containerWidth / 2 + tabWidth / 2
 
-      containerRef.current.scrollTo(targetScollX, 0)
+      containerRef.current.scroll({
+        left: targetScollX,
+        top: 0,
+        behavior: 'smooth',
+      })
     },
     [containerRef]
   )
