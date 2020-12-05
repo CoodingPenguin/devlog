@@ -30,7 +30,12 @@ export const Bio = () => (
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
                   {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
+                    <a
+                      href={`https://github.com/${social.github}`}
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
                   )}
                   {social.medium && (
                     <a href={`https://medium.com/${social.medium}`}>Medium</a>
@@ -51,10 +56,19 @@ export const Bio = () => (
                     </a>
                   )}
                   {social.instagram && (
-                    <a href={`https://www.instagram.com/${social.instagram}/`}>
+                    <a
+                      href={`https://www.instagram.com/${social.instagram}/`}
+                      target="_blank"
+                    >
                       Instagram
                     </a>
                   )}
+                  <a
+                    href="https://www.notion.so/coodingpenguin/TIL-cb1ebf1ea49945a08efd2f6f5785cd1a"
+                    target="_blank"
+                  >
+                    TIL
+                  </a>
                 </p>
               </div>
             </div>
