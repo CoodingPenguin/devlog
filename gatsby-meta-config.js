@@ -2,7 +2,7 @@ module.exports = {
   title: `코딩하는펭귄의 저장소`,
   description: ``,
   author: `코딩하는펭귄`,
-  introduction: `파이썬과 웹에 관심 많은 컴공 전공자👩‍💻`,
+  introduction: `파이썬과 웹에 관심 많은 컴공 전공자`,
   siteUrl: `https://cooding-penguin.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
