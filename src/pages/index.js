@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import _ from 'lodash'
-import React, { useEffect } from 'react'
+import React, { useMemo } from 'react'
 import { Bio } from '../components/bio'
 import { Category } from '../components/category'
 import { Contents } from '../components/contents'
@@ -9,6 +9,7 @@ import { HOME_TITLE } from '../constants'
 import { useCategory } from '../hooks/useCategory'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
+import { useScrollEvent } from '../hooks/useScrollEvent'
 import { Layout } from '../layout'
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
@@ -23,19 +24,15 @@ export default ({ data, location }) => {
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
-  const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
+  const categories = useMemo(
+    () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
+    []
+  )
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory()
+
   useIntersectionObserver()
-
-  useEffect(() => {
-    window.addEventListener(`scroll`, onScroll, { passive: false })
-    return () => {
-      window.removeEventListener(`scroll`, onScroll, { passive: false })
-    }
-  }, [])
-
-  const onScroll = () => {
+  useScrollEvent(() => {
     const currentPos = window.scrollY + window.innerHeight
     const isTriggerPos = () => getDistance(currentPos) < BASE_LINE
     const doesNeedMore = () =>
@@ -45,7 +42,7 @@ export default ({ data, location }) => {
       dismissCondition: () => !isTriggerPos(),
       triggerCondition: () => isTriggerPos() && doesNeedMore(),
     })()
-  }
+  })
 
   return (
     <Layout location={location} title={siteMetadata.title}>
