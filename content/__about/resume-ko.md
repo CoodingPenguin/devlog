@@ -1,6 +1,6 @@
 ---
 title: 'about'
-date: 2020-8-11 18:02:00
+date: 2020-12-06 01:11:00
 lang: 'ko'
 ---
 
@@ -8,10 +8,10 @@ lang: 'ko'
 
 **하고 싶은 것을 찾고 있는 코딩하는펭귄🐧**
 
-**정리하는 것**을 정말 좋아하며 블로그, 인스타, Notion으로 여러 가지를 정리합니다.    
-데이터분석, 인공지능, 웹개발 공부를 해왔으며 지금은 웹개발에 집중하고 있습니다. 
+**정리하는 것**을 정말 좋아하며 블로그, 인스타, Notion으로 여러 가지를 정리합니다.  
+데이터분석, 인공지능, 웹개발 공부를 해왔으며 지금은 <u>전공 복습</u>과 <u>파이썬</u>에 집중하고 있습니다.
 
-`Python` `Data Analysis` `Web Development` `React` 
+`Python` `Data Analysis` `Web Development` `React`
 
 |               |                                                                |
 | :-----------: | -------------------------------------------------------------- |
@@ -29,11 +29,11 @@ lang: 'ko'
 **Nomad Coders ReactJS Challenge 5기 졸업 작품**  
 리액트JS와 TMDB API를 이용한 영화 평점 사이트 클론
 
-|                |                                                                                                                                                       |
-| :------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Period**     | 2020.10 - 2020.11                                                                                                                                     |
+|                |                                                                                |
+| :------------- | ------------------------------------------------------------------------------ |
+| **Period**     | 2020.10 - 2020.11                                                              |
 | **What I Did** | ◾ ReactJS로 영화 평점 사이트 프론트엔드 구현<br>◾ axios로 TMDB API 결과 추출 |
-| **Tech**       | `Javascript` `Axios` `ReactJS` `Hooks` |
+| **Tech**       | `Javascript` `Axios` `ReactJS` `Hooks`                                         |
 
 ## 공공 배달앱 : 소비자를 위한 다다익선
 
@@ -104,14 +104,14 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 ## [김해시 화재발생 예측모델 개발](https://github.com/CoodingPenguin/data-contest-collection/tree/main/2019-gimhae-fire-prediction)
 
-**COMPAS 김해시 화재발생 예측모델 개발**      
+**COMPAS 김해시 화재발생 예측모델 개발**  
 경상남도 소방 및 건물 관련 데이터로 김해시 건축물의 화재 위험도 분석 및 예측 모델 개발
 
-|            |                                                                                                |
-| :--------- | ---------------------------------------------------------------------------------------------- |
-| **Period** | 2019.10 - 2020.11                                                                              |
-| **Role**   | ◾ 데이터 전처리 및 EDA<br>◾ 화재예측 모델 설계 |
-| **Tech**   | `Python` `Pandas` `Numpy` `Jupyter Notebook` `Scikit-Learn`                                          |
+|            |                                                             |
+| :--------- | ----------------------------------------------------------- |
+| **Period** | 2019.10 - 2020.11                                           |
+| **Role**   | ◾ 데이터 전처리 및 EDA<br>◾ 화재예측 모델 설계            |
+| **Tech**   | `Python` `Pandas` `Numpy` `Jupyter Notebook` `Scikit-Learn` |
 
 ## [프로젝트 Doldam](https://github.com/CoodingPenguin/doldam)
 
@@ -131,7 +131,7 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 ### ReactJS Online Bootcamp
 
-[우수졸업자🎓](https://www.notion.so/nomadcoders/ReactJS-5-c1e7e589824f44a3958db13710e81487)    
+[우수졸업자🎓](https://www.notion.so/nomadcoders/ReactJS-5-c1e7e589824f44a3958db13710e81487)  
 `2020.11` 수료 by **Nomad Coders**
 
 ### 2020 TOPCIT 특별평가
@@ -152,7 +152,7 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 ### VanillaJS Online Bootcamp
 
-[우수졸업자🎓](https://www.notion.so/VanillaJS-2-ff8005575c4a4077a923648afa400d9a)    
+[우수졸업자🎓](https://www.notion.so/VanillaJS-2-ff8005575c4a4077a923648afa400d9a)  
 `2020.02` 수료 by **Nomad Coders**
 
 ### HTML/CSS Online Bootcamp
