@@ -31,10 +31,6 @@ GitHubTheme.overrideThemeStyles = () => {
       fontFamily: 'Catamaran',
     },
 
-    h3: {
-      fontweight: 500,
-    },
-
     ul: {
       marginBottom: '6px',
     },
