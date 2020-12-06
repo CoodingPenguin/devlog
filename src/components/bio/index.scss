@@ -5,6 +5,21 @@
 
   .author-description {
     display: flex;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      z-index: 999;
+      background: url('/images/santa-hat.png');
+      display: inline-block;
+      width: 39px;
+      height: 39px;
+      background-size: contain;
+      content: '';
+      transform: rotate(-25deg);
+      top: -4px;
+      left: -8px;
+    }
   }
 
   .author-image {
