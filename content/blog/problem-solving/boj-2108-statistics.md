@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 통계학
 date: 2020-08-25 12:19:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

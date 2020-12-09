@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - LCS
 date: 2020-12-07 21:40:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

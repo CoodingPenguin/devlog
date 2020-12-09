@@ -1,7 +1,7 @@
 ---
 title: 📝 PROGRAMMERS - K번째 수
 date: 2020-08-18 17:38:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

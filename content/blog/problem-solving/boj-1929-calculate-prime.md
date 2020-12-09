@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 소수 구하기
 date: 2020-08-11 18:56:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

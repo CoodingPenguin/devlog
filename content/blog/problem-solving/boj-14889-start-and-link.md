@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 스타트와 링크
 date: 2020-09-11 00:09:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

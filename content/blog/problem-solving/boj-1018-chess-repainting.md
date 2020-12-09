@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 체스판 다시 칠하기
 date: 2020-08-20 19:34:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

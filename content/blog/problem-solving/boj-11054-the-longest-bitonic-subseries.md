@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 가장 긴 바이토닉 부분 수열
 date: 2020-11-24 22:41:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---
@@ -11,6 +11,7 @@ draft: false
 BOJ 11054번 : [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054)
 
 ## 접근 방법
+
 바이토닉 수열이란 계속 증가하다가 어떤 숫자를 기점으로 계속 감소하는 수열을 말한다. 처음 보는 수열 같지만 **가장 긴 증가하는 부분 수열**이 정방향, 역방향으로 **2개** 있다고 생각하면 된다.
 
 참고로 가장 긴 증가하는 부분 수열에 대한 설명은 하지 않으므로 궁금하다면 [여기](../boj-11053-the-longest-increasing-subseries/)를 참고할 것!
@@ -36,7 +37,6 @@ $$
 - $table[i]$ : $i$번째 숫자가 기점일 때의 가장 긴 바이토닉 수열의 최장 길이
 - $uptable[i]$ : $0$번째부터 $i$번째 숫자까지의 가장 긴 증가하는 수열의 길이에 1을 뺀 값
 - $downtable[i]$ : $n-1$번째 부터 $i$번째 숫자까지의 가장 긴 증가하는 수열의 길이에 1을 뺀 값 (이 때, $i ≤ n$)
-
 
 ## 소스코드
 

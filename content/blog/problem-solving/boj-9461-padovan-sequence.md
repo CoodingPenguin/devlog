@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 파도반 수열
 date: 2020-09-17 17:10:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

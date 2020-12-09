@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - RGB거리
 date: 2020-09-22 00:02:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

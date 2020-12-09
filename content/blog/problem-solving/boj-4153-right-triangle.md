@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 직각삼각형
 date: 2020-08-15 01:50:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

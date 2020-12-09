@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - N-Queen
 date: 2020-09-01 12:35:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

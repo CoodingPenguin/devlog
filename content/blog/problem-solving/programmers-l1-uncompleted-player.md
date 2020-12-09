@@ -1,7 +1,7 @@
 ---
 title: 📝 PROGRAMMERS - 완주하지 못한 선수
 date: 2020-08-16 21:54:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

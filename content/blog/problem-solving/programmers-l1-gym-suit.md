@@ -1,7 +1,7 @@
 ---
 title: 📝 PROGRAMMERS - 체육복
 date: 2020-08-20 19:46:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

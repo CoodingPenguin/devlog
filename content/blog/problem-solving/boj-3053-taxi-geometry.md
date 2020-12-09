@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 택시 기하학
 date: 2020-08-15 01:59:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

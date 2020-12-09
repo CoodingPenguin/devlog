@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 하노이 탑 이동 순서
 date: 2020-08-17 22:08:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

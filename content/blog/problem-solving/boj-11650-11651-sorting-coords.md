@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 좌표 정렬하기 시리즈
 date: 2020-08-25 12:28:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

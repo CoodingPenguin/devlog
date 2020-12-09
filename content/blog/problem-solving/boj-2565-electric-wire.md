@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 전깃줄
 date: 2020-10-05 15:35:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

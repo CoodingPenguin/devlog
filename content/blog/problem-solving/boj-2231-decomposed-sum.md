@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 분해합
 date: 2020-08-18 16:27:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

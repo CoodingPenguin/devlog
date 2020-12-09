@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 수 정렬하기 3
 date: 2020-08-24 19:44:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

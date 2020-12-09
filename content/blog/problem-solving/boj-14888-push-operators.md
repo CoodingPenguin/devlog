@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 연산자 끼워넣기
 date: 2020-09-10 18:30:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

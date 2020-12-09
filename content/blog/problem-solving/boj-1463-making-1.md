@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 1로 만들기
 date: 2020-09-22 17:44:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

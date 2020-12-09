@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 쉽게 푸는 문제
 date: 2020-03-01 00:25:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

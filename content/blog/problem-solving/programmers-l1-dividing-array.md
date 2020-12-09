@@ -1,7 +1,7 @@
 ---
 title: 📝 PROGRAMMERS - 나누어 떨어지는 배열
 date: 2020-08-25 12:06:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - N과 M 시리즈
 date: 2020-08-31 23:05:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

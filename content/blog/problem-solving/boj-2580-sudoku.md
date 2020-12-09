@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 스도쿠
 date: 2020-09-04 13:56:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

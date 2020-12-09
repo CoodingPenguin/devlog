@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 단어 정렬
 date: 2020-08-26 13:39:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

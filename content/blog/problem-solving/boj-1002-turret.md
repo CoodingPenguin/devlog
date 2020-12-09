@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 터렛
 date: 2020-08-15 02:09:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

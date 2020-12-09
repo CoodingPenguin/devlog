@@ -1,7 +1,7 @@
 ---
 title: 💬 노마드코더 카카오톡 클론 챌린지 4기 졸업
 date: 2020-02-03 00:59:00
-category: penguin
+category: '🐧 Penguin'
 thumbnail: './img/thumbnail-4.png'
 draft: false
 ---

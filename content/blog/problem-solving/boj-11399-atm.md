@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - ATM문제
 date: 2019-07-20 13:34:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

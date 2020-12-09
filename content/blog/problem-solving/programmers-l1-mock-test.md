@@ -1,7 +1,7 @@
 ---
 title: 📝 PROGRAMMERS - 모의고사
 date: 2020-08-17 23:12:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---

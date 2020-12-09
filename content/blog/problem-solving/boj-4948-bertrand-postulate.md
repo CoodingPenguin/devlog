@@ -1,7 +1,7 @@
 ---
 title: 📝 BOJ - 베르트랑의 공준
 date: 2020-08-11 18:40:00
-category: problem-solving
+category: '📝 Problem Solving'
 thumbnail: './img/thumbnail.png'
 draft: false
 ---
