@@ -34,7 +34,6 @@ export const Bio = () => (
                       href={`https://github.com/${social.github}`}
                       target="_blank"
                     >
-                      <i class="fab fa-github"></i>
                       GitHub
                     </a>
                   )}
@@ -61,7 +60,6 @@ export const Bio = () => (
                       href={`https://www.instagram.com/${social.instagram}/`}
                       target="_blank"
                     >
-                      <i class="fab fa-instagram"></i>
                       Instagram
                     </a>
                   )}
@@ -69,7 +67,6 @@ export const Bio = () => (
                     href="https://www.notion.so/coodingpenguin/TIL-cb1ebf1ea49945a08efd2f6f5785cd1a"
                     target="_blank"
                   >
-                    <i class="fas fa-globe"></i>
                     TIL
                   </a>
                 </p>
