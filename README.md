@@ -8,7 +8,7 @@
   <small>개발 이모저모를 끄적이는 Devlog</small>
 </div>
 
-## 🚀 Built Info
+## 🚀 Build Info
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/91fa8dc9-d4c4-4a09-a72f-be661d0848ec/deploy-status)](https://app.netlify.com/sites/cooding-penguin/deploys)
 
