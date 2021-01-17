@@ -1,6 +1,8 @@
 // custom typefaces
 require('typeface-noto-sans-kr')
 require('typeface-catamaran')
+require('@kfonts/bm-dohyeon')
+require('@kfonts/nanum-square')
 
 // polyfill
 require('intersection-observer')

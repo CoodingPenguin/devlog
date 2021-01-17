@@ -18,17 +18,36 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h1: {
-      fontWeight: 700,
+      fontWeight: 800,
       lineHeight: 1.2,
-      fontFamily: 'Catamaran',
+      fontFamily: 'nanum-square',
     },
 
     h2: {
-      fontWeight: 600,
+      fontWeight: 500,
+      fontSize: '26px',
       lineHeight: 1.2,
       marginTop: '56px',
       marginBottom: '20px',
-      fontFamily: 'Catamaran',
+      fontFamily: 'bm-dohyeon',
+    },
+
+    h3: {
+      fontSize: '22px',
+      marginTop: '48px',
+      fontWeight: 800,
+      fontFamily: 'nanum-square',
+    },
+
+    h4: {
+      fontSize: '17px',
+      fontWeight: 800,
+      fontFamily: 'nanum-square',
+    },
+
+    h5: {
+      fontWeight: 800,
+      fontFamily: 'nanum-square',
     },
 
     ul: {
