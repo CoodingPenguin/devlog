@@ -10,15 +10,15 @@
     &::before {
       position: absolute;
       z-index: 999;
-      background: url('/images/santa-hat.png');
+      background: url('/images/scarf.png');
       display: inline-block;
-      width: 39px;
-      height: 39px;
+      width: 66px;
+      height: 66px;
       background-size: contain;
       content: '';
-      transform: rotate(-25deg);
-      top: -4px;
-      left: -8px;
+      transform: rotate(-16deg);
+      bottom: -20px;
+      left: 10px;
     }
   }
 
