@@ -40,9 +40,10 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h4: {
-      fontSize: '17px',
+      fontSize: '18px',
       fontWeight: 800,
       fontFamily: 'nanum-square',
+      marginTop: '20px',
     },
 
     h5: {
