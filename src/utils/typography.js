@@ -33,11 +33,15 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     ul: {
-      marginBottom: '6px',
+      marginBottom: '5px',
     },
 
     li: {
       marginBottom: '2px',
+    },
+
+    'h3,h4,h5,h6': {
+      marginTop: '1.925rem',
     },
 
     h3: {
@@ -47,7 +51,7 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h4: {
-      fontSize: '18px',
+      fontSize: '17px',
       fontWeight: 800,
       fontFamily: 'nanum-square',
     },
@@ -57,12 +61,20 @@ GitHubTheme.overrideThemeStyles = () => {
       fontFamily: 'nanum-square',
     },
 
-    'h3,h4,h5,h6': {
-      marginTop: '1.725rem',
-    },
-
     details: {
       marginBottom: '32px',
+    },
+
+    'ol, ul': {
+      marginLeft: '1.8rem',
+    },
+
+    'li>ol, li>ul': {
+      marginLeft: '1.325rem',
+    },
+
+    'li *:last-child': {
+      marginBottom: '10px',
     },
   }
 }
