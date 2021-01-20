@@ -1,6 +1,6 @@
 ---
 title: 'about'
-date: 2020-12-06 01:11:00
+date: 2021-01-20 11:00:00
 lang: 'ko'
 ---
 
@@ -9,7 +9,7 @@ lang: 'ko'
 **하고 싶은 것을 찾고 있는 코딩하는펭귄🐧**
 
 **정리하는 것**을 정말 좋아하며 블로그, 인스타, Notion으로 여러 가지를 정리합니다.  
-데이터분석, 인공지능, 웹개발 공부를 해왔으며 지금은 <u>전공 복습</u>과 <u>파이썬</u>에 집중하고 있습니다.
+데이터분석, 인공지능, 웹개발 공부를 해왔으며 지금은 <u>파이썬</u>과 <u>인공지능</u>에 집중하고 있습니다.
 
 `Python` `Data Analysis` `Web Development` `React`
 
@@ -127,16 +127,16 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 <br />
 
-# CERTIFICATES
+# EDUCATION
+
+### 부스트캠프 AI Tech
+
+`2021.01 - ing` by **네이버 커넥트재단**
 
 ### ReactJS Online Bootcamp
 
 [우수졸업자🎓](https://www.notion.so/nomadcoders/ReactJS-5-c1e7e589824f44a3958db13710e81487)  
 `2020.11` 수료 by **Nomad Coders**
-
-### 2020 TOPCIT 특별평가
-
-`2020.07` 419 점 && 수준 3 by **TOPCIT**
 
 ### Python Online Bootcamp
 
@@ -144,7 +144,7 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 ### NodeJS Fullstack Online Bootcamp
 
-`2020.04` 수료 by **Nomad Coders**
+`2020.03 - 2020.04` 수료 by **Nomad Coders**
 
 ### 부스트코스 : 파이토치로 시작하는 딥러닝 기초
 
@@ -163,4 +163,4 @@ StackOverflow 특정 키워드 일자리 크롤링 사이트
 
 스터디 운영진✍  
 사용자 맞춤 악성 댓글 필터링 서비스 개발  
-`2020.01` 수료 by **Meeta**
+`2019.09 - 2020.01` 수료 by **Meeta**
