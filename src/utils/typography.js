@@ -72,10 +72,6 @@ GitHubTheme.overrideThemeStyles = () => {
     'li>ol, li>ul': {
       marginLeft: '1.325rem',
     },
-
-    'li *:last-child': {
-      marginBottom: '10px',
-    },
   }
 }
 
