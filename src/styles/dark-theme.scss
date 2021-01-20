@@ -99,4 +99,11 @@ body.dark {
       box-shadow: 1px 1px 5px 0 #666666;
     }
   }
+
+  .post-container {
+    h3 {
+      padding: 5px 10px;
+      border-left: 6px solid $navigator-background-color;
+    }
+  }
 }
