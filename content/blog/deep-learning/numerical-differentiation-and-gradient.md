@@ -12,7 +12,7 @@ draft: false
 
 ## 1. 수치 미분 Numerical Difference
 
-### 1.1. 수치 미분
+### 수치 미분
 
 미분은 특정 순간의 변화량을 말한다. df(x)dx에서 **x의 변화가 함수 f(x)를 얼마나 변화시키느냐**를 의미한다. 하지만 우리는 미분을 직접적으로 구하기 어려우므로 그 근사값을 구한다. 이것을 `수치 미분`이라 한다. 그래서 어느 정도의 오차가 포함이 된다.
 
@@ -37,7 +37,7 @@ print(numerical_diff(func, 10))    # func의 x값이 10일때의 기울기
 <img src="./img/5-9.png">
 <br>
 
-### 1.2. 편미분
+### 편미분
 
 편미분은 **변수가 2개 이상일 때** 하는 미분을 말한다. 이 때 다른 변수들의 값을 **고정**하고 **목표 변수 하나의 기울기**만 구하는 것이다.
 
@@ -62,7 +62,7 @@ print(numerical_diff(func2_1, 4.0))    # x_1에 대한 편미분
 
 ## 2. 기울기
 
-### 2.1. 다변수 함수의 기울기
+### 다변수 함수의 기울기
 
 <img src="./img/5-0.png">
 <br>
@@ -106,7 +106,7 @@ print(numerical_gradient(func2, np.array([3.0, 0.0])))
 <img src="./img/5-1.png">
 <br>
 
-### 2.2. 경사하강법 Gradient Descent
+### 경사하강법 Gradient Descent
 
 <img src="./img/5-2.png">
 <br>
@@ -146,7 +146,7 @@ gradient_descent(func2, init_x=init_x, lr=0.1, step_num=100)   # 거의 0에 가
 <img src="./img/5-3.png">
 <br>
 
-### 2.3. 신경망에서의 기울기
+### 신경망에서의 기울기
 
 $$
 W = \begin{pmatrix}w_{11} & w_{12} & w_{13}\\w_{21} & w_{22} & w_{23} \end{pmatrix}

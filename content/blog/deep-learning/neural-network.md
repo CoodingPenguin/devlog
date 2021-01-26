@@ -29,7 +29,7 @@ draft: false
 - weight가 달린 입력 신호와 편향의 총합을 구한다.
 - 이 총합을 활성화 함수인 $h(x)$에 넣어 출력 신호를 구한다.
 
-### 2.1. 시그모이드 함수 vs 계단 함수
+### 시그모이드 함수 vs 계단 함수
 
 시그모이드(sigmoid) 함수 $h(x) = \frac{1}{1+exp(-x)}$는 **S자 모양**을 한 함수를 말한다. 시그모이드 함수는 다음과 같은 특성을 가지고 있다.
 
@@ -81,13 +81,13 @@ plt.show()
 - 입력이 작을 때 출력은 0에 가깝고, 입력이 커질 때 출력이 1에 가까워진다.
 - 입력이 중요하면 큰 값을 출력하고, 입력이 중요하지 않으면 작은 값을 출력한다.
 
-### 2.2. 비선형 함수
+### 비선형 함수
 
 곡선 모양의 시그모이드(sigmoid) 함수와 계단처럼 구부러진 직선인 계단(step) 함수는 `비선형 함수`로 분류된다. 이 비선형 함수는 신경망에서 정말 중요한다. 신경망에서 선형 함수를 쓸 경우 **신경망을 여러 층으로 구성하는 장점**을 살릴 수가 없다.
 
 예를 들어, $h(x) = cx$라는 활성화 함수가 있다고 하면, 3개의 층을 쌓았을 때 출력은 $y = h(h(h(x))) = c^3x$이다. $c^3 = a$로 치환을 하면 결국에는 1개의 층을 쌓은 신경망과 똑같아진다.
 
-### 2.3. ReLU 함수
+### ReLU 함수
 
 ReLU 함수 $h(x) = \begin{cases}x & x > 0\\0 & x \leq 0\end{cases}$는 입력이 0이 넘으면 그대로 출력하고 0 이하면 0을 출력하는 함수를 말한다. 최근에는 ReLU 함수를 신경망에서 주로 사용한다고 한다.
 
@@ -114,7 +114,7 @@ plt.show()
 - `2 클래스 분류(2 class classification)` : 시그모이드 함수(sigmoid function)
 - `다중 클래스 분류(multi class classification)` : 소프트맥스 함수(softmax function)
 
-### 3.1. 항등 함수 identity function
+### 항등 함수 identity function
 
 <img src="./img/1-4.png">
 
@@ -127,7 +127,7 @@ def identity_function(x):
     return x
 ```
 
-### 3.2. 소프트맥스 함수 softmax function
+### 소프트맥스 함수 softmax function
 
 <img src="./img/1-5.png">
 

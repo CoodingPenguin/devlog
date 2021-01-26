@@ -14,7 +14,7 @@ draft: false
 
 계산 그래프(computational graph)는 **계산 과정을 그래프로 나타낸 것**이다.
 
-### 1.1. 순전파 Forward Propagation
+### 순전파 Forward Propagation
 
 <br>
 
@@ -28,7 +28,7 @@ draft: false
 - 계산하는 것이 **단순**하기에 복잡한 문제를 단순화할 수 있음
 - **중간 계산 결과**를 edge에 적어둠으로써 기록할 수 있음
 
-### 1.2. 역전파 Back Propagation
+### 역전파 Back Propagation
 
 <br>
 
@@ -60,7 +60,7 @@ draft: false
 
 ## 3. 역전파 Back Propagation
 
-### 3.1. 덧셈 노드의 역전파
+### 덧셈 노드의 역전파
 
 덧셈 노드의 역전파는 **입력된 값을 그대로 다음 노드로 전달**한다.
 
@@ -70,7 +70,7 @@ draft: false
 
 <br>
 
-### 3.2. 곱셈 노드의 역전파
+### 곱셈 노드의 역전파
 
 곱셈 노드의 역전파는 **전 노드에서 받은 신호와 순전파 때의 입력 신호들을 서로 바꾼 값을 곱해서 다음 노드들로 전달**한다. 곱셈 노드 구현 시 순전파 때의 입력신호가 필요하므로 이를 변수에 저장한다.
 
@@ -80,14 +80,14 @@ draft: false
 
 <br>
 
-### 3.3. 단순한 계층 구현
+### 단순한 계층 구현
 
 모든 계층은 다음의 공통적인 메서드를 포함한다.
 
 - `forward()` : 순전파를 처리
 - `backward()` : 역전파를 처리
 
-#### 3.3.1. 덧셈 계층
+#### 덧셈 계층
 
 ```python
 class AddLayer:
@@ -105,7 +105,7 @@ class AddLayer:
         return dx, dy
 ```
 
-#### 3.3.2. 곱셈 계층
+#### 곱셈 계층
 
 ```python
 class MulLayer:

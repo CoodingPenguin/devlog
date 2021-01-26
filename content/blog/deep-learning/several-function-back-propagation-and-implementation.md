@@ -12,7 +12,7 @@ draft: false
 
 ## 1. 활성화 함수 계층 구현
 
-### 1.1. ReLU 계층
+### ReLU 계층
 
 $$
 y = \begin{cases}x & x > 0\\0 & x \leq 0\end{cases}
@@ -65,7 +65,7 @@ class Relu:
 
 <br>
 
-### 1.2. Signoid 계층
+### Signoid 계층
 
 $$
 y = \frac{1}{1 + exp(-x)}
@@ -131,7 +131,7 @@ class Sigmoid:
 
 ## 2. Affine/Softmax 계층 구현
 
-### 2.1. Affine 계층
+### Affine 계층
 
 $$
 Y = X\cdot W + B
@@ -154,13 +154,13 @@ Affine 함수는 **행렬의 곱**을 의미한다.
   - 각각의 요소에 역전파를 한 것과 같음
   - $X = (x_0, x_1, ..., x_n) → \frac{\partial L}{\partial X} = (\frac{\partial L}{\partial x_0} \frac{\partial a}{\partial x_1}, \frac{\partial L}{\partial x_2})$
 
-#### 2.1.1. 입력 데이터 1개
+#### 입력 데이터 1개
 
 <img src="./img/8-3.png">
 
 <br>
 
-#### 2.1.2. 입력 데이터 N개
+#### 입력 데이터 N개
 
 입력 데이터가 1개일 때와 거의 같지만, bias에 대한 덧셈에서는 주의를 해야 한다.
 
@@ -199,9 +199,9 @@ class Affine:
 
 <br>
 
-### 2.2. Softmax 계층
+### Softmax 계층
 
-#### 2.2.1. Softmax 함수
+#### Softmax 함수
 
 <br>
 
@@ -219,7 +219,7 @@ $$
 
 <br>
 
-#### 2.2.2. Softmax-with-Loss 계층
+#### Softmax-with-Loss 계층
 
 `순전파`로 Softmax-with-Loss 계층을 봐보자.
 
@@ -268,7 +268,7 @@ class SoftmaxWithLoss:
 
 ## 3. 오차역전파법 구현
 
-### 3.1. 2층 신경망 구현
+### 2층 신경망 구현
 
 ```python
 import sys, os
@@ -356,7 +356,7 @@ class TwoLayerNet:
         return grads
 ```
 
-### 3.2. 학습 및 모델 성능 평가
+### 학습 및 모델 성능 평가
 
 ```python
 import sys, os
