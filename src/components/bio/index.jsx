@@ -63,12 +63,6 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
-                  <a
-                    href="https://www.notion.so/coodingpenguin/TIL-cb1ebf1ea49945a08efd2f6f5785cd1a"
-                    target="_blank"
-                  >
-                    TIL
-                  </a>
                 </p>
               </div>
             </div>
