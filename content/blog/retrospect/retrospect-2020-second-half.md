@@ -1,8 +1,8 @@
 ---
 title: ⛄ 2020년 하반기 마지막 회고
 date: 2020-12-30 00:00:00
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-10.png'
+category: "✍ Retrospect"
+thumbnail: "./img/thumbnail-10.png"
 draft: true
 ---
 

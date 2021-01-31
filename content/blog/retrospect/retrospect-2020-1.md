@@ -1,8 +1,8 @@
 ---
 title: 😤 조금 늦은 2020년 1분기 회고
 date: 2020-04-24 03:44:00
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-8.png'
+category: "✍ Retrospect"
+thumbnail: "./img/thumbnail-8.png"
 draft: false
 ---
 
