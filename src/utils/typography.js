@@ -41,7 +41,7 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     'h3,h4,h5,h6': {
-      marginTop: '1.925rem',
+      marginTop: '2rem',
     },
 
     h3: {
@@ -65,6 +65,10 @@ GitHubTheme.overrideThemeStyles = () => {
       marginBottom: '32px',
     },
 
+    p: {
+      marginBottom: '16px',
+    },
+
     'ol, ul': {
       marginLeft: '1.8rem',
     },
@@ -72,6 +76,10 @@ GitHubTheme.overrideThemeStyles = () => {
     'li>ol, li>ul': {
       marginLeft: '1.325rem',
     },
+
+    blockquote: {
+      borderLeft: '5px solid hsla(0,0%,0%,0.13)',
+    }
   }
 }
 

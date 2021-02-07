@@ -1,0 +1,74 @@
+body {
+  .post-container {
+    h3 {
+      padding: 5px 10px;
+      border-left: 5px solid $navigator-background-color;
+    }
+
+    .up-button {
+      background-image: linear-gradient(
+        to right,
+        #9d50bb 0%,
+        #9d50bb 51%,
+        #6e48aa 100%
+      );
+      color: white;
+      border-radius: 5px;
+      padding: 3px 5px 3px 5px;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        box-shadow: 1px 1px 5px 0 #666666;
+      }
+    }
+
+    .quote-block {
+      border: 2px solid none;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 14px;
+      .quote-block__emoji {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      .quote-block__content {
+        padding-right: 6px;
+        p {
+          margin-bottom: 0;
+        }
+
+        p:first-child {
+          margin-bottom: 4px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .quote-block-simple {
+      border: 2px solid none;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 14px;
+      .quote-block-simple__emoji {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      .quote-block-simple__content {
+        padding-right: 6px;
+        display: flex;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

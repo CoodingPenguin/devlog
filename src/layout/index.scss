@@ -1,10 +1,11 @@
-@import '../styles/variables.scss';
-@import '../styles/light-theme.scss';
-@import '../styles/dark-theme.scss';
-@import '../styles/resume.scss';
+@import "../styles/variables.scss";
+@import "../styles/light-theme.scss";
+@import "../styles/dark-theme.scss";
+@import "../styles/resume.scss";
+@import "../styles/post.scss";
 
 body {
-  font-family: 'noto-sans-kr', sans-serif;
+  font-family: "noto-sans-kr", sans-serif;
   background-color: $light-background-color;
   -webkit-text-size-adjust: antialiased;
   -moz-osx-font-smoothing: grayscale;
