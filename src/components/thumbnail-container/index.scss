@@ -1,3 +1,10 @@
 .thumbnail-container {
   min-height: calc(100vh - 3.5rem);
+  h3 {
+    margin-top: 24px;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
 }
