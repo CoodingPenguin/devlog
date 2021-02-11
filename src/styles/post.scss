@@ -37,6 +37,16 @@ body {
       margin-left: 1.325rem;
     }
 
+    ul p,
+    ol p {
+      margin-bottom: 6px;
+    }
+
+    ul > li:last-child,
+    ol > li:last-child {
+      margin-bottom: 12px;
+    }
+
     blockquote {
       border-left: 5px solid hsla(0, 0%, 0%, 0.13);
     }
@@ -105,6 +115,10 @@ body {
           margin-bottom: 0;
         }
       }
+    }
+
+    .src {
+      color: #999999;
     }
   }
 }
