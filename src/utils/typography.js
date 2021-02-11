@@ -24,6 +24,7 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h2: {
+      fontSize: '24px',
       fontWeight: 500,
       lineHeight: 1.2,
       marginTop: '56px',
@@ -40,7 +41,7 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h3: {
-      fontSize: '23px',
+      fontSize: '22px',
       fontWeight: 800,
       fontFamily: 'nanum-square',
     },
