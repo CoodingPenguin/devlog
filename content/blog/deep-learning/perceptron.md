@@ -1,8 +1,8 @@
 ---
 title: 🧠 [밑바닥 딥러닝] 퍼셉트론
 date: 2020-01-24 15:59:00
-category: '🧠 Deep Learning'
-thumbnail: './img/thumbnail.png'
+category: "🧠 Deep Learning"
+thumbnail: "./img/thumbnail.png"
 draft: false
 ---
 
@@ -46,7 +46,7 @@ $$
 
 <img src="./img/0-1.png">
 
-## 퍼셉트론 구현
+### 퍼셉트론 구현
 
 ```python
 import numpy as np
