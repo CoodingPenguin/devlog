@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - N-Queen
 date: 2020-09-01 12:35:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

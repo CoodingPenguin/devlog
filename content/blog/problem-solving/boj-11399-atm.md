@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - ATM문제
 date: 2019-07-20 13:34:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

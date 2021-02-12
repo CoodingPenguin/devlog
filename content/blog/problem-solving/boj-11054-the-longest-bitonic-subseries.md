@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 가장 긴 바이토닉 부분 수열
 date: 2020-11-24 22:41:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

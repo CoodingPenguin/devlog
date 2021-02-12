@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - LCS
 date: 2020-12-07 21:40:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

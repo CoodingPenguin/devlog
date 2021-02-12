@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 정수 삼각형
 date: 2020-09-22 14:38:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

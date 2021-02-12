@@ -1,10 +1,12 @@
 ---
 title: 📝 PROGRAMMERS - 예산
 date: 2020-09-11 01:05:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-programmers.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-programmers.png)
 
 ## 문제
 

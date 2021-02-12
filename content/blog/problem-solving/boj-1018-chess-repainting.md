@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 체스판 다시 칠하기
 date: 2020-08-20 19:34:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

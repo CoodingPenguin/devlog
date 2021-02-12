@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 소수 구하기
 date: 2020-08-11 18:56:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

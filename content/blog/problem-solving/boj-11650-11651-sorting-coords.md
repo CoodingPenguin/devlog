@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 좌표 정렬하기 시리즈
 date: 2020-08-25 12:28:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

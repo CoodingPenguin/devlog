@@ -1,10 +1,12 @@
 ---
 title: 📝 PROGRAMMERS - 큰 수 만들기
 date: 2020-10-05 17:02:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-programmers.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-programmers.png)
 
 ## 문제
 

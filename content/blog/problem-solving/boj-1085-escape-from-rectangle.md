@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 직사각형에서 탈출
 date: 2020-08-13 14:49:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

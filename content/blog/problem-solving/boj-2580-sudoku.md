@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 스도쿠
 date: 2020-09-04 13:56:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

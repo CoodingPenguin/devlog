@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 카드 구매하기
 date: 2019-07-21 17:18:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 01타일
 date: 2020-09-17 16:49:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

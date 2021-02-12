@@ -1,10 +1,12 @@
 ---
 title: 📝 BOJ - 터렛
 date: 2020-08-15 02:09:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-boj.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-boj.png)
 
 ## 문제
 

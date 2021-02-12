@@ -1,10 +1,12 @@
 ---
 title: 📝 PROGRAMMERS - 크레인 인형뽑기 게임
 date: 2020-08-15 02:26:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-programmers.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-programmers.png)
 
 ## 문제
 

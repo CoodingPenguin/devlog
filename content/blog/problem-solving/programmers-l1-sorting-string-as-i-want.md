@@ -1,10 +1,12 @@
 ---
 title: 📝 PROGRAMMERS - 문자열 내 마음대로 정렬하기
 date: 2020-08-25 11:39:00
-category: '📝 Problem Solving'
-thumbnail: './img/thumbnail.png'
+category: "📝 Problem Solving"
+thumbnail: "./img/thumbnail-programmers.png"
 draft: false
 ---
+
+![thumbnail](./img/thumbnail-programmers.png)
 
 ## 문제
 
