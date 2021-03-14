@@ -42,6 +42,7 @@
     "prismjs": "^1.21.0",
     "query-string": "^6.13.1",
     "react": "^16.8.1",
+    "react-dev-utils": ">=11.0.4",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
