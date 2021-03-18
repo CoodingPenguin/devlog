@@ -1,106 +1,106 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .bio {
-	margin-bottom: 24px;
+  margin-bottom: 24px;
 
-	.author-description {
-		display: flex;
-		position: relative;
+  .author-description {
+    display: flex;
+    position: relative;
 
-		&::before {
-			position: absolute;
-			z-index: 999;
-			background: url('/images/scarf.png');
-			display: inline-block;
-			width: 66px;
-			height: 66px;
-			background-size: contain;
-			content: '';
-			transform: rotate(-16deg);
-			bottom: -16px;
-			left: 10px;
-		}
-	}
+    &::before {
+      position: absolute;
+      z-index: 999;
+      background: url("/images/hat.png");
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background-size: contain;
+      content: "";
+      transform: rotate(-28deg);
+      top: 2px;
+      left: 0px;
+    }
+  }
 
-	.author-image {
-		margin-top: 12px;
-		margin-right: 12px;
-		margin-bottom: 0;
-		min-width: 72px;
-	}
+  .author-image {
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    min-width: 72px;
+  }
 
-	.author-name-prefix {
-		font-size: 90%;
-		margin-right: 4px;
-	}
+  .author-name-prefix {
+    font-size: 90%;
+    margin-right: 4px;
+  }
 
-	.author-name-content {
-		display: inline-block;
-		font-size: 95%;
-		padding: 2px 6px;
-		font-weight: bolder;
-		border-radius: 8px;
-		transform-origin: center;
-		animation: flutter 2s infinite linear;
-	}
+  .author-name-content {
+    display: inline-block;
+    font-size: 95%;
+    padding: 2px 6px;
+    font-weight: bolder;
+    border-radius: 8px;
+    transform-origin: center;
+    animation: flutter 2s infinite linear;
+  }
 
-	.author-introduction {
-		margin-top: 6px;
-		font-size: 84%;
-		line-height: 1.4;
-	}
+  .author-introduction {
+    margin-top: 6px;
+    font-size: 84%;
+    line-height: 1.4;
+  }
 
-	.author-socials {
-		margin-top: 4px;
-	}
+  .author-socials {
+    margin-top: 4px;
+  }
 
-	a {
-		margin-right: 8px;
-		font-size: 80%;
-		&.visited {
-			text-decoration: none;
-		}
-	}
+  a {
+    margin-right: 8px;
+    font-size: 80%;
+    &.visited {
+      text-decoration: none;
+    }
+  }
 }
 
 @-webkit-keyframes flutter {
-	0% {
-		transform: rotate(0deg);
-	}
-	35% {
-		transform: rotate(0deg);
-	}
-	40% {
-		transform: rotate(-5deg);
-	}
-	60% {
-		transform: rotate(5deg);
-	}
-	65% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  65% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes flutter {
-	0% {
-		transform: rotate(0deg);
-	}
-	35% {
-		transform: rotate(0deg);
-	}
-	40% {
-		transform: rotate(-5deg);
-	}
-	60% {
-		transform: rotate(5deg);
-	}
-	65% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  65% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
