@@ -1,8 +1,8 @@
 ---
 title: 🧠 [밑바닥 딥러닝] 여러 함수의 역전파와 오차역전파법 구현
 date: 2020-01-28 00:31:00
-category: '🧠 Deep Learning'
-thumbnail: './img/thumbnail.png'
+category: "🧠 Deep Learning"
+thumbnail: "./img/thumbnail.png"
 draft: false
 ---
 
@@ -65,7 +65,7 @@ class Relu:
 
 <br>
 
-### Signoid 계층
+### Sigmoid 계층
 
 $$
 y = \frac{1}{1 + exp(-x)}
