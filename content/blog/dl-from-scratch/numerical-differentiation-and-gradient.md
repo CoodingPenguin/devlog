@@ -1,8 +1,8 @@
 ---
-title: 🧠 [밑바닥 딥러닝] 수치 미분과 기울기
+title: 🐠 [밑바닥 딥러닝] 수치 미분과 기울기
 date: 2020-01-27 23:06:00
-category: '🧠 Deep Learning'
-thumbnail: './img/thumbnail.png'
+category: "🐠 Deep Learning from Scratch"
+thumbnail: "./img/thumbnail.png"
 draft: false
 ---
 
