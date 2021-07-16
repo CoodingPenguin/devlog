@@ -10,14 +10,14 @@
     &::before {
       position: absolute;
       z-index: 999;
-      background: url("/images/hat.png");
+      background: url("/images/graduation-hat.png");
       display: inline-block;
       width: 48px;
       height: 48px;
       background-size: contain;
       content: "";
-      transform: rotate(-28deg);
-      top: 2px;
+      transform: rotate(-30deg);
+      top: 4px;
       left: 0px;
     }
   }
