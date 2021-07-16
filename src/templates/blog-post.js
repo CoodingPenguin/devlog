@@ -5,8 +5,10 @@ import * as Elements from '../components/elements'
 import { Layout } from '../layout'
 import { Head } from '../components/head'
 import { PostTitle } from '../components/post-title'
+import {PostCategory } from '../components/post-category'
 import { PostDate } from '../components/post-date'
 import { PostContainer } from '../components/post-container'
+import {PostInfo } from '../components/post-info'
 import { SponsorButton } from '../components/sponsor-button'
 import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
@@ -27,7 +29,7 @@ export default ({ data, pageContext, location }) => {
   const metaData = data.site.siteMetadata
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
-  const { title: postTitle, date, thumbnail } = post.frontmatter
+  const { title: postTitle, date, thumbnail, category: postCategory } = post.frontmatter
   const thumbnailSrc =
     thumbnail != null &&
     thumbnail.childImageSharp != null &&
@@ -43,7 +45,9 @@ export default ({ data, pageContext, location }) => {
         thumbnail={thumbnailSrc}
       />
       <PostTitle title={postTitle} />
-      <PostDate date={date} />
+      {/* <PostCategory category={postCategory}/>
+      <PostDate date={date} /> */}
+      <PostInfo category={postCategory} date={date}/>
       <PostContainer html={post.html} />
       {!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
@@ -86,6 +90,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        category
         date(formatString: "MMMM DD, YYYY")
         thumbnail {
           childImageSharp {
