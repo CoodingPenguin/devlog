@@ -20,7 +20,7 @@ GitHubTheme.overrideThemeStyles = () => {
     h1: {
       fontWeight: 800,
       lineHeight: 1.2,
-      fontFamily: 'Spoqa Han Sans Neo',
+      fontFamily: "nanum-square",
     },
 
     h2: {
@@ -43,18 +43,18 @@ GitHubTheme.overrideThemeStyles = () => {
     h3: {
       fontSize: '22px',
       fontWeight: 800,
-      fontFamily: 'Spoqa Han Sans Neo',
+      fontFamily: "nanum-square",
     },
 
     h4: {
       fontSize: '18px',
       fontWeight: 800,
-      fontFamily: 'Spoqa Han Sans Neo',
+      fontFamily: "nanum-square",
     },
 
     h5: {
       fontWeight: 800,
-      fontFamily: 'Spoqa Han Sans Neo',
+      fontFamily: "nanum-square",
     },
 
   }
