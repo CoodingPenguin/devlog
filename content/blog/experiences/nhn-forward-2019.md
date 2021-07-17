@@ -1,8 +1,8 @@
 ---
 title: 🐧 NHN Forward 2019 참가 후기
 date: 2020-02-03 19:05:00
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-5.png'
+category: "👩‍💻 Experiences"
+thumbnail: "./img/thumbnail-5.png"
 draft: false
 ---
 

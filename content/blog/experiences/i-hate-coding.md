@@ -1,8 +1,8 @@
 ---
 title: 🐧 I hate coding
 date: 2019-07-28 20:20:00
-thumbnail: './img/thumbnail-1.png'
-category: '🐧 Penguin'
+thumbnail: "./img/thumbnail-1.png"
+category: "👩‍💻 Experiences"
 draft: false
 ---
 

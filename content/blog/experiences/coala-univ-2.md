@@ -1,8 +1,8 @@
 ---
 title: 🐨 코알라유니브 2기 활동 후기
 date: 2020-02-02 23:02:00
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-3.png'
+category: "👩‍💻 Experiences"
+thumbnail: "./img/thumbnail-3.png"
 draft: false
 ---
 

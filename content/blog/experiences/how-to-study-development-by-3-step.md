@@ -1,8 +1,8 @@
 ---
 title: 👩‍💻 개발 공부의 3단계
 date: 2020-07-21 01:07:20
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-9.png'
+category: "👩‍💻 Experiences"
+thumbnail: "./img/thumbnail-9.png"
 draft: false
 ---
 

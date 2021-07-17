@@ -1,8 +1,8 @@
 ---
 title: 🏆 9월 알고리즘 테스트 참여 후기
 date: 2020-10-09 18:44:00
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-11.png'
+category: "👩‍💻 Experiences"
+thumbnail: "./img/thumbnail-11.png"
 draft: false
 ---
 

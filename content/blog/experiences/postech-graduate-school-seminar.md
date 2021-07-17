@@ -1,8 +1,8 @@
 ---
 title: 🎓 포스텍 대학원 설명회
 date: 2019-09-27 21:46:00
-category: '🐧 Penguin'
-thumbnail: './img/thumbnail-2.png'
+category: "👩‍💻 Experiences"
+thumbnail: "./img/thumbnail-2.png"
 draft: false
 ---
 
