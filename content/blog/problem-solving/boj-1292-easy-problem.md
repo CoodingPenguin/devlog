@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 쉽게 푸는 문제
+title: BOJ - 쉽게 푸는 문제
 date: 2020-03-01 00:25:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - ATM문제
+title: BOJ - ATM문제
 date: 2019-07-20 13:34:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 영화감독 숌
+title: BOJ - 영화감독 숌
 date: 2020-08-21 12:35:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

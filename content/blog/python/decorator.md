@@ -1,5 +1,5 @@
 ---
-title: 🐍 데코레이터 (Decorator)
+title: 데코레이터 (Decorator)
 date: 2021-01-21 20:08:00
 category: "🐍 Python"
 thumbnail: "./img/thumbnail.png"

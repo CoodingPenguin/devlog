@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 카드 구매하기
+title: BOJ - 카드 구매하기
 date: 2019-07-21 17:18:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

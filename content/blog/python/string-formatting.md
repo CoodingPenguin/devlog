@@ -1,5 +1,5 @@
 ---
-title: 🐍 문자열 포맷팅
+title: 문자열 포맷팅
 date: 2021-01-19 09:48:00
 category: "🐍 Python"
 thumbnail: "./img/thumbnail.png"

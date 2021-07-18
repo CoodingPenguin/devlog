@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - LCS
+title: BOJ - LCS
 date: 2020-12-07 21:40:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

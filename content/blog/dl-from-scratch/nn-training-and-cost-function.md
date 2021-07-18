@@ -1,5 +1,5 @@
 ---
-title: 🐠 [밑바닥 딥러닝] 신경망 학습과 손실 함수
+title: "[밑바닥 딥러닝] 신경망 학습과 손실 함수"
 date: 2020-01-27 22:50:00
 category: "🐠 Deep Learning from Scratch"
 thumbnail: "./img/thumbnail.png"

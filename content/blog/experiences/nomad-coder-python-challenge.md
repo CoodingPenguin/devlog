@@ -1,5 +1,5 @@
 ---
-title: 🐍 노마드코더 파이썬 챌린지 1기 졸업 후기
+title: 노마드코더 파이썬 챌린지 1기 졸업 후기
 date: 2020-10-09 17:32:00
 category: "👩‍💻 Experiences"
 thumbnail: "./img/thumbnail-12.png"

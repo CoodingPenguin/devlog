@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 분해합
+title: BOJ - 분해합
 date: 2020-08-18 16:27:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

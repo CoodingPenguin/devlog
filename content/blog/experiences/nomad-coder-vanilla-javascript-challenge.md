@@ -1,5 +1,5 @@
 ---
-title: ✅ 노마드코더 바닐라 자바스크립트 챌린지 2기 우수졸업
+title: 노마드코더 바닐라 자바스크립트 챌린지 2기 우수졸업
 date: 2020-02-24 17:24:00
 category: "👩‍💻 Experiences"
 thumbnail: "./img/thumbnail-6.png"

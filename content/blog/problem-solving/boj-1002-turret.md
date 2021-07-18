@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 터렛
+title: BOJ - 터렛
 date: 2020-08-15 02:09:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

@@ -1,5 +1,5 @@
 ---
-title: 📝 PROGRAMMERS - 비밀 지도
+title: PROGRAMMERS - 비밀 지도
 date: 2020-09-11 01:24:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-programmers.png"

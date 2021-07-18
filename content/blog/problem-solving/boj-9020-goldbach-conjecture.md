@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 골든바흐의 추측
+title: BOJ - 골든바흐의 추측
 date: 2020-08-12 12:51:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

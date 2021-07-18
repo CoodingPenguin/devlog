@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 파도반 수열
+title: BOJ - 파도반 수열
 date: 2020-09-17 17:10:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

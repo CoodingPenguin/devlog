@@ -1,5 +1,5 @@
 ---
-title: 🐍 제너레이터 (Generator)
+title: 제너레이터 (Generator)
 date: 2021-01-20 05:44:00
 category: "🐍 Python"
 thumbnail: "./img/thumbnail.png"

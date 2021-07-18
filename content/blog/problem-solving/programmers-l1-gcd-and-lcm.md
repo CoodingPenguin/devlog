@@ -1,5 +1,5 @@
 ---
-title: 📝 PROGRAMMERS - 최대공약수와 최소공배수
+title: PROGRAMMERS - 최대공약수와 최소공배수
 date: 2020-09-11 14:24:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-programmers.png"

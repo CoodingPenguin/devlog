@@ -1,5 +1,5 @@
 ---
-title: 📝 Programmers - 소수 찾기
+title: PROGRAMMERS - 소수 찾기
 date: 2020-08-26 13:34:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-programmers.png"

@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 연산자 끼워넣기
+title: BOJ - 연산자 끼워넣기
 date: 2020-09-10 18:30:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

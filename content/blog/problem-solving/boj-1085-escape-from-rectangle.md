@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 직사각형에서 탈출
+title: BOJ - 직사각형에서 탈출
 date: 2020-08-13 14:49:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

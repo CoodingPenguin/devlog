@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 평범한 배낭
+title: BOJ - 평범한 배낭
 date: 2020-10-22 15:43:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

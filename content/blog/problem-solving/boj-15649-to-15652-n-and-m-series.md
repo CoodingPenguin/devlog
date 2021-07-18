@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - N과 M 시리즈
+title: BOJ - N과 M 시리즈
 date: 2020-08-31 23:05:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

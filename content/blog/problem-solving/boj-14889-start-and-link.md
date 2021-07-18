@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 스타트와 링크
+title: BOJ - 스타트와 링크
 date: 2020-09-11 00:09:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

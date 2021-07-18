@@ -1,5 +1,5 @@
 ---
-title: 🐍 파이썬 기본 연산자의 시간복잡도
+title: 파이썬 기본 연산자의 시간복잡도
 date: 2021-07-17 16:43:00
 category: "🐍 Python"
 thumbnail: "./img/thumbnail.png"

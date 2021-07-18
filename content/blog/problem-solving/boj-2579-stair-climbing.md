@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 계단 오르기
+title: BOJ - 계단 오르기
 date: 2020-09-22 16:22:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

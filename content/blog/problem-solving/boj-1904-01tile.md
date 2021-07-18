@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 01타일
+title: BOJ - 01타일
 date: 2020-09-17 16:49:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

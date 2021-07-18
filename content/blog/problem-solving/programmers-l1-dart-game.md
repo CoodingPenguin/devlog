@@ -1,5 +1,5 @@
 ---
-title: 📝 PROGRAMMERS - 다트 게임
+title: PROGRAMMERS - 다트 게임
 date: 2020-09-11 14:40:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-programmers.png"

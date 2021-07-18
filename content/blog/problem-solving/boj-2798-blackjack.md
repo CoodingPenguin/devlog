@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 블랙잭
+title: BOJ - 블랙잭
 date: 2020-08-18 14:48:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

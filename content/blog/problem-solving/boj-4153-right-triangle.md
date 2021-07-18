@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 직각삼각형
+title: BOJ - 직각삼각형
 date: 2020-08-15 01:50:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

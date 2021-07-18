@@ -1,5 +1,5 @@
 ---
-title: 📝 PROGRAMMERS - 멀쩡한 사각형
+title: PROGRAMMERS - 멀쩡한 사각형
 date: 2020-09-22 16:59:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-programmers.png"

@@ -1,5 +1,5 @@
 ---
-title: 🔥 부스트캠프 AI Tech U-Stage 회고록 모음
+title: 부스트캠프 AI Tech U-Stage 회고록 모음
 date: 2021-04-18 02:49:00
 category: "✍ Retrospect"
 thumbnail: "./img/4-thumbnail.png"

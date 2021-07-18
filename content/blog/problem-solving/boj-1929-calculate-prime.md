@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 소수 구하기
+title: BOJ - 소수 구하기
 date: 2020-08-11 18:56:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

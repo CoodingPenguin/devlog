@@ -1,5 +1,5 @@
 ---
-title: 🎬 노마드코더 유튜브 클론 챌린지 3기 졸업 후기
+title: 노마드코더 유튜브 클론 챌린지 3기 졸업 후기
 date: 2020-10-09 12:08:00
 category: "👩‍💻 Experiences"
 thumbnail: "./img/thumbnail-7.png"

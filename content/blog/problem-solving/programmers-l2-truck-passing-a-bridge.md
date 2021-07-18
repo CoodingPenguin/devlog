@@ -1,5 +1,5 @@
 ---
-title: 📝 PROGRAMMERS - 다리를 지나는 트럭
+title: PROGRAMMERS - 다리를 지나는 트럭
 date: 2020-09-17 18:41:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-programmers.png"

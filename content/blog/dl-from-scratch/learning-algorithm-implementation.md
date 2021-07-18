@@ -1,5 +1,5 @@
 ---
-title: 🐠 [밑바닥 딥러닝] 학습 알고리즘 구현하기
+title: "[밑바닥 딥러닝] 학습 알고리즘 구현하기"
 date: 2020-01-27 23:23:00
 category: "🐠 Deep Learning from Scratch"
 thumbnail: "./img/thumbnail.png"

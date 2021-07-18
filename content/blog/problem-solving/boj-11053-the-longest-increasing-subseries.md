@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 가장 긴 증가하는 부분 수열
+title: BOJ - 가장 긴 증가하는 부분 수열
 date: 2020-11-24 21:57:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

@@ -1,5 +1,5 @@
 ---
-title: 🐠 [밑바닥 딥러닝] 신경망 - 3층 신경망 구현하기
+title: "[밑바닥 딥러닝] 신경망 - 3층 신경망 구현하기"
 date: 2020-01-27 20:52:00
 category: "🐠 Deep Learning from Scratch"
 thumbnail: "./img/thumbnail.png"

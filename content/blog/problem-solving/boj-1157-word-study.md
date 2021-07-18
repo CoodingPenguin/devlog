@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 단어 공부
+title: BOJ - 단어 공부
 date: 2020-02-29 23:43:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"

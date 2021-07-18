@@ -1,5 +1,5 @@
 ---
-title: 📝 BOJ - 가장 긴 바이토닉 부분 수열
+title: BOJ - 가장 긴 바이토닉 부분 수열
 date: 2020-11-24 22:41:00
 category: "📝 Problem Solving"
 thumbnail: "./img/thumbnail-boj.png"
