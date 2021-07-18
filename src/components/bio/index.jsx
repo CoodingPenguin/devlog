@@ -63,6 +63,14 @@ export const Bio = () => (
                       Instagram
                     </a>
                   )}
+                  {social.gmail && (
+                    <a
+                      href={`mailto:${social.gmail}`}
+                      target="_blank"
+                    >
+                      Gmail
+                    </a>
+                  )}
                 </p>
               </div>
             </div>
@@ -93,6 +101,7 @@ const bioQuery = graphql`
           facebook
           linkedin
           instagram
+          gmail
         }
       }
     }

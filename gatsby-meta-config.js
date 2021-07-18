@@ -2,7 +2,7 @@ module.exports = {
   title: `오늘도 정리 내일도 정리`,
   description: ``,
   author: `코딩하는펭귄`,
-  introduction: `파이썬과 웹에 관심 많은 펭귄`,
+  introduction: `파이썬과 웹, 컴퓨터비전에 관심 많은 펭귄`,
   siteUrl: `https://cooding-penguin.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -11,12 +11,13 @@ module.exports = {
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
     instagram: `cooding_penguin`,
+    gmail: `coodingpenguin@gmail.com`,
   },
   icon: `content/assets/felog.png`, // Add your favicon
   thumbnail: `content/assets/thumbnail.png`,
   resume: {
     title: `About COODINGPENGUIN`,
-    description: `파이썬과 웹에 관심 많은 펭귄👩‍💻`,
+    description: `파이썬과 웹, 컴퓨터비전에 관심 많은 펭귄👩‍💻`,
     thumbnail: `content/assets/thumbnail.png`,
   },
   keywords: [

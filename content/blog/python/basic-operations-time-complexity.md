@@ -37,9 +37,6 @@ draft: false
 | Sort          | `l.sort()`        | $$O(N \log N)$$ |                                                   |
 | Multiply      | `k*l`             | $$O(N)$$        | `len(l)*l` 복잡도: $$O(N^2)$$                     |
 
-2
-) |
-
 ## Set
 
 | 연산           | 예시             | 복잡도                 | 비고                                               |
