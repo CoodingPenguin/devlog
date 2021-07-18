@@ -1,5 +1,5 @@
 ---
-title: 💾 SQL 문법 정리
+title: SQL 문법 정리
 date: 2021-07-17 17:42:00
 category: "💾 Database"
 thumbnail: "./img/thumbnail.png"
