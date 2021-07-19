@@ -8,6 +8,8 @@ draft: false
 
 ![thumbnail](./img/thumbnail.png)
 
+> 잘못된 부분이 있다면 친절히 말씀해주시면 감사하겠습니다🙏
+
 파이썬의 대표적인 자료구조 **List, Dictionary, Set의 연산별 시간복잡도**이다. 최악의 경우를 나타내는 `Big-O 표기법`을 사용했으며, Tuple의 경우 Immutable하다는 것을 제외하고 List의 연산과 동일하다.
 
 ## List

@@ -8,6 +8,8 @@ draft: false
 
 ![thumbnail](./img/thumbnail.png)
 
+> 이 글은 [Mode SQL Tutorial](https://mode.com/sql-tutorial/)를 공부하며 정리한 글입니다! 계속 업데이트될 예정이며, 잘못된 부분이 있다면 친절히 말씀해주시면 감사하겠습니다🙏
+
 ## SELECT
 
 - 테이블에서 여러 컬럼 추출

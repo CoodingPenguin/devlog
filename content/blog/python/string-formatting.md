@@ -8,6 +8,8 @@ draft: false
 
 ![thumbnail](./img/thumbnail.png)
 
+> 잘못된 부분이 있다면 친절히 말씀해주시면 감사하겠습니다🙏
+
 ## 포맷팅 방식 3가지
 
 ```python

@@ -8,6 +8,8 @@ draft: false
 
 ![thumbnail](./img/thumbnail.png)
 
+> 잘못된 부분이 있다면 친절히 말씀해주시면 감사하겠습니다🙏
+
 ## Iterable vs Iterator
 
 - `Iterable 객체`: iter 함수에 인자로 전달 가능한, 반복 가능한 객체

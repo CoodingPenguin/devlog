@@ -8,6 +8,8 @@ draft: false
 
 ![thumbnail](./img/thumbnail-boj.png)
 
+> 잘못된 부분이 있다면 친절히 말씀해주시면 감사하겠습니다🙏
+
 ## 문제
 
 BOJ 2580번 : [스도쿠](https://www.acmicpc.net/problem/2580)

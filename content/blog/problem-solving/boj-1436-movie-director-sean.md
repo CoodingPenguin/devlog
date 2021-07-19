@@ -8,6 +8,8 @@ draft: false
 
 ![thumbnail](./img/thumbnail-boj.png)
 
+> 잘못된 부분이 있다면 친절히 말씀해주시면 감사하겠습니다🙏
+
 ## 문제
 
 BOJ 1436번 : [영화감독 숌](https://www.acmicpc.net/problem/1436)
