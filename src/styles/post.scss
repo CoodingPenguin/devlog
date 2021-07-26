@@ -86,7 +86,7 @@ body {
       justify-content: flex-start;
       font-size: 14px;
       .quote-block__emoji {
-        font-size: 24px;
+        font-size: 20px;
         margin-right: 10px;
       }
       .quote-block__content {
@@ -98,6 +98,9 @@ body {
         p:first-child {
           margin-bottom: 4px;
           font-weight: bold;
+        }
+        ul {
+          margin-left: 20px;
         }
       }
     }
