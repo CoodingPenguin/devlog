@@ -41,7 +41,7 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h3: {
-      fontSize: '22px',
+      fontSize: '20px',
       fontWeight: 800,
       fontFamily: "nanum-square",
     },
