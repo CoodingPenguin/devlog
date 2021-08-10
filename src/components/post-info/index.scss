@@ -4,9 +4,9 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
     .post-category {
-      border-radius: 5px;
+      border-radius: 14px;
       padding: 3px 7px 3px 7px;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: normal;
       transition: all 0.1s ease-in-out;
       &:hover {
@@ -15,7 +15,7 @@ body {
       }
     }
     .post-date {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
