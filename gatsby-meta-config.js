@@ -1,8 +1,8 @@
 module.exports = {
-  title: `오늘도 정리 내일도 정리`,
-  description: ``,
+  title: `펭카이브`,
+  description: `배움을 편식하지 말자`,
   author: `코딩하는펭귄`,
-  introduction: `파이썬과 웹, 컴퓨터비전에 관심 많은 펭귄`,
+  introduction: `배움을 편식하지 말자`,
   siteUrl: `https://cooding-penguin.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -16,8 +16,8 @@ module.exports = {
   icon: `content/assets/felog.png`, // Add your favicon
   thumbnail: `content/assets/thumbnail.png`,
   resume: {
-    title: `About COODINGPENGUIN`,
-    description: `파이썬과 웹, 컴퓨터비전에 관심 많은 펭귄👩‍💻`,
+    title: `코딩하는펭귄`,
+    description: `배움을 편식하지 말자`,
     thumbnail: `content/assets/thumbnail.png`,
   },
   keywords: [
