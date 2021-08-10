@@ -4,7 +4,7 @@
   <a href="https://cooding-penguin.netlify.app">
     <img src="./content/assets/thumbnail.png" alt="Logo" width="256">
   </a>
-  <h3>코딩하는펭귄의 저장소</h3>
+  <h3>펭카이브</h3>
   <small>개발 이모저모를 끄적이는 Devlog</small>
 </div>
 
