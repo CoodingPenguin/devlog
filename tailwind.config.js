@@ -39,6 +39,9 @@ module.exports = {
               },
               code: { color: '#EB5757' },
             },
+            'h1,h2,h3,h4,h5,h6': {
+              code: { color: '#EB5757' },
+            },
             'h1,h2': {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
@@ -83,6 +86,7 @@ module.exports = {
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
+              code: { color: '#EB5757' },
             },
             p: {
               color: theme('colors.gray.200'),
