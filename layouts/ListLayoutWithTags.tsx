@@ -119,7 +119,7 @@ export default function ListLayoutWithTags({
               </ul>
             </div>
           </div>
-          <div>
+          <div className="w-full">
             <ul className="divide-y divide-gray-200">
               {displayPosts.map((post) => {
                 const { path, date, title, summary, tags } = post
