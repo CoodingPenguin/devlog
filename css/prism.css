@@ -11,7 +11,7 @@
 }
 
 .remark-code-title + div > pre {
-  @apply mt-0 rounded-t-none;
+  @apply mt-0 rounded-t-none dark:bg-gray-900;
 }
 
 /* Code block styles */

@@ -26,16 +26,16 @@ module.exports = {
         calli: ['iceJaram-Rg'],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.blue,
         gray: colors.neutral,
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.gray.400'),
+              color: theme('colors.gray.500'),
               '&:hover': {
-                color: `${theme('colors.gray.500')}`,
+                color: `${theme('colors.gray.600')}`,
               },
               code: { color: '#EB5757' },
             },
@@ -62,19 +62,25 @@ module.exports = {
             'code::after': {
               content: 'none',
             },
+            p: {
+              color: theme('colors.gray.800'),
+            },
           },
         },
         invert: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.gray.400'),
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: `${theme('colors.gray.300')}`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: '#EB5757' },
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
+            },
+            p: {
+              color: theme('colors.gray.200'),
             },
           },
         },
