@@ -33,7 +33,7 @@ const FigCaption = ({ alt }: { alt?: string }) => {
   }
   const { url, caption } = parseAlt(alt)
   return (
-    <div className="mb-8 mt-1.5 text-center text-sm text-gray-700 dark:text-gray-400">
+    <div className="mt-1.5 text-center text-sm text-gray-400 dark:text-gray-400">
       {url ? (
         <span>
           출처: <Link href={url}>{caption}</Link>
@@ -47,13 +47,15 @@ const FigCaption = ({ alt }: { alt?: string }) => {
 
 const Image = ({ ...rest }: ImageProps) => (
   <>
-    {rest.alt && rest.src.toString().startsWith('/static/images') ? (
-      <div className="mb-8">
-        <NextImage {...rest} className="mb-0"/>
+    {rest.alt === 'avatar' ? (
+      <NextImage {...rest} />
+    ) : rest.alt && rest.src.toString().startsWith('/static/images') ? (
+      <div className="my-2">
+        <NextImage {...rest} className="my-0" />
         <FigCaption alt={rest.alt.toString()} />
       </div>
     ) : (
-      <NextImage {...rest} />
+      <NextImage {...rest} className="my-2" />
     )}
   </>
 )
