@@ -22,21 +22,21 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['Pretendard-Regular', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
-        gray: colors.gray,
+        primary: colors.teal,
+        gray: colors.neutral,
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.gray.400'),
               '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+                color: `${theme('colors.gray.500')}`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: '#EB5757' },
             },
             'h1,h2': {
               fontWeight: '700',
@@ -45,8 +45,21 @@ module.exports = {
             h3: {
               fontWeight: '600',
             },
+            li: {
+              lineHeight: theme('lineHeight.snug'),
+            },
             code: {
-              color: theme('colors.indigo.500'),
+              color: '#EB5757',
+              padding: '0.2em 0.4em',
+              backgroundColor: 'rgba(135,131,120,.15)',
+              borderRadius: '0.25rem',
+              fontSize: '85%',
+            },
+            'code::before': {
+              content: 'none',
+            },
+            'code::after': {
+              content: 'none',
             },
           },
         },
