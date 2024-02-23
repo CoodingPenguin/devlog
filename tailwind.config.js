@@ -65,6 +65,11 @@ module.exports = {
             p: {
               color: theme('colors.gray.800'),
             },
+            img: {
+              borderRadius: '1.0rem',
+              borderWidth: '1px',
+              borderColor: theme('colors.gray.200'),
+            },
           },
         },
         invert: {
@@ -81,6 +86,9 @@ module.exports = {
             },
             p: {
               color: theme('colors.gray.200'),
+            },
+            img: {
+              borderColor: theme('colors.gray.700'),
             },
           },
         },

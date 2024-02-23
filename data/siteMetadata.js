@@ -8,8 +8,8 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://coodingpenguin.xyz',
   siteRepo: 'https://github.com/CoodingPenguin/devlog-nextjs',
-  siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
+  siteLogo: '/static/favicons/logo.png',
+  socialBanner: '/static/favicons/twitter-card.png',
   email: 'coodingpenguin@gmail.com',
   github: 'https://github.com/CoodingPenguin',
   locale: 'ko-KR',
