@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Pretendard-Regular', ...fontFamily.sans],
+        calli: ['iceJaram-Rg'],
       },
       colors: {
         primary: colors.teal,
