@@ -1,0 +1,95 @@
+---
+tags: ["CSS", "selector"]
+description: "매번 까먹는 자주 쓰는 CSS 선택자"
+last_update:
+  date: 2023-05-07
+---
+
+# CSS 선택자
+
+## 전체 선택자: `*`
+
+```css
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+```
+
+모든 요소를 선택한다. `#container *`처럼 자식 선택자에도 사용할 수 있다.
+
+## 유형 선택자: `X`
+
+```css
+a {
+  color: red;
+}
+```
+
+문서 내 모든 `X` 요소를 선택한다.
+
+## 클래스 선택자: `.X`
+
+```css
+.container {
+  margin: 1em;
+}
+```
+
+특정 클래스 `.X`에 해당하는 모든 요소를 선택한다.
+
+## ID 선택자: `#X`
+
+```css
+#content {
+  background-color: blue;
+}
+```
+
+`#X`와 동일한 ID를 가진 요소를 선택한다.
+
+## 자손 결합자: `X Y`
+
+```css
+li li {
+  list-style-type: circle;
+}
+```
+
+요소 `X` 아래에 있는 모든 자손 요소 `Y`를 선택한다. 이 때 `Y`를 **자식 선택자**라 한다.
+
+## 자식 결합자: `X > Y`
+
+```css
+div > span {
+  background-color: blue;
+}
+```
+
+요소 `X` 바로 아래에 있는 자식 요소 `Y`만 선택한다. 이 때 `Y`를 **자손 선택자**라 한다.
+
+## 인접 형제 결합자: `X + Y`
+
+```css
+ul + p {
+  color: red;
+}
+```
+
+요소 `X`와 같은 부모를 공유하면서 바로 뒤에 있는 요소 `Y`만 선택한다.
+
+## 일반 형제 결합자: `X ~ Y`
+
+```css
+img ~ p {
+  color: red;
+}
+```
+
+`X + Y`와 다르게, 요소 `X`와 같은 부모를 공유하면서 뒤에 있는 모든 요소 `Y`를 선택한다.
+
+## 참고 자료
+
+- [CSS 선택자 | MDN Web Docs](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Selectors)
+- [반드시 기억해야 하는 CSS 선택자 30개 | envatotuts+](https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048)

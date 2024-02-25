@@ -1,0 +1,282 @@
+---
+description: "파이썬 코드로 정리하는 대표적인 정렬 알고리즘"
+tags:
+  [
+    "algorithm",
+    "sort",
+    "bubble-sort",
+    "selection-sort",
+    "insertion-sort",
+    "merge-sort",
+    "quick-sort",
+    "heap-sort",
+    "counting-sort",
+    "radix-sort",
+  ]
+last_update:
+    date: 2022-09-12
+---
+
+# 정렬 알고리즘
+
+:::info
+
+- 모든 정렬은 **오름차순 정렬**로 가정합니다.
+- 아래 표는 [ratsgo's blog의 정렬 알고리즘 비교표](https://ratsgo.github.io/data%20structure&algorithm/2017/10/19/sort/)를 참고했습니다.
+
+:::
+
+| **정렬 알고리즘** | **In-Place** | **Stable** | **Comparison** | **복잡도**      |
+| ----------------- | ------------ | ---------- | -------------- | --------------- |
+| 버블(Bubble)      | O            | O          | O              | $O(n^2)$        |
+| 선택(Selection)   | O            | O          | O              | $O(n^2)$        |
+| 삽입(Insertion)   | O            | O          | O              | $O(n^2)$        |
+| 병합(Merge)       | X            | O          | O              | $O(n \log n)$   |
+| 힙(Heap)          | O            | X          | O              | $O(n \log n)$   |
+| 퀵(Quick)         | O            | X          | O              | $O(n \log n)$   |
+| 계수(Counting)    | X            | O          | X              | $O(n + k)$      |
+| 기수(Radix)       | X            | O          | X              | $d \times O(n)$ |
+
+- `In-Place` : 배열 내부에서 정렬이 이뤄지는 경우를 말한다. 반대의 경우는 정렬 도중 별도의 저장공간이 필요한 경우이다.
+- `Stable` : 같은 값의 위치가 정렬 과정에서 바뀌지 않는 것을 말한다.
+- `Comparison` : 값을 비교하는 정렬 알고리즘일 경우를 말한다. 비교 정렬의 시간 복잡도의 하한선은 $O(n \log n)$이다.
+
+## 버블 정렬(Bubble Sort)
+
+**버블 정렬**은 서로 인접한 두 원소를 비교하여 정렬하는 알고리즘이다. 인접한 두 개의 요소가 오름차순이 아니라면 교환을 한다.
+
+**버블 정렬의 시간복잡도**는 요소의 개수 n에 대하여 비교 횟수와 교환 횟수를 고려할 때 $O(n^2)$이다.
+
+```python showLineNumbers
+def bubble_sort(arr):
+    for i in range(len(arr)-1, 0, -1):
+                # 0부터 i-1까지 다음을 반복
+        for j in range(i):
+                        # j번째와 j+1번째 요소가 오름차순이 아니면 교환
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+```
+
+## 선택 정렬(Selection Sort)
+
+**선택 정렬**은 배열의 최댓값 혹은 최소값을 찾아 이 값을 정해진 위치로 보내주는 알고리즘이다. 최댓값을 찾는 경우라면 정렬되지 않은 배열에서 최댓값을 찾아 정렬되지 않은 배열 다음으로 위치를 옮긴다. 그렇게 되면 정렬되지 않은 배열 다음에는 정렬된 배열이 되고 이것을 모든 요소에 대해 수행하면 선택 정렬이 된다
+
+**선택 정렬의 시간복잡도**는 요소의 개수 $n$에 대하여 $O(n^2)$으로 버블 정렬과 같지만, 교환 횟수 측면에서 버블 정렬보다 개선되었다. 버블 정렬의 경우 요소가 원래 자리에 도착할 때까지 서로를 교환하지만, 선택 정렬의 경우 자신의 위치로 바로 교환을 하기 때문에 딱 한 번만 교환을 하면 된다.
+
+```python showLineNumbers
+def selection_sort(arr):
+    for i in range(len(arr)-1, 0, -1):
+        idx_of_max = 0  # 최댓값 인덱스
+        for j in range(1, i+1):
+            # 최댓값보다 값이 크다면
+            if arr[j] > arr[idx_of_max]:
+                idx_of_max = j  # 최댓값 인덱스 갱신
+        # 요소를 교환
+        arr[idx_of_max], arr[i] = arr[i], arr[idx_of_max]
+    return arr
+```
+
+## 삽입 정렬(Insertion Sort)
+
+**삽입 정렬**은 모든 요소에 대해 앞에서부터 차례대로 이미 정렬된 배열과 비교하여 정렬된 배열 내 자신의 위치를 찾아 삽입하여 정렬하는 알고리즘이다. 첫 번째 요소를 정렬된 배열이라 가정하고 시작한다. 그다음 요소를 보고 앞의 정렬된 배열을 탐색하면서 자신의 위치를 찾고 그 위치로 삽입하면 된다.
+
+**삽입 정렬의 시간복잡도**는 역으로 정렬된 배열의 경우 정렬되지 않은 배열의 요소가 모두 정렬된 배열의 맨 앞 요소로 가야 하므로 $O(n^2)$이다.
+
+```python showLineNumbers
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        # 정렬된 배열에서 자신의 위치에 도달할 때까지
+        while i > 0 and arr[i] < arr[i-1]:
+            # 서로 교환
+            arr[i], arr[i-1] = arr[i-1], arr[i]
+            i -= 1
+    return arr
+```
+
+## 병합 정렬(Merge Sort)
+
+**병합 정렬**은 배열을 최대한 작게 나누고 둘 씩을 비교해 정렬한 결과를 더 이상 합칠 배열이 없을 때까지 합치는 것을 반복하여 전체 배열을 정렬하는 알고리즘이다. 즉, 분할 정복(Divide and Conquer) 알고리즘을 적용하여 정렬하는 알고리즘이다.
+
+**병합 정렬의 시간복잡도**는 요소의 개수 $n$에 대하여 병합하는 단계수가 $\log n$이고 각 단계별 정렬 시 연산 횟수는 $n$이므로, $O(n \log n)$이다.
+
+```python showLineNumbers
+def merge(left, right):
+    result = []
+    l, r = 0, 0 # 왼쪽, 오른쪽 배열의 포인터
+    while len(left) > l and len(right) > r:
+        # 오른쪽 배열의 요소가 더 크다면
+        if left[l] < right[r]:
+            result.append(left[l])  # 왼쪽 요소 추가
+            l += 1  # 왼쪽 포인터 이동
+        # 작다면
+        else:
+            result.append(right[r]) # 오른쪽 요소 추가
+            r += 1  # 오른쪽 포인터 이동
+    # 남은 요소 추가
+    result = result + left[l:] + right[r:]
+    return result
+
+def merge_sort(arr):
+    # 배열의 길이가 1보다 작거나 같으면 정렬된 배열로 취급
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr)//2   # 중간 지점
+    left = merge_sort(arr[:mid])    # 왼쪽 부분 배열 병합 정렬
+    right = merge_sort(arr[mid:])   # 오른쪽 부분 배열 병합 정렬
+    return merge(left, right)  # 왼쪽 오른쪽 병합
+```
+
+## 힙 정렬(Heap Sort)
+
+**힙 정렬**은 힙 자료구조를 사용하여 정렬하는 알고리즘이다. 오름차순 정렬이므로 최대 힙 자료구조는 부모노드의 값이 자식 노드들의 값보다 항상 작은 값을 가진다. 이 성질을 이용해 정렬을 수행한다.
+
+- 먼저 배열을 힙 리스트로 만든다.
+- 그럼 배열의 첫 번째 요소는 정렬되지 않은 배열의 최댓값이 있게 된다.
+- 이 값을 오른쪽에 위치한 정렬된 배열의 바로 앞, 정렬되지 않은 배열의 마지막 요소와 교환한다.
+- 이를 반복적으로 수행하면 전체 배열이 정렬된다.
+
+**힙 정렬의 시간복잡도**는 최대 힙의 시간 복잡도와 힙에서의 자리 이동의 시간 복잡도의 합이다. 최대 힙의 시간 복잡도는 $O(n)$이고 자리 이동은 노드 $n$개에 대해 $\log n$만큼 이동해야 하므로 힙 정렬의 시간 복잡도는 $O(n \log n)$이다.
+
+```python showLineNumbers
+def heapify(arr, idx, size):
+    largest = idx   # 최댓값 인덱스
+    left = idx * 2  # 왼쪽 자식노드
+    right = idx * 2 + 1 # 오른쪽 자식노드
+
+    # 자식노드가 부모노드보다 크면
+    if left < size and arr[left] > arr[largest]:
+        largest = left  # 최댓값 인덱스 갱신
+    if right < size and arr[right] > arr[largest]:
+        largest = right # 최댓값 인덱스 갱신
+
+    if largest != idx:
+        # 최댓값 자리 노드와 현재 노드랑 교환
+        arr[largest], arr[idx] = arr[idx], arr[largest]
+        heapify(arr, largest, size)
+
+def heap_sort(arr):
+    size = len(arr) # 힙 리스트 크기
+
+    # 배열을 힙 리스트로 변환
+    for i in range(size//2-1, -1, -1):
+        heapify(arr, i, size)
+
+    for i in range(size-1, 0, -1):
+        # 최대힙의 최댓값을 정렬된 배열 앞으로 이동
+        arr[0], arr[i] = arr[i], arr[0]
+        # 정렬되지 않은 배열을 힙 리스트로 변환
+        heapify(arr, 0, i)
+
+    return arr
+```
+
+## 퀵 정렬(Quick Sort)
+
+**퀵 정렬**은 피봇(Pivot)을 기준으로 배열을 둘로 분할하고 피봇의 왼쪽에는 작은 값이 오른쪽에는 큰 값이 오도록 재귀적으로 이 과정을 반복하여 정렬하는 알고리즘이다. 병합 정렬(Merge Sort)과는 달리 분할되는 두 배열이 비슷한 크기를 갖는다는 보장이 없다.
+
+**퀵 정렬의 시간복잡도**는 피봇을 어떻게 잡느냐에 따라 달라진다.
+
+- 만약 피봇의 왼쪽 배열의 크기가 항상 1이라면 오른쪽 배열은 $n-1$개를 다시 정렬해야 하기 때문에, 이를 전체 배열 크기 $n$에 대해 수행하면 $O(n^2)$이다.
+- 피봇이 잘 나누어져서 왼쪽과 오른쪽 배열의 크기가 거의 동일하다면 재귀 함수의 트리 높이는 $\log n$이므로, 전체 배열 크기 $n$에 대해 수행하면 $O(n \log n)$이다.
+
+```python
+def quick_sort(arr):
+    size = len(arr) # 배열 크기
+    # 배열 크기가 1보다 작거나 같으면
+    if size <= 1:
+        # 정렬된 배열로 취급
+        return arr
+
+    pivot = arr[0]  # 피봇
+    left = [i for i in arr[1:] if i <= pivot]   # 피봇 왼쪽: 피봇보다 작거나 같은 수
+    right = [i for i in arr[1:] if i > pivot]   # 피봇 오른쪽: 피봇보다 큰 수
+    return quick_sort(left) + [pivot] + quick_sort(right)
+```
+
+## 계수 정렬(Counting Sort)
+
+**계수 정렬**은 배열의 인덱스를 이용하여 데이터를 정렬하는 방법이다. 그러므로 데이터는 0 이상의 정수여야 하고 요소의 최댓값이 메모리 사이즈를 넘어서는 안된다.
+
+- 정렬된 결과를 저장할 기존 배열의 크기만큼의 새로운 배열을 생성한다.
+- 기존 배열의 요소의 개수를 세서 카운터 배열에 저장한다. 이 때 인덱스는 배열의 값이고 인덱스에 저장된 값은 값의 개수이다.
+- 카운터 배열을 누적합 배열로 변환한다.
+- 누적합 배열을 이용하여 기존 배열의 요소를 재배치한다.
+
+**계수 정렬의 시간복잡도**는 배열 크기 $n$와 카운터 배열의 최대 크기 $k$에 대하여 $O(n + k)$이다. 계수 정렬 시 카운터 배열을 만들기 위해 기존 배열을 순회하므로 시간 복잡도는 $O(n)$이고 카운터 배열의 누적합을 만들기 위해 카운터 배열을 또 순회하므로 $O(k)$ 가 된다. 이를 더해 계수 정렬의 시간복잡도는 $O(n + k)$ 가 된다.
+
+```python showLineNumbers
+MAX = 200   # 카운터 배열 최대 크기
+def counting_sort(arr):
+    size = len(arr) # 배열 크기
+    result = [0] * size # 정렬된 배열
+
+    counter = [0] * (MAX+1) # 카운터
+    for i in arr:
+        counter[i] += 1
+
+    # 누적합으로 변환
+    for i in range(MAX):
+        counter[i+1] += counter[i]
+
+    # 카운터로 기존 요소 재배치
+    for i in range(size):
+        result[counter[arr[i]]-1] = arr[i]
+        counter[arr[i]] -= 1
+    return result
+```
+
+## 기수 정렬(Radix Sort)
+
+**기수 정렬**은 자릿수의 개수만큼 자릿수 별로 계수 정렬을 수행하여 정렬하는 알고리즘이다. 첫 번째 자릿수를 기준으로 배열을 계수 정렬하고 자릿수를 높여가며 마지막 자릿수를 기준으로 계수 정렬을 수행하면 전체 배열이 정렬된다. 이때 마지막 자릿수는 배열의 최댓값의 자릿수의 개수이다.
+
+**기수 정렬의 시간복잡도**는 자릿수 별로 계수 정렬을 수행하므로, 전체 자릿수 $d$와 배열 크기 $n$에 대하여 $d \times O(n + k)$이다. 이때 $k$는 9이고 상수가 되므로, 정리하면 $d \times O(n)$이 된다.
+
+```python showLineNumbers
+from math import log
+
+base = 10   # 십진수
+
+def get_digit(num, digit):
+    # digit 자릿수에 해당하는 값 반환
+    return (num // base ** digit) % base
+
+def counting_sort_with_digit(arr, d):
+    MAX = base - 1  # 10진수의 최댓값 = 9
+    size = len(arr) # 배열 크기
+    result = [0] * size # 정렬된 배열
+
+    counter = [0] * (MAX+1) # 카운터
+    for i in arr:
+        counter[get_digit(i, d)] += 1
+
+    # 누적합으로 변환
+    for i in range(MAX):
+        counter[i+1] += counter[i]
+
+    # 현재 자릿수를 기준으로 정렬
+    for i in range(size-1, -1, -1):
+        k = get_digit(arr[i], d)
+        result[counter[k]-1] = arr[i]
+        counter[k] -= 1
+
+    return result
+
+def radix_sort(arr):
+    digit = int(log(max(arr), base)) + 1    # 최댓값의 자릿수
+    # 첫번째 자리부터 시작해 자릿수 별로 계수 정렬 수행
+    for d in range(digit):
+        arr = counting_sort_with_digit(arr, d)
+    return arr
+```
+
+## 참고 자료
+
+- [버블정렬(Bubble Sort) | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/11/05/bubblesort/)
+- [선택정렬(Selection Sort) | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/11/06/selectionsort/)
+- [삽입정렬(Insertion Sort) | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/09/06/insmersort/)
+- [합병정렬(Merge Sort) | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/10/03/mergesort/)
+- [퀵 정렬(Quick Sort) | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/09/28/quicksort/)
+- [힙 정렬(Heap Sort) | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/09/27/heapsort/)
+- [카운팅 정렬, 래딕스 정렬 | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/10/16/countingsort/)
+- [정렬 알고리즘 비교 | ratsgo's blog](https://ratsgo.github.io/data%20structure&algorithm/2017/10/19/sort/)

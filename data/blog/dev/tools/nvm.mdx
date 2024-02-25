@@ -1,0 +1,193 @@
+---
+tags: ["nvm", "command"]
+description: "NVM(Node Version Manager) 명령어 모음집"
+last_update:
+  date: 2023-04-18
+---
+
+# NVM 명령어
+
+## 설치
+
+```bash showLineNumbers
+brew install nvm
+```
+
+## 명령어
+
+### 도움말
+
+```bash showLineNumbers
+nvm --help
+```
+
+### NVM 버전 확인
+
+```bash showLineNumbers
+nvm --version
+# 0.39.3
+```
+
+### 설치 가능한 Node 버전 확인
+
+```bash showLineNumbers
+nvm ls-remote
+# ...
+#        v18.14.2   (LTS: Hydrogen)
+# ->     v18.15.0   (LTS: Hydrogen)
+#        v18.16.0   (Latest LTS: Hydrogen)
+#         v19.0.0
+# ...
+```
+
+LTS 버전만 필터링하고 싶다면, `--lts` 옵션을 주면 된다.
+
+```bash showLineNumbers
+nvm ls-remote --lts
+# ...
+#        v18.14.2   (LTS: Hydrogen)
+# ->     v18.15.0   (LTS: Hydrogen)
+#        v18.16.0   (Latest LTS: Hydrogen)
+```
+
+### Node 설치
+
+#### `.nvmrc`에 적힌 버전 설치
+
+```bash showLineNumbers
+nvm install
+# Found '/Users/coodingpenguin/.nvmrc' with version <v18.6.0>
+# Downloading and installing node v18.6.0...
+# Downloading https://nodejs.org/dist/v18.6.0/node-v18.6.0-darwin-x64.tar.xz...
+# ############################################################################################################################## 100.0%
+# Computing checksum with sha256sum
+# Checksums matched!
+# Now using node v18.6.0 (npm v8.13.2)
+```
+
+#### 최신 LTS 버전 설치
+
+```bash showLineNumbers
+nvm install --lts
+# Installing latest LTS version.
+# Downloading and installing node v18.16.0...
+# Local cache found: ${NVM_DIR}/.cache/bin/node-v18.16.0-darwin-x64/node-v18.16.0-darwin-x64.tar.xz
+# Checksums match! Using existing downloaded archive ${NVM_DIR}/.cache/bin/node-v18.16.0-darwin-x64/node-v18.16.0-darwin-x64.tar.xz
+# Now using node v18.16.0 (npm v9.5.1)
+```
+
+#### 특정 버전 설치
+
+```bash showLineNumbers
+nvm install 14.7.0
+# Downloading and installing node v14.7.0...
+# Downloading https://nodejs.org/dist/v14.7.0/node-v14.7.0-darwin-x64.tar.xz...
+# ##################################################################################################### 100.0%
+# Computing checksum with sha256sum
+# Checksums matched!
+# Now using node v14.7.0 (npm v6.14.7)
+```
+
+### 설치된 Node 확인
+
+로컬에 설치된 Node 목록과 현재 사용 중인 버전(→), alias된 버전 등을 확인할 수 있다.
+
+```bash showLineNumbers
+nvm ls
+#         v14.7.0
+#         v18.6.0
+#        v18.15.0
+# ->     v18.16.0
+# default -> lts/* (-> v18.16.0)
+# iojs -> N/A (default)
+# unstable -> N/A (default)
+# node -> stable (-> v18.16.0) (default)
+# stable -> 18.16 (-> v18.16.0) (default)
+# ...
+```
+
+간단하게 로컬에 설치된 목록만 보고싶다면, `--no-alias` 옵션을 주자.
+
+```bash showLineNumbers
+nvm ls --no-alias
+#         v14.7.0
+#         v18.6.0
+#        v18.15.0
+# ->     v18.16.0
+```
+
+### 사용할 Node 지정
+
+#### `.nvmrc`에 적힌 버전으로 지정
+
+```bash showLineNumbers
+nvm use
+# Found '/Users/coodingpenguin/.nvmrc' with version <v18.6.0>
+# Now using node v18.6.0 (npm v8.13.2)
+```
+
+#### LTS 버전으로 지정
+
+```bash showLineNumbers
+nvm use --lts
+# Now using node v18.16.0 (npm v9.5.1)
+```
+
+#### 특정 버전으로 지정
+
+```bash showLineNumbers
+nvm use 14.7.0
+# Now using node v14.7.0 (npm v6.14.7)
+```
+
+### 사용 중인 Node 확인
+
+```bash showLineNumbers
+nvm current
+# v14.7.0
+```
+
+### 설치된 Node 삭제
+
+#### 특정 버전 Node 삭제
+
+```bash showLineNumbers
+nvm uninstall v14.7.0
+# Uninstalled node v14.7.0
+```
+
+#### LTS 버전 Node 삭제
+
+```bash showLineNumbers
+nvm uninstall --lts
+# Uninstalled node v18.16.0
+```
+
+### default 버전 설정
+
+#### 특정 버전으로 설정
+
+```bash showLineNumbers
+nvm alias default v18.15.0
+# default -> v18.15.0
+```
+
+#### 최신 버전으로 설정
+
+```bash showLineNumbers
+nvm alias default node
+# default -> node (-> v18.16.0)
+```
+
+### NVM 캐시 삭제
+
+`~/.nvm/.cache` 폴더가 삭제된다.
+
+```bash showLineNumbers
+nvm cache clear
+# nvm cache cleared.
+```
+
+## 참고 자료
+
+- [nvm-sh/nvm | GitHub](https://github.com/nvm-sh/nvm)

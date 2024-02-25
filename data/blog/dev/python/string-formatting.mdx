@@ -1,0 +1,61 @@
+---
+tags: ["python", "string"]
+description: "파이썬의 대표적인 문자열 포맷팅 방식 3가지"
+last_update:
+  date: 9/12/2022
+---
+
+import Figure from "@site/src/components/Figure";
+
+# 파이썬 문자열 포맷팅
+
+## 포맷팅 방식
+
+```python showLineNumbers
+integer = 10
+string = "Hi!"
+real = 3.14
+
+# 방법 1. % string
+print("정수: %d, 문자열: %s, 실수: %.2f" % (integer, string, real))
+# 방법 2. format 함수
+print("정수: {0}, 문자열: {1}, 실수: {2:.2f}".format(integer, string, real))
+# 방법 3. f-string (권장)
+print(f"정수: {integer}, 문자열: {string}, 실수: {real:.2f}")
+```
+
+## 포맷팅 옵션
+
+f-string 기준으로 다음과 같이 `:` 다음에 포맷팅 옵션을 넣어줄 수 있다.
+
+<Figure
+  src="img/wiki/python/string-formatting/formatting-option.png"
+  hasBorder
+/>
+
+- ① 공백 대신 빈칸을 채울 문자열
+- ② `<` 왼쪽 정렬(기본), `>` 오른쪽 정렬, `^` 가운데 정렬
+- ③ 전체 칸 수
+- ④ 소수점 몇 자리까지 나타낼 것인지
+- ⑤ 천단위로 쉼표를 표시 (정수, 실수 모두 가능)
+- ⑥ 서식 지정자 (f, d)
+
+## 포맷팅 예시
+
+```python showLineNumbers
+pi = 3.141592653589793
+print(f'{pi:.3f}')      # 3.142
+print(f'{pi:10.3f}')    #      3.142
+print(f'{pi:*<10.3f}')  # 3.142*****
+print(f'{pi:*^10.3f}')  # **3.142***
+print(f'{pi:*>10.3f}')  # *****3.142
+
+million = 1000000
+print(f'{million:,}')       # 1,000,000
+print(f'{million:*>10,}')   # *1,000,000
+
+thousand_with_decimal = 1000.123
+print(f'{thousand_with_decimal:,}')         # 1,000.123
+print(f'{thousand_with_decimal:*>10,}')     # *1,000.123
+print(f'{thousand_with_decimal:*>10,.1f}')  # ***1,000.1
+```

@@ -1,0 +1,115 @@
+---
+tags: ["homebrew", "command"]
+description: "Homebrew 명령어 모음집"
+last_update:
+  date: 2022-09-12
+---
+
+# Homebrew 명령어
+
+## 설치
+
+### xcode command line tools 설치
+
+```bash showLineNumbers
+xcode-select --install
+```
+
+### homebrew 설치 (Intel)
+
+```bash showLineNumbers
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### homebrew 설치 (Apple Silicon/M1)
+
+```bash showLineNumbers
+# arm64
+arch -arm64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+# x86_64
+arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+## 명령어
+
+### brew를 최신 버전으로 업데이트
+
+```bash showLineNumbers
+brew update
+```
+
+### 패키지 업그레이드
+
+`brew update`가 선행된다.
+
+```bash showLineNumbers
+# 전체 패키지 업그레이드
+brew upgrade
+
+# 인자로 넘긴 패키지만 업그레이드
+brew upgrade <패키지명1> <패키지명2> <패키지명3>
+```
+
+### 업그레이드가 필요한 패키지 확인
+
+```bash showLineNumbers
+brew oudated
+```
+
+### 패키지 검색
+
+```bash showLineNumbers
+brew search <패키지명>
+```
+
+### 패키지 설치
+
+```bash showLineNumbers
+brew install <패키지명>[@버전]
+```
+
+### 설치된 패키지 확인
+
+```bash showLineNumbers
+brew list | ls
+
+# 더 간단히
+brew leaves
+```
+
+### 패키지 정보 확인
+
+```bash showLineNumbers
+brew info <패키지명>
+```
+
+### 패키지 삭제
+
+```bash showLineNumbers
+brew uninstall | remove | rm <패키지명>
+```
+
+### 최신 버전 외 버전의 패키지 삭제
+
+```bash showLineNumbers
+brew cleanup <패키지명>
+```
+
+### 패키지 종속성 확인
+
+```bash showLineNumbers
+brew deps --tree --installed <패키지명>
+```
+
+### 문제 진단
+
+```bash showLineNumbers
+brew doctor
+```
+
+## 참고 자료
+
+- [[Homebrew] brew 명령어 모음집 | sukvvon](https://sukvvon.tistory.com/7)
+- [Homebrew 기본 명령어 | taelee.log](https://velog.io/@taelee/brew-%EA%B0%84%EB%8B%A8-%EB%AA%85%EB%A0%B9%EC%96%B4)
+- [macOS 안내서 - 패키지 관리자(Apple Silicon/M1) | subicura](https://subicura.com/mac/dev/apple-silicon.html)

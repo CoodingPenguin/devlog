@@ -1,0 +1,21 @@
+---
+tags: ["docusaurus", "algolia"]
+last_update:
+    date: 2023-06-21
+---
+
+# Algolia 크롤링 이슈
+
+[Algolia](https://www.algolia.com/)에서 크롤링이 안 되고 이슈가 있었다. 그리고 브라우저에서 URL을 입력하면 바로 그에 해당하는 페이지가 뜨지 않고 404가 뜬 다음에 리다이렉트되었다.
+
+이 경우 [trailingSlash](https://djkeh.github.io/articles/Why-do-we-put-slash-at-the-end-of-URL-kor/) 관련 이슈일 수 있으므로 `docusaurus.config.js`로 가서 `trailingSlash` 옵션 자체를 없애면 된다.
+
+```javascript
+const config = {
+  ...
+  // trailingSlash: false,
+  ...
+};
+
+module.exports = config;
+```

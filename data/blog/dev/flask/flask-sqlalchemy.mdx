@@ -1,0 +1,36 @@
+---
+tags: ["flask", "sqlalchemy", "flask-sqlalchemy"]
+description: "sqlalchemy 세팅을 쉽게 해주는 flask-sqlalchemy 익스텐션"
+last_update:
+  date: 2023-05-02
+---
+
+# Flask-SQLAlchemy
+
+> Flask-SQLAlchemy는 **Flask에 SQLAlchemy를 추가하여 애플리케이션에서 SQLAlchemy를 사용할 수 있게 하는 확장 프로그램**입니다. 이는 각각의 웹 요청에 바인딩된 세션, 모델 및 엔진과 같은 일반적인 객체 및 패턴을 설정하여 Flask와 SQLAlchemy를 간편하게 사용할 수 있도록 도와줍니다.
+>
+> 🔗 [Flask-SQLAlchemy Documentation](https://flask-sqlalchemy.palletsprojects.com/)
+
+## Flask Application Context
+
+Flask-SQLAlchemy는 SQLAlchemy뿐만 아니라 Flask 애플리케이션에도 의존성을 갖는다. 그렇기 때문에, 애플리케이션 컨텍스트가 활성화되지 않은 상황에서 Flask-SQLAlchemy를 통해 데이터베이스에 접근하려 하면 다음과 같은 에러가 발생한다. 예를 들면, 멀티쓰레딩을 통해 데이터를 병렬로 넣어주거나 Flask 애플리케이션이 없는 테스트 환경에서 마주할 수 있는 문제이다.
+
+```text
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+```
+
+이렇게 Flask 애플리케이션 밖에서 Flask-SQLAlchemy를 통해 데이터베이스를 접근해야 한다면, 직접 애플리케이션 컨텍스트를 주입해줘야 한다.
+
+```python
+def test_user_model(app):
+    user = User()
+
+    with app.app_context():
+        db.session.add(user)
+        db.session.commit()
+```
+
