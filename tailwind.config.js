@@ -4,6 +4,7 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
+  important: true,
   content: [
     './node_modules/pliny/**/*.js',
     './app/**/*.{js,ts,jsx,tsx}',
@@ -28,19 +29,20 @@ module.exports = {
       colors: {
         primary: colors.blue,
         gray: colors.stone,
+        inlineCode: '#EB5757',
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.gray.500'),
+              color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.gray.600')}`,
+                color: `${theme('colors.primary.800')}`,
               },
-              code: { color: '#EB5757' },
+              code: { color: theme('colors.inlineCode') },
             },
             'h1,h2,h3,h4,h5,h6': {
-              code: { color: '#EB5757' },
+              code: { color: theme('colors.inlineCode') },
             },
             'h1,h2': {
               fontWeight: '700',
@@ -53,7 +55,7 @@ module.exports = {
               lineHeight: theme('lineHeight.snug'),
             },
             code: {
-              color: '#EB5757',
+              color: theme('colors.inlineCode'),
               padding: '0.2em 0.4em',
               backgroundColor: 'rgba(135,131,120,.15)',
               borderRadius: '0.25rem',
@@ -65,28 +67,50 @@ module.exports = {
             'code::after': {
               content: 'none',
             },
+            'blockquote p:first-of-type::before': {
+              content: 'none',
+            },
+            'blockquote p:first-of-type::after': {
+              content: 'none',
+            },
             p: {
               color: theme('colors.gray.800'),
             },
             img: {
-              borderRadius: '1.0rem',
+              borderRadius: '0.5rem',
               borderWidth: '1px',
               borderColor: theme('colors.gray.200'),
+            },
+            del: {
+              color: theme('colors.gray.500'),
+              '&:hover': {
+                textDecoration: 'none',
+              },
+            },
+            '.admonition': {
+              a: {
+                color: theme('colors.primary.500'),
+                '&:hover': {
+                  color: `${theme('colors.primary.800')}`,
+                },
+                code: { color: theme('colors.inlineCode') },
+              },
+              code: { color: theme('colors.inlineCode') },
             },
           },
         },
         invert: {
           css: {
             a: {
-              color: theme('colors.gray.400'),
+              color: theme('colors.primary.400'),
               '&:hover': {
-                color: `${theme('colors.gray.300')}`,
+                color: `${theme('colors.primary.300')}`,
               },
-              code: { color: '#EB5757' },
+              code: { color: theme('colors.inlineCode') },
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
-              code: { color: '#EB5757' },
+              code: { color: theme('colors.inlineCode') },
             },
             p: {
               color: theme('colors.gray.200'),
