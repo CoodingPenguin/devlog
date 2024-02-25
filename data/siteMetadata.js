@@ -7,7 +7,7 @@ const siteMetadata = {
   language: 'ko-kr',
   theme: 'system', // system, dark or light
   siteUrl: 'https://coodingpenguin.xyz',
-  siteRepo: 'https://github.com/CoodingPenguin/devlog-nextjs',
+  siteRepo: 'https://github.com/CoodingPenguin/devlog',
   siteLogo: '/static/favicons/logo.png',
   socialBanner: '/static/favicons/twitter-card.png',
   email: 'coodingpenguin@gmail.com',
