@@ -47,7 +47,7 @@ const Tip = ({ title, children }) => (
           <strong className="text-[#1f883d]">{title || 'Tip'}</strong>
         </p>
       </div>
-      <div className="prose">{children}</div>
+      {children}
     </div>
   </>
 )
@@ -74,7 +74,7 @@ const Important = ({ title, children }) => (
           <strong className="text-[#8250df]">{title || 'Important'}</strong>
         </p>
       </div>
-      <div className="prose">{children}</div>
+      {children}
     </div>
   </>
 )
@@ -101,7 +101,7 @@ const Warning = ({ title, children }) => (
           <strong className="text-[#9a6700]">{title || 'Warning'}</strong>
         </p>
       </div>
-      <div className="prose">{children}</div>
+      {children}
     </div>
   </>
 )
@@ -128,7 +128,7 @@ const Caution = ({ title, children }) => (
           <strong className="text-[#cf222e]">{title || 'Caution'}</strong>
         </p>
       </div>
-      <div className="prose">{children}</div>
+      {children}
     </div>
   </>
 )
