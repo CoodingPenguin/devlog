@@ -48,9 +48,11 @@ const FigCaption = ({ alt }: { alt?: string }) => {
 const Image = ({ ...rest }: ImageProps) => (
   <>
     {rest.alt === 'avatar' ? (
-      <NextImage {...rest} />
+      <div className="flex flex-col items-center justify-center">
+        <NextImage {...rest} />
+      </div>
     ) : rest.alt && rest.src.toString().startsWith('/static/images') ? (
-      <div className="my-2">
+      <div className="my-2 flex flex-col items-center justify-center">
         <NextImage {...rest} className="my-0" />
         <FigCaption alt={rest.alt.toString()} />
       </div>
