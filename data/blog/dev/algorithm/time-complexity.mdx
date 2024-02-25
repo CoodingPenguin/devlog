@@ -1,53 +1,36 @@
 ---
+title: '시간 복잡도'
 tags: ["algorithm", "time-complexity", "big-o"]
-description: "시간 복잡도와 이를 표현하기 위한 빅오 표기법"
-last_update:
-  date: 2022-09-12
+summary: "시간 복잡도와 이를 표현하기 위한 빅오 표기법"
+date: 2022-09-12
+draft: false
+images: []
 ---
 
-import Figure from "@site/src/components/Figure";
-
-# 시간 복잡도와 빅오 표기법
-
-## 시간 복잡도
-
 어떤 알고리즘을 수행하는데 걸리는 시간을 설명하는 계산 복잡도를 말한다.
-​
 
 - 수행 시간은 컴퓨터 하드웨어, 프로그래밍 언어의 컴파일러에 따라 차이가 있을 수 있기 때문에 오직 **명령어의 실행횟수**만 고려한다.
 - 시간 복잡도를 표기하는 대표적인 방법으로 최고 차항만 나타내는 **빅오 표기법(Big-O)**이 있다.
-  ​
 
 ## 빅오 표기법
 
-​
-**$g(n)$을 감싸는 상한선(Upper Bound)**인 $c * f(n)$을 빅오(Big-O)라고 한다. 이 때 $N$은 기준점으로 N 이상의 매우 큰 데이터만을 고려한다. 빅오의 자세한 정의는 다음과 같다.
-​
+$g(n)$을 감싸는 상한선(Upper Bound*인 $c * f(n)$을 빅오(Big-O)라고 한다. 이 때 $N$은 기준점으로 N 이상의 매우 큰 데이터만을 고려한다. 빅오의 자세한 정의는 다음과 같다.
 
 $$
 IF \; \exists \; c, \; N \geq 0, \; s.t: \forall n > N, \; g(n) \leq c*f(n)
 $$
 
-​
-
 $$
 THEN \; g(n) \in O(f(n))
 $$
 
-​
 정리하면 입력 크기 $n$과 총 연산횟수가 대응되는 함수 $g(n)$이 있다고 할 때, 이 함수를 포함하는 상한선이 빅오인 것이다. 그렇기 때문에 $g(n)$을 포함하기만 하면 모두 빅오라고 할 수 있다.
 
-<Figure
-  src="/img/wiki/algorithm/time-complexity/big-o-formula.png"
-  caption="빅오 정의에 대한 그래프"
-/>
+![빅오 정의에 대한 그래프](/static/images/dev/algorithm/time-complexity/big-o-formula.png)
 
 ### 빅오 표기법 종류
 
-<Figure
-  src="/img/wiki/algorithm/time-complexity/big-o-complexity-chart.png"
-  caption="빅오 표기법 종류"
-/>
+![빅오 표기법 종류](/static/images/dev/algorithm/time-complexity/big-o-complexity-chart.png)
 
 - $O(1)$, **상수 시간**: 입력값이 커도 실행시간이 일정하다.
   - ex. 인덱싱
@@ -66,7 +49,6 @@ $$
 - 빅오는 상한을 의미한다 ⭕
 
 빅오는 알고리즘의 최악의 경우는 아니라 어떤 함수의 **상한선**을 의미한다. 예를 들어, 최악의 경우 입력 크기 $n$에 대해 총 연산 횟수가 $5n^2+4$가 나왔다고 하자. 이 연산 횟수를 빅오로 표기했을 때 $O(n^2)$인 것이다. 단순 표기법일 뿐, **알고리즘 최악의 경우와 헷갈리지 말자.**
-​
 
 ## 시간 복잡도 계산하는 방법
 
@@ -76,9 +58,8 @@ $$
 - **연산**: 비교 연산, 대입 연산
 
 반복문과 조건문, 재귀 호출은 연산 횟수에 영향을 끼치며, 이 때 기준으로 삼을 연산을 비교와 대입 연산으로 하면 된다. 다음의 간단한 예시를 보자.
-​
 
-```python showLineNumbers
+```python
 count = 0
 for i in range(n):
     for j in range(n):
@@ -107,4 +88,4 @@ for i in range(n):
 - [[Algorithm] 알고리즘 시간복잡도에 대하여 - 코딩팩토리](https://coding-factory.tistory.com/608)
 - [알고리즘의 시간 복잡도와 Big-O 쉽게 이해하기 - Chulgil.Lee](https://blog.chulgil.me/algorithm/)
 - [내 알고리즘의 시간 복잡도를 어떻게 계산할까? - 개발하는 피자 양목장](https://pizzasheepsdev.tistory.com/3)
-- [<Time Complexity : 시간복잡도> 구하는 법 + 코딩 팁 - 채니의 블로그](https://mimimimamimimo.tistory.com/2)
+- [Time Complexity: 시간복잡도 구하는 법 + 코딩 팁 - 채니의 블로그](https://mimimimamimimo.tistory.com/2)

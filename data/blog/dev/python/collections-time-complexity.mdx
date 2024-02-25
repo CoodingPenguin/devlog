@@ -1,11 +1,11 @@
 ---
+title: "파이썬 대표 컬렉션 연산의 시간복잡도"
 tags: ["python", "data-structure", "list", "set", "dict", "time-complexity"]
-description: "파이썬의 대표 컬렉션인 list, set, dict 메서드의 시간복잡도"
-last_update:
-  date: 9/12/2022
+summary: "파이썬의 대표 컬렉션인 list, set, dict 메서드의 시간복잡도"
+date: 2022-09-12
+images: []
+draft: false
 ---
-
-# 파이썬 대표 컬렉션 연산의 시간복잡도
 
 파이썬의 대표적인 자료구조 **List, Dictionary, Set의 연산별 시간복잡도**이다. 최악의 경우를 나타내는 **Big-O 표기법**을 사용했으며, Tuple의 경우 Immutable하다는 것을 제외하고 List의 연산과 동일하다.
 
@@ -49,8 +49,8 @@ last_update:
 | Clear          | `s.clear()`      | $O(1)$               | 변환할 Iteratble의 길이에 비례                   |
 | Construction   | `set(...)`       | $O(len(...))$        | 모든 요소가 동일해야 함. 길이가 다른 경우 $O(1)$ |
 | Check ==, !=   | `s != t`         | $O(len(s))$          |                                                  |
-| <=, <          | `s <= t`         | $O(len(s))$          | s가 t의 부분집합인지 체크                        |
-| \>=, >         | `s >= t`         | $O(len(t))$          | t가 s의 부분집합인지 체크                        |
+| \<=, \<          | `s <= t`         | $O(len(s))$          | s가 t의 부분집합인지 체크                        |
+| \>=, \>         | `s >= t`         | $O(len(t))$          | t가 s의 부분집합인지 체크                        |
 | Union          | `s + t`          | $O(len(s) + len(t))$ |                                                  |
 | Intersection   | `s & t`          | $O(len(s) + len(t))$ |                                                  |
 | Difference     | `s - t`          | $O(len(s) + len(t))$ |                                                  |

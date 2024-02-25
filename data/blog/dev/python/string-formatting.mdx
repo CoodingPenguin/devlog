@@ -1,17 +1,15 @@
 ---
+title: "파이썬 문자열 포맷팅"
 tags: ["python", "string"]
-description: "파이썬의 대표적인 문자열 포맷팅 방식 3가지"
-last_update:
-  date: 9/12/2022
+summary: "파이썬의 대표적인 문자열 포맷팅 방식 3가지"
+date: 2022-09-12
+images: []
+draft: false
 ---
-
-import Figure from "@site/src/components/Figure";
-
-# 파이썬 문자열 포맷팅
 
 ## 포맷팅 방식
 
-```python showLineNumbers
+```python
 integer = 10
 string = "Hi!"
 real = 3.14
@@ -28,10 +26,7 @@ print(f"정수: {integer}, 문자열: {string}, 실수: {real:.2f}")
 
 f-string 기준으로 다음과 같이 `:` 다음에 포맷팅 옵션을 넣어줄 수 있다.
 
-<Figure
-  src="img/wiki/python/string-formatting/formatting-option.png"
-  hasBorder
-/>
+![](/static/images/dev/python/string-formatting/formatting-option.png)
 
 - ① 공백 대신 빈칸을 채울 문자열
 - ② `<` 왼쪽 정렬(기본), `>` 오른쪽 정렬, `^` 가운데 정렬
@@ -42,7 +37,7 @@ f-string 기준으로 다음과 같이 `:` 다음에 포맷팅 옵션을 넣어�
 
 ## 포맷팅 예시
 
-```python showLineNumbers
+```python
 pi = 3.141592653589793
 print(f'{pi:.3f}')      # 3.142
 print(f'{pi:10.3f}')    #      3.142

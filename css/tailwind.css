@@ -52,4 +52,10 @@ input:-webkit-autofill:focus {
   & p {
     @apply my-0
   }
+  & ul {
+    @apply my-0
+  }
+  & ol {
+    @apply my-0
+  }
 }

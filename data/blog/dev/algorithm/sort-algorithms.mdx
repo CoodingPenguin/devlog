@@ -1,5 +1,6 @@
 ---
-description: "파이썬 코드로 정리하는 대표적인 정렬 알고리즘"
+title: "정렬 알고리즘"
+summary: "파이썬 코드로 정리하는 대표적인 정렬 알고리즘"
 tags:
   [
     "algorithm",
@@ -13,18 +14,15 @@ tags:
     "counting-sort",
     "radix-sort",
   ]
-last_update:
-    date: 2022-09-12
+date: 2022-09-12
+draft: false
+images: []
 ---
 
-# 정렬 알고리즘
-
-:::info
-
-- 모든 정렬은 **오름차순 정렬**로 가정합니다.
-- 아래 표는 [ratsgo's blog의 정렬 알고리즘 비교표](https://ratsgo.github.io/data%20structure&algorithm/2017/10/19/sort/)를 참고했습니다.
-
-:::
+<Note>
+  - 모든 정렬은 **오름차순 정렬**로 가정합니다.
+  - 아래 표는 [ratsgo's blog의 정렬 알고리즘 비교표](https://ratsgo.github.io/data%20structure&algorithm/2017/10/19/sort/)를 참고했습니다.
+</Note>
 
 | **정렬 알고리즘** | **In-Place** | **Stable** | **Comparison** | **복잡도**      |
 | ----------------- | ------------ | ---------- | -------------- | --------------- |
@@ -47,7 +45,7 @@ last_update:
 
 **버블 정렬의 시간복잡도**는 요소의 개수 n에 대하여 비교 횟수와 교환 횟수를 고려할 때 $O(n^2)$이다.
 
-```python showLineNumbers
+```python
 def bubble_sort(arr):
     for i in range(len(arr)-1, 0, -1):
                 # 0부터 i-1까지 다음을 반복
@@ -64,7 +62,7 @@ def bubble_sort(arr):
 
 **선택 정렬의 시간복잡도**는 요소의 개수 $n$에 대하여 $O(n^2)$으로 버블 정렬과 같지만, 교환 횟수 측면에서 버블 정렬보다 개선되었다. 버블 정렬의 경우 요소가 원래 자리에 도착할 때까지 서로를 교환하지만, 선택 정렬의 경우 자신의 위치로 바로 교환을 하기 때문에 딱 한 번만 교환을 하면 된다.
 
-```python showLineNumbers
+```python
 def selection_sort(arr):
     for i in range(len(arr)-1, 0, -1):
         idx_of_max = 0  # 최댓값 인덱스
@@ -83,7 +81,7 @@ def selection_sort(arr):
 
 **삽입 정렬의 시간복잡도**는 역으로 정렬된 배열의 경우 정렬되지 않은 배열의 요소가 모두 정렬된 배열의 맨 앞 요소로 가야 하므로 $O(n^2)$이다.
 
-```python showLineNumbers
+```python
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         # 정렬된 배열에서 자신의 위치에 도달할 때까지
@@ -100,7 +98,7 @@ def insertion_sort(arr):
 
 **병합 정렬의 시간복잡도**는 요소의 개수 $n$에 대하여 병합하는 단계수가 $\log n$이고 각 단계별 정렬 시 연산 횟수는 $n$이므로, $O(n \log n)$이다.
 
-```python showLineNumbers
+```python
 def merge(left, right):
     result = []
     l, r = 0, 0 # 왼쪽, 오른쪽 배열의 포인터
@@ -138,7 +136,7 @@ def merge_sort(arr):
 
 **힙 정렬의 시간복잡도**는 최대 힙의 시간 복잡도와 힙에서의 자리 이동의 시간 복잡도의 합이다. 최대 힙의 시간 복잡도는 $O(n)$이고 자리 이동은 노드 $n$개에 대해 $\log n$만큼 이동해야 하므로 힙 정렬의 시간 복잡도는 $O(n \log n)$이다.
 
-```python showLineNumbers
+```python
 def heapify(arr, idx, size):
     largest = idx   # 최댓값 인덱스
     left = idx * 2  # 왼쪽 자식노드
@@ -205,7 +203,7 @@ def quick_sort(arr):
 
 **계수 정렬의 시간복잡도**는 배열 크기 $n$와 카운터 배열의 최대 크기 $k$에 대하여 $O(n + k)$이다. 계수 정렬 시 카운터 배열을 만들기 위해 기존 배열을 순회하므로 시간 복잡도는 $O(n)$이고 카운터 배열의 누적합을 만들기 위해 카운터 배열을 또 순회하므로 $O(k)$ 가 된다. 이를 더해 계수 정렬의 시간복잡도는 $O(n + k)$ 가 된다.
 
-```python showLineNumbers
+```python
 MAX = 200   # 카운터 배열 최대 크기
 def counting_sort(arr):
     size = len(arr) # 배열 크기
@@ -232,7 +230,7 @@ def counting_sort(arr):
 
 **기수 정렬의 시간복잡도**는 자릿수 별로 계수 정렬을 수행하므로, 전체 자릿수 $d$와 배열 크기 $n$에 대하여 $d \times O(n + k)$이다. 이때 $k$는 9이고 상수가 되므로, 정리하면 $d \times O(n)$이 된다.
 
-```python showLineNumbers
+```python
 from math import log
 
 base = 10   # 십진수

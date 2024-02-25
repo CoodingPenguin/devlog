@@ -1,29 +1,29 @@
 ---
+title: "Homebrew 명령어"
 tags: ["homebrew", "command"]
-description: "Homebrew 명령어 모음집"
-last_update:
-  date: 2022-09-12
+summary: "Homebrew 명령어 모음집"
+date: 2022-09-12
+draft: false
+images: []
 ---
-
-# Homebrew 명령어
 
 ## 설치
 
 ### xcode command line tools 설치
 
-```bash showLineNumbers
+```bash
 xcode-select --install
 ```
 
 ### homebrew 설치 (Intel)
 
-```bash showLineNumbers
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### homebrew 설치 (Apple Silicon/M1)
 
-```bash showLineNumbers
+```bash
 # arm64
 arch -arm64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -35,7 +35,7 @@ arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 
 ### brew를 최신 버전으로 업데이트
 
-```bash showLineNumbers
+```bash
 brew update
 ```
 
@@ -43,7 +43,7 @@ brew update
 
 `brew update`가 선행된다.
 
-```bash showLineNumbers
+```bash
 # 전체 패키지 업그레이드
 brew upgrade
 
@@ -53,25 +53,25 @@ brew upgrade <패키지명1> <패키지명2> <패키지명3>
 
 ### 업그레이드가 필요한 패키지 확인
 
-```bash showLineNumbers
+```bash
 brew oudated
 ```
 
 ### 패키지 검색
 
-```bash showLineNumbers
+```bash
 brew search <패키지명>
 ```
 
 ### 패키지 설치
 
-```bash showLineNumbers
+```bash
 brew install <패키지명>[@버전]
 ```
 
 ### 설치된 패키지 확인
 
-```bash showLineNumbers
+```bash
 brew list | ls
 
 # 더 간단히
@@ -80,31 +80,31 @@ brew leaves
 
 ### 패키지 정보 확인
 
-```bash showLineNumbers
+```bash
 brew info <패키지명>
 ```
 
 ### 패키지 삭제
 
-```bash showLineNumbers
+```bash
 brew uninstall | remove | rm <패키지명>
 ```
 
 ### 최신 버전 외 버전의 패키지 삭제
 
-```bash showLineNumbers
+```bash
 brew cleanup <패키지명>
 ```
 
 ### 패키지 종속성 확인
 
-```bash showLineNumbers
+```bash
 brew deps --tree --installed <패키지명>
 ```
 
 ### 문제 진단
 
-```bash showLineNumbers
+```bash
 brew doctor
 ```
 

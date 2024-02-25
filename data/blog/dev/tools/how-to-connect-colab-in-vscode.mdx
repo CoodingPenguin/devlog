@@ -1,31 +1,26 @@
 ---
+title: "VSCode에서 Colab 연결하는 방법"
 tags: ["vscode", "colab", "ngrok", "ssh", "cloudflared"]
-description: "까먹을까봐 적어놓는 VScode 에디터에서 Colab 연결하는 방법"
-last_update:
-  date: 2022-09-12
+summary: "까먹을까봐 적어놓는 VScode 에디터에서 Colab 연결하는 방법"
+date: 2022-09-12
+draft: false
+images: []
 ---
 
-import Figure from "@site/src/components/Figure";
+<Note title="필수 조건">
+  **윈도우 10** 환경에서 진행했습니다.
 
-# VSCode에서 Colab 연결하는 방법
+  - Google Colab 계정 생성
+  - Visual Studio Code 설치
+  - [ngrok 계정](https://ngrok.com/) 생성
 
-:::info 필수 조건
-**윈도우 10** 환경에서 진행했습니다.
-
-- Google Colab 계정 생성
-- Visual Studio Code 설치
-- [ngrok 계정](https://ngrok.com/) 생성
-
-:::
+</Note>
 
 ## Step 1. Google Drive 마운트
 
 왼쪽 탭에 있는 📁 아이콘을 눌러 Google Colab과 Drive 연결을 한다.
 
-<Figure
-  src="/img/wiki/tip/how-to-connect-colab-in-vscode/google-drive-mount.png"
-  hasBorder
-/>
+![](/static/images/dev/tools/how-to-connect-colab-in-vscode/google-drive-mount.png)
 
 ## Step 2. 런타임 유형 GPU로 설정
 
@@ -35,7 +30,8 @@ import Figure from "@site/src/components/Figure";
 
 [ngrok 대시보드](https://dashboard.ngrok.com/get-started/setup)에 들어가 **authtoken** 값을 복사한다.
 
-<Figure src="/img/wiki/tip/how-to-connect-colab-in-vscode/ngrok-dashboard.png" />
+
+![](/static/images/dev/tools/how-to-connect-colab-in-vscode/ngrok-dashboard.png)
 
 ## Step 4. ssh 연결 준비
 
@@ -43,7 +39,7 @@ Google Colab에 들어가 다음의 코드를 적고, `NGROK_TOKEN`에 authtoken
 
 (나중에 ssh 연결 후 확인을 위해 비밀번호를 입력하는 창이 뜬다.)
 
-```python showLineNumbers
+```python
 !pip install colab-ssh  # colab-ssh 설치
 
 NGROK_TOKEN = '[토큰값]'  # ngrok 토큰
@@ -57,10 +53,8 @@ launch_ssh_cloudflared(password=PASSWORD)
 
 ## Step 5. cloudflared 설치 및 config 파일 생성
 
-<Figure
-  src="/img/wiki/tip/how-to-connect-colab-in-vscode/cloudflared.png"
-  hasBorder
-/>
+
+![](/static/images/dev/tools/how-to-connect-colab-in-vscode/cloudflared.png)
 
 위의 코드를 실행하면 다음과 같은 창이 뜨는데 cloudflared를 설치하고 config 파일을 생성하여 호스트 정보를 붙여넣고 저장한다.
 
@@ -68,16 +62,13 @@ launch_ssh_cloudflared(password=PASSWORD)
 
 ## Step 6. VSCode에 Remote - SSH 확장 프로그램 설치
 
-<Figure src="/img/wiki/tip/how-to-connect-colab-in-vscode/remote-ssh-vscode-extension.png" />
+![](/static/images/dev/tools/how-to-connect-colab-in-vscode/remote-ssh-vscode-extension.png)
 
 Visual Studio Code로 들어가 **Remote - SSH**를 설치해준다.
 
 ## Step 7. Remote - SSH로 호스트랑 연결
 
-<Figure
-  src="/img/wiki/tip/how-to-connect-colab-in-vscode/connect-to-host-by-ssh.png"
-  hasBorder
-/>
+![](/static/images/dev/tools/how-to-connect-colab-in-vscode/connect-to-host-by-ssh.png)
 
 `Ctrl+Shift+P`를 눌러서 **Remote - SSH: Connect to Host**를 실행시키고 Google Colab에 있는 Hostname을 복사해서 붙여넣는다.
 

@@ -1,0 +1,142 @@
+---
+title: "Docker 명령어"
+tags: ["docker", "command"]
+summary: "자주 쓰는 docker 명령어 모음"
+date: 2023-05-11
+images: []
+draft: false
+---
+
+<TOCInline toc={props.toc}/>
+
+## 레지스트리 로그인
+
+```bash
+docker login
+# Authenticating with existing credentials...
+# Login Succeeded
+
+# Logging in with your password grants your terminal complete access to your account.
+# For better security, log in with a limited-privilege personal access token. Learn more at https://docs.docker.com/go/access-tokens/
+```
+
+`[-u | --username]`과 `[-p | --password]` 옵션을 주면 바로 로그인할 수 있다.
+
+```bash
+docker login -u coodingpenguin -p **** my-registry.com
+```
+
+레지스트리 주소를 인자로 넘겨주면 비공개 레지스트리에 로그인할 수 있다.
+
+```bash
+docker login my-registry.com
+```
+
+## 이미지 검색
+
+```bash
+docker search ubuntu
+# NAME                             DESCRIPTION                                      STARS     OFFICIAL   AUTOMATED
+# ubuntu                           Ubuntu is a Debian-based Linux operating sys…   15952     [OK]
+# websphere-liberty                WebSphere Liberty multi-architecture images …   294       [OK]
+# open-liberty                     Open Liberty multi-architecture images based…   59        [OK]
+```
+
+`[-f | --filter]`를 사용해 검색 결과를 필터링할 수 있다. 현재 지원되는 필터링은 다음과 같다.
+
+- **stars(int)**: 이미지의 스타 수
+- **is-automated(boolean)**: 이미지 자동 빌드 여부
+- **is-official(boolean)**: Docker Hub에서 인증한 공식 이미지 여부
+
+```bash
+docker search --filter stars=100 ubuntu
+# NAME                DESCRIPTION                                      STARS     OFFICIAL   AUTOMATED
+# ubuntu              Ubuntu is a Debian-based Linux operating sys…   15952     [OK]
+# websphere-liberty   WebSphere Liberty multi-architecture images …   294       [OK]
+# ubuntu-upstart      DEPRECATED, as is Upstart (find other proces…   114       [OK]
+```
+
+`--no-trunc` 옵션을 주면 잘린 **DESCRIPTION**을 확인할 수 있다.
+
+```bash
+# NAME                             DESCRIPTION                                                                                            STARS     OFFICIAL   AUTOMATED
+# ubuntu                           Ubuntu is a Debian-based Linux operating system based on free software.                                15952     [OK]
+# websphere-liberty                WebSphere Liberty multi-architecture images based on Ubuntu 18.04                                      294       [OK]
+# open-liberty                     Open Liberty multi-architecture images based on Ubuntu 18.04                                           59        [OK]
+```
+
+## 이미지 다운로드
+
+태그를 명시하지 않으면 기본적으로 **latest** 태그의 이미지를 가져온다.
+
+```bash
+docker pull ubuntu  # ubuntu:latest
+# Using default tag: latest
+# latest: Pulling from library/ubuntu
+# 79d0ea7dc1a8: Pull complete
+# Digest: sha256:dfd64a3b4296d8c9b62aa3309984f8620b98d87e47492599ee20739e8eb54fbf
+# Status: Downloaded newer image for ubuntu:latest
+# docker.io/library/ubuntu:latest
+```
+
+특정 태그의 이미지가 필요하면 꼭 명시해주자.
+
+```bash
+docker pull ubuntu:18.04
+# 18.04: Pulling from library/ubuntu
+# 13f679bb266a: Pull complete
+# Digest: sha256:8aa9c2798215f99544d1ce7439ea9c3a6dfd82de607da1cec3a8a2fae005931b
+# Status: Downloaded newer image for ubuntu:18.04
+# docker.io/library/ubuntu:18.04
+```
+
+## 로컬 이미지 조회
+
+```bash
+docker images
+# REPOSITORY                         TAG       IMAGE ID       CREATED             SIZE
+# coodingpenguin/welcome-to-docker   v0.0.0    aaca33068baf   About an hour ago   237MB
+# welcome-to-docker                  latest    aaca33068baf   About an hour ago   237MB
+# ubuntu                             latest    3f5ef9003cef   2 weeks ago         69.2MB
+# coodingpenguin/ubuntu              v0.0.0    3f5ef9003cef   2 weeks ago         69.2MB
+# coodingpenguin/welcome-to-docker   latest    b1eb53af308a   3 weeks ago         13.6MB
+# docker/welcome-to-docker           latest    b1eb53af308a   3 weeks ago         13.6MB
+# ubuntu                             18.04     c1adc1968c7b   2 months ago        56.7MB
+```
+
+특정 레포지토리의 이미지도 조회 가능하며, 태그까지 일치하는 조회도 가능하다.
+
+```bash
+docker images ubuntu
+# REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+# ubuntu       latest    3f5ef9003cef   2 weeks ago    69.2MB
+# ubuntu       18.04     c1adc1968c7b   2 months ago   56.7MB
+
+docker images ubuntu:latest
+# REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+# ubuntu       latest    3f5ef9003cef   2 weeks ago   69.2MB
+```
+
+**docker search**에서 제공된 필터 옵션처럼 필터를 지원하고 있다. (자세한 내용은 [여기](https://docs.docker.com/engine/reference/commandline/images/#filter)를 참고!)  
+예를 들어, `dangling=true`를 주면 태그가 없는 임시 이미지를 조회할 수 있다.
+
+## 이미지 업로드
+
+우선 이미지를 업로드하기 전에 태깅을 해야 한다. ~~(아니면 Permission Denied가 된다..)~~
+
+```bash
+docker tag ubuntu coodingpenguin/ubuntu:v0.0.0
+# docker images
+# REPOSITORY                         TAG       IMAGE ID       CREATED             SIZE
+# coodingpenguin/ubuntu              v0.0.0    3f5ef9003cef   2 weeks ago         69.2MB
+# ubuntu                             18.04     c1adc1968c7b   2 months ago        56.7MB
+```
+
+그 다음에 태깅된 이미지를 업로드해준다.
+
+```bash
+docker push coodingpenguin/ubuntu:v0.0.0
+# The push refers to repository [docker.io/coodingpenguin/ubuntu]
+# b49483f6a0e6: Mounted from library/ubuntu
+# v0.0.0: digest: sha256:9b85f48f0298ec89dcbc46b35edf9b12e5b9b04ca9cc9ea063968933ddba6adf size: 529
+```

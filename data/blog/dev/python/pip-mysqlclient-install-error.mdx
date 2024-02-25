@@ -1,30 +1,30 @@
 ---
+title: "pip로 mysqlclient 설치 시 에러 처리"
 tags: ["pip", "mysqlclient", "homebrew"]
-description: "매우 화났던 mysqlclient 설치 에러 해결법"
-last_update:
-  date: 9/12/2022
+summary: "매우 화났던 mysqlclient 설치 에러 해결법"
+date: 2022-09-12
+draft: false
+images: []
 ---
-
-# pip로 mysqlclient 설치 시 에러 처리
 
 ## 설치 에러가 발생한 경우
 
 ### Intel Mac 해결법
 
-```bash showLineNumbers
+```bash
 brew install mysql
 ```
 
 ### M1 Mac 해결법
 
-```bash showLineNumbers
+```bash
 # Intel 기반 패키지 설치
 arch -x86_64 /usr/local/bin/brew install mysql
 ```
 
 ## wheel 빌드 에러가 발생한 경우
 
-```bash showLineNumbers
+```bash
 ld: library not found for -lzstd
 clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
 error: command 'clang' failed with exit status 1
@@ -32,7 +32,7 @@ error: command 'clang' failed with exit status 1
 
 ### 해결 방법
 
-```bash showLineNumbers
+```bash
 # brew가 설치된 경로 확인
 brew --prefix   # output: Users/helloWorld/homebrew
 

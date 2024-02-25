@@ -1,18 +1,18 @@
 ---
+title: "Flask 블루프린트(Blueprint)"
 tags: ["flask", "blueprint"]
-last_update:
-  date: 2023-10-23
+date: 2023-10-23
+draft: false
+summary: 'Flask에서 라우팅할 때 쓰는 블루프린트 객체는 무엇일까?'
+images: []
 ---
-# 블루프린트 (Blueprint)
 
 **연산(Operation)의 집합으로 애플리케이션 객체에 등록해서 실행시킬 수 있도록 하는 객체**를 말한다. 결국 애플리케이션 객체처럼 쓸 수 있되 애플리케이션 설정을 공유하기 위해 사용되는 개념이다.
 이렇게 블루프린트로 관리하게 되면 큰 애플리케이션 개발 시 각 도메인 별로 관리하기가 좋다. 다만, 애플리케이션 객체 한 번 블루프린트를 등록하면 애플리케이션 실행 도중에 해지할 수 없으니 주의해야 한다.
 
-:::tip 애플리케이션 객체를 여러 개 두면 안 될까?
-
+<Tip title="애플리케이션 객체를 여러 개 두면 안 될까?">
 이렇게 되면 각자 다른 설정값을 가져야 하고 이를 WSGI 계층에서 관리를 해야 한다. 이걸 블루프린트로 관리를 하게 되면 Flask 계층에서 쉽게 관리할 수 있고 설정값을 따로 관리하지 않고 공유할 수 있다.
-
-:::
+</Tip>
 
 ## 블루프린트 클래스
 ```python
@@ -34,7 +34,7 @@ class flask.Blueprint(
 ## 블루프린트 생성 및 등록
 블루프린트 객체는 `Blueprint` 클래스를 사용해 객체를 생성하고, `@bp.route` 데코레이터로 View 함수를 등록한다.
 
-```python showLineNumbers
+```python
 from flask import Blueprint
 
 auth_bp = Blueprint("auth", __name__, url_prefix="auth")
@@ -46,7 +46,7 @@ def get_account_id(account_id):
 
 그리고 애플리케이션 객체에서 `app.register_blueprint`를 사용해 블루프린트를 등록한다.
 
-```python showLineNumbers
+```python
 from flask import Flask
 from auth import auth_bp
 
@@ -60,7 +60,7 @@ app.register_blueprint(auth_bp)
 
 생성한 블루프린트는 앱에 여러 번 등록해 재사용이 가능하다. 예를 들어, `/auth` 와 `/new_auth` URL에 두 번 등록 가능하다.
 
-```python showLineNumbers
+```python
 from flask import Flask
 from auth import auth_bp
 
@@ -73,7 +73,7 @@ app.register_blueprint(auth_bp, url_prefix="/new_auth")
 
 블루프린트의 중첩이 가능하다.
 
-```python showLineNumbers
+```python
 from flask import Flask
 
 app = Flask(__name__)
@@ -87,7 +87,7 @@ app.register_blueprint(parent)
 
 애플리케이션 객체와 동일하게 블루프린트에도 에러 핸들러 등록이 가능하다.
 
-```python showLineNumbers
+```python
 @auth_app.errorhandler(404)
 @auth_app.errorhandler(405)
 def _handle_api_error(ex):
@@ -97,11 +97,9 @@ def _handle_api_error(ex):
         return ex
 ```
 
-:::caution 블루프린트 에러 핸들러 주의사항
-
+<Caution title="블루프린트 에러 핸들러 주의사항">
 404와 405 예외를 처리하는 데 있어서 주의가 필요하다. **유효하지 않은 URL에 대해 404, 405 에러가 발생하지 않는다.** 왜냐하면 블루프린트가 특정 URL 공간을 가지고 있지 않기 때문에 유효하지 않은 URL일 때 어떤 블루프린트의 에러 핸들러를 실행해야 할지 모르기 때문이다.
-
-:::
+</Caution>
 
 ## 참고 자료
 - [Use a Flask Blueprint to Architect Your Applications | RealPython](https://realpython.com/flask-blueprint/)

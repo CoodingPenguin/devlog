@@ -1,16 +1,15 @@
 ---
+title: "문서 사이드바와 메뉴바 커스텀"
+summary: "공식 문서에도 없는 커스텀 삽질기"
 tags: ["docusaurus", "docs"]
-last_update:
-    date: 2023-09-11
+date: 2023-09-11
+draft: false
+images: []
 ---
 
-# 문서 사이드바와 메뉴바 커스텀
-
-:::caution 원하는 사이드바를 커스텀하기 위한 삽질기입니다.
-
+<Caution title="원하는 사이드바를 커스텀하기 위한 삽질기입니다.">
 아래의 내용은 [공식 문서](https://docusaurus.io/ko/)에도 따로 내용이 있지 않으며, Docusaurus 버전에 따라 내용이 틀릴 수도 있습니다.
-
-:::
+</Caution>
 
 ## 사이드바 카테고리 아이템에 커스텀 인덱스 연결하기
 
@@ -27,7 +26,7 @@ last_update:
 
 그리고 사이드바 설정 파일에서 해당 카테고리 아이템의 `link` 부분을 아래와 같이 바꿔준다.
 
-```javascript title="docusaurus.config.js"
+```javascript
 const sidebars = {
   wikiSidebar: [
     {
@@ -79,7 +78,7 @@ module.exports = sidebars;
 
 그리고 해당 파일 프론트메터에 `sidebarPath`에서 설정한 사이드바를 `displayed_sidebar`에 추가해준다.
 
-```markdown title="docs/index.md"
+```markdown
 ---
 displayed_sidebar: wikiSidebar
 ---

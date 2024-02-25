@@ -1,15 +1,15 @@
 ---
+title: "NVM 명령어"
 tags: ["nvm", "command"]
-description: "NVM(Node Version Manager) 명령어 모음집"
-last_update:
-  date: 2023-04-18
+summary: "NVM(Node Version Manager) 명령어 모음집"
+date: 2023-04-18
+images: []
+draft: false
 ---
-
-# NVM 명령어
 
 ## 설치
 
-```bash showLineNumbers
+```bash
 brew install nvm
 ```
 
@@ -17,20 +17,20 @@ brew install nvm
 
 ### 도움말
 
-```bash showLineNumbers
+```bash
 nvm --help
 ```
 
 ### NVM 버전 확인
 
-```bash showLineNumbers
+```bash
 nvm --version
 # 0.39.3
 ```
 
 ### 설치 가능한 Node 버전 확인
 
-```bash showLineNumbers
+```bash
 nvm ls-remote
 # ...
 #        v18.14.2   (LTS: Hydrogen)
@@ -42,7 +42,7 @@ nvm ls-remote
 
 LTS 버전만 필터링하고 싶다면, `--lts` 옵션을 주면 된다.
 
-```bash showLineNumbers
+```bash
 nvm ls-remote --lts
 # ...
 #        v18.14.2   (LTS: Hydrogen)
@@ -54,7 +54,7 @@ nvm ls-remote --lts
 
 #### `.nvmrc`에 적힌 버전 설치
 
-```bash showLineNumbers
+```bash
 nvm install
 # Found '/Users/coodingpenguin/.nvmrc' with version <v18.6.0>
 # Downloading and installing node v18.6.0...
@@ -67,7 +67,7 @@ nvm install
 
 #### 최신 LTS 버전 설치
 
-```bash showLineNumbers
+```bash
 nvm install --lts
 # Installing latest LTS version.
 # Downloading and installing node v18.16.0...
@@ -78,7 +78,7 @@ nvm install --lts
 
 #### 특정 버전 설치
 
-```bash showLineNumbers
+```bash
 nvm install 14.7.0
 # Downloading and installing node v14.7.0...
 # Downloading https://nodejs.org/dist/v14.7.0/node-v14.7.0-darwin-x64.tar.xz...
@@ -92,7 +92,7 @@ nvm install 14.7.0
 
 로컬에 설치된 Node 목록과 현재 사용 중인 버전(→), alias된 버전 등을 확인할 수 있다.
 
-```bash showLineNumbers
+```bash
 nvm ls
 #         v14.7.0
 #         v18.6.0
@@ -108,7 +108,7 @@ nvm ls
 
 간단하게 로컬에 설치된 목록만 보고싶다면, `--no-alias` 옵션을 주자.
 
-```bash showLineNumbers
+```bash
 nvm ls --no-alias
 #         v14.7.0
 #         v18.6.0
@@ -120,7 +120,7 @@ nvm ls --no-alias
 
 #### `.nvmrc`에 적힌 버전으로 지정
 
-```bash showLineNumbers
+```bash
 nvm use
 # Found '/Users/coodingpenguin/.nvmrc' with version <v18.6.0>
 # Now using node v18.6.0 (npm v8.13.2)
@@ -128,21 +128,21 @@ nvm use
 
 #### LTS 버전으로 지정
 
-```bash showLineNumbers
+```bash
 nvm use --lts
 # Now using node v18.16.0 (npm v9.5.1)
 ```
 
 #### 특정 버전으로 지정
 
-```bash showLineNumbers
+```bash
 nvm use 14.7.0
 # Now using node v14.7.0 (npm v6.14.7)
 ```
 
 ### 사용 중인 Node 확인
 
-```bash showLineNumbers
+```bash
 nvm current
 # v14.7.0
 ```
@@ -151,14 +151,14 @@ nvm current
 
 #### 특정 버전 Node 삭제
 
-```bash showLineNumbers
+```bash
 nvm uninstall v14.7.0
 # Uninstalled node v14.7.0
 ```
 
 #### LTS 버전 Node 삭제
 
-```bash showLineNumbers
+```bash
 nvm uninstall --lts
 # Uninstalled node v18.16.0
 ```
@@ -167,14 +167,14 @@ nvm uninstall --lts
 
 #### 특정 버전으로 설정
 
-```bash showLineNumbers
+```bash
 nvm alias default v18.15.0
 # default -> v18.15.0
 ```
 
 #### 최신 버전으로 설정
 
-```bash showLineNumbers
+```bash
 nvm alias default node
 # default -> node (-> v18.16.0)
 ```
@@ -183,7 +183,7 @@ nvm alias default node
 
 `~/.nvm/.cache` 폴더가 삭제된다.
 
-```bash showLineNumbers
+```bash
 nvm cache clear
 # nvm cache cleared.
 ```
