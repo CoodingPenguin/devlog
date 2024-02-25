@@ -47,3 +47,9 @@ input:-webkit-autofill:focus {
 .katex-display {
   overflow: auto hidden;
 }
+
+.admonition {
+  & p {
+    @apply my-0
+  }
+}
