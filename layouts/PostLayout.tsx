@@ -101,7 +101,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 {/*{` • `}*/}
                 <Link href={editUrl(filePath)}>
                   <div className="flex flex-row">
-                    <Github className="mr-1 w-4" />
+                    <Github className="mr-1.5 w-4 dark:fill-gray-50" />
                     GitHub에서 보기
                   </div>
                 </Link>
