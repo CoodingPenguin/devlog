@@ -1,8 +1,13 @@
 const Note = ({ title, children }) => (
   <>
     <div
-      className="admonition mb-5 border-l-4 py-2 pl-4 pr-10 rounded-r-md"
-      style={{ borderColor: '#0969da', display: 'flex', flexDirection: 'column', background: "#0969da0d" }}
+      className="admonition mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      style={{
+        borderColor: '#0969da',
+        display: 'flex',
+        flexDirection: 'column',
+        background: '#0969da0d',
+      }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <svg
@@ -28,8 +33,13 @@ const Note = ({ title, children }) => (
 const Tip = ({ title, children }) => (
   <>
     <div
-      className="admonition mb-5 border-l-4 py-2 pl-4 pr-10 rounded-r-md"
-      style={{ borderColor: '#1f883d', display: 'flex', flexDirection: 'column', background: '#1f88ed0d' }}
+      className="admonition mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      style={{
+        borderColor: '#1f883d',
+        display: 'flex',
+        flexDirection: 'column',
+        background: '#1f88ed0d',
+      }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <svg
@@ -55,8 +65,13 @@ const Tip = ({ title, children }) => (
 const Important = ({ title, children }) => (
   <>
     <div
-      className="not-prose mb-5 border-l-4 py-2 pl-4 pr-10 rounded-r-md"
-      style={{ borderColor: '#8250df', display: 'flex', flexDirection: 'column', background: '#8250df0d' }}
+      className="not-prose mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      style={{
+        borderColor: '#8250df',
+        display: 'flex',
+        flexDirection: 'column',
+        background: '#8250df0d',
+      }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <svg
@@ -82,8 +97,13 @@ const Important = ({ title, children }) => (
 const Warning = ({ title, children }) => (
   <>
     <div
-      className="not-prose mb-5 border-l-4 py-2 pl-4 pr-10 rounded-r-md"
-      style={{ borderColor: '#9a6700', display: 'flex', flexDirection: 'column', background: '#9a67000d' }}
+      className="not-prose mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      style={{
+        borderColor: '#9a6700',
+        display: 'flex',
+        flexDirection: 'column',
+        background: '#9a67000d',
+      }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <svg
@@ -109,8 +129,13 @@ const Warning = ({ title, children }) => (
 const Caution = ({ title, children }) => (
   <>
     <div
-      className="not-prose border-l-4 py-2 pl-4 pr-10 rounded-r-md"
-      style={{ borderColor: '#cf222e', display: 'flex', flexDirection: 'column', background: "#cf222e0d" }}
+      className="not-prose rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      style={{
+        borderColor: '#cf222e',
+        display: 'flex',
+        flexDirection: 'column',
+        background: '#cf222e0d',
+      }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <svg
