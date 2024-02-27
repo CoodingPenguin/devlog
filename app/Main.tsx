@@ -65,7 +65,7 @@ export default function Home({ posts }) {
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="블로그"
           >
-            블로그로 이동하기 〉
+            블로그로 이동하기 ❯
           </Link>
         </div>
       )}

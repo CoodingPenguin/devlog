@@ -160,7 +160,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                   aria-label="블로그로 돌아가기"
                 >
-                  〈 블로그로 돌아가기
+                  ❮ 블로그로 돌아가기
                 </Link>
               </div>
             </footer>
