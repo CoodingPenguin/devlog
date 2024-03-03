@@ -45,21 +45,27 @@ const FigCaption = ({ alt }: { alt?: string }) => {
   )
 }
 
-const Image = ({ ...rest }: ImageProps) => (
-  <>
-    {rest.alt === 'avatar' ? (
-      <div className="flex flex-col items-center justify-center">
-        <NextImage {...rest} />
-      </div>
-    ) : rest.alt && rest.src.toString().startsWith('/static/images') ? (
-      <div className="my-2 flex flex-col items-center justify-center">
-        <NextImage {...rest} className="my-0" />
-        <FigCaption alt={rest.alt.toString()} />
-      </div>
-    ) : (
-      <NextImage {...rest} className="my-2" />
-    )}
-  </>
-)
+const Image = ({ ...rest }: ImageProps) => {
+  let { alt, src } = rest
+  if (typeof src !== 'string') {
+    src = src.toString()
+  }
 
+  return (
+    <>
+      {alt === 'avatar' ? (
+        <div className="flex flex-col items-center justify-center">
+          <NextImage {...rest} />
+        </div>
+      ) : alt && src.startsWith('/static/images') ? (
+        <div className="my-2 flex flex-col items-center justify-center">
+          <NextImage {...rest} className="my-0" />
+          <FigCaption alt={alt.toString()} />
+        </div>
+      ) : (
+        <NextImage {...rest} className="my-2" />
+      )}
+    </>
+  )
+}
 export default Image

@@ -1,3 +1,5 @@
+import { Project, allProjects, allBlogs } from 'contentlayer/generated'
+import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
@@ -5,6 +7,8 @@ import { genPageMetadata } from 'app/seo'
 export const metadata = genPageMetadata({ title: '프로젝트' })
 
 export default function Projects() {
+  const projects = sortPosts(allProjects)
+
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -15,17 +19,29 @@ export default function Projects() {
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
-            {projectsData.length > 0 ? (
-              projectsData.map((d) => (
-                <Card
-                  key={d.title}
-                  title={d.title}
-                  description={d.description}
-                  imgSrc={d.imgSrc}
-                  href={d.href}
-                />
-              ))
+            {projects.length > 0 ? (
+              projects.map((project) => {
+                console.log(project)
+                return (
+                  <Card
+                    key={project.title}
+                    title={project.title}
+                    description={project.title}
+                    imgSrc={project.structuredData.image}
+                    href={'/' + project.path}
+                  />
+                )
+              })
             ) : (
+              // projectsData.map((d) => (
+              //   <Card
+              //     key={d.title}
+              //     title={d.title}
+              //     description={d.description}
+              //     imgSrc={d.imgSrc}
+              //     href={d.href}
+              //   />
+              // ))
               <p className="p-4">준비 중입니다!</p>
             )}
           </div>

@@ -1,0 +1,53 @@
+---
+title: "TEST2"
+date: 2024-02-29
+summary: "이거느느느느느느는"
+tags: ["github", "organization"]
+draft: false
+images: []
+---
+
+## 자손 결합자: `X Y`
+
+```css
+li li {
+  list-style-type: circle;
+}
+```
+
+요소 `X` 아래에 있는 모든 자손 요소 `Y`를 선택한다. 이 때 `Y`를 **자식 선택자**라 한다.
+
+## 자식 결합자: `X > Y`
+
+```css
+div > span {
+  background-color: blue;
+}
+```
+
+요소 `X` 바로 아래에 있는 자식 요소 `Y`만 선택한다. 이 때 `Y`를 **자손 선택자**라 한다.
+
+## 인접 형제 결합자: `X + Y`
+
+```css
+ul + p {
+  color: red;
+}
+```
+
+요소 `X`와 같은 부모를 공유하면서 바로 뒤에 있는 요소 `Y`만 선택한다.
+
+## 일반 형제 결합자: `X ~ Y`
+
+```css
+img ~ p {
+  color: red;
+}
+```
+
+`X + Y`와 다르게, 요소 `X`와 같은 부모를 공유하면서 뒤에 있는 모든 요소 `Y`를 선택한다.
+
+## 참고 자료
+
+- [CSS 선택자 | MDN Web Docs](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Selectors)
+- [반드시 기억해야 하는 CSS 선택자 30개 | envatotuts+](https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048)

@@ -31,7 +31,7 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
-  const { filePath, path, slug, date, title, tags } = content
+  const { filePath, path, slug, date, title, tags, images } = content
   const basePath = path.split('/')[0]
 
   return (
@@ -93,6 +93,11 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+              {images.length > 0 && (
+                <div>
+                  <Image src={images[0].src} alt="thumbnail" />
+                </div>
+              )}
               <div className="prose max-w-none pb-8 pt-6 dark:prose-invert">{children}</div>
               <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
                 {/*<Link href={discussUrl(path)} rel="nofollow">*/}
