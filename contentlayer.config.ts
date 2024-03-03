@@ -21,6 +21,7 @@ import rehypePrismPlus from 'rehype-prism-plus'
 import rehypePresetMinify from 'rehype-preset-minify'
 import siteMetadata from './data/siteMetadata'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer.js'
+import { allBlogs } from 'contentlayer/generated'
 
 const root = process.cwd()
 const isProduction = process.env.NODE_ENV === 'production'
@@ -75,6 +76,45 @@ function createSearchIndex(allBlogs) {
   }
 }
 
+function createPostsPerSeries(allBlogs) {
+  const posts = allCoreContent(sortPosts(allBlogs)).filter((post) => post.series)
+  const series = Array.from(new Set(posts.map((post) => post.series)))
+
+  const postsPerSeries = new Map()
+  posts.forEach((post) => {
+    const key = post.series
+    const value = postsPerSeries.get(key)
+    if (value) {
+      postsPerSeries.set(key, [post, ...value])
+    } else {
+      postsPerSeries.set(key, [post])
+    }
+  })
+
+  series.sort(function (a, b) {
+    const recentPostDateA = postsPerSeries
+      .get(a)
+      .reduce((x: { date: number }, y: { date: number }) => (x.date > y.date ? x.date : y.date))
+    const recentPostDateB = postsPerSeries
+      .get(b)
+      .reduce((x: { date: number }, y: { date: number }) => (x.date > y.date ? x.date : y.date))
+
+    return recentPostDateA > recentPostDateB ? 1 : -1
+  })
+
+  const sortedPostsPerSeries = new Map()
+  series.forEach((_series) => {
+    sortedPostsPerSeries.set(_series, postsPerSeries.get(_series))
+  })
+
+  if (sortedPostsPerSeries.size > 0) {
+    writeFileSync(
+      './app/posts-per-series.json',
+      JSON.stringify(Object.fromEntries(sortedPostsPerSeries.entries()))
+    )
+  }
+}
+
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: 'blog/**/*.mdx',
@@ -91,6 +131,7 @@ export const Blog = defineDocumentType(() => ({
     layout: { type: 'string' },
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
+    series: { type: 'string' },
   },
   computedFields: {
     ...computedFields,
@@ -153,5 +194,6 @@ export default makeSource({
     const { allBlogs } = await importData()
     createTagCount(allBlogs)
     createSearchIndex(allBlogs)
+    createPostsPerSeries(allBlogs)
   },
 })
