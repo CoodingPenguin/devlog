@@ -5,7 +5,7 @@ import tagData from 'app/tag-data.json'
 import { genPageMetadata } from 'app/seo'
 import TagWithCount from '@/components/TagWithCount'
 
-export const metadata = genPageMetadata({ title: 'Tags', description: 'Things I blog about' })
+export const metadata = genPageMetadata({ title: '태그' })
 
 export default async function Page() {
   const tagCounts = tagData as Record<string, number>
