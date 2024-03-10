@@ -1,5 +1,5 @@
 ---
-title: "[Docusaurus] Algolia 크롤링 이슈"
+title: "[Docusaurus] Algolia 크롤링이 안 된다면"
 tags: ["docusaurus", "algolia", "trailing-slash"]
 summary: "trailingSlash가 원인이었다..."
 date: 2023-06-21
@@ -7,9 +7,9 @@ images: []
 draft: false
 ---
 
-[Algolia](https://www.algolia.com/)에서 크롤링이 안 되고 이슈가 있었다. 그리고 브라우저에서 URL을 입력하면 바로 그에 해당하는 페이지가 뜨지 않고 404가 뜬 다음에 리다이렉트되었다.
+[Docusaurus](https://docusaurus.io/)에서 검색 엔진으로 [Algolia](https://www.algolia.com/)를 적용했지만, 크롤링이 실패하여 페이지가 있음에도 검색이 안 되는 이슈가 있었다. 또한 다른 이슈로 브라우저에 URL을 입력하면 해당하는 페이지가 뜨지 않고 404 에러가 뜬 다음 해당 페이지로 리다이렉트되었다.
 
-이 경우 [trailingSlash](https://djkeh.github.io/articles/Why-do-we-put-slash-at-the-end-of-URL-kor/) 관련 이슈일 수 있으므로 `docusaurus.config.js`로 가서 `trailingSlash` 옵션 자체를 없애면 된다.
+정확한 원인은 파악하지 못했지만, [trailingSlash](https://djkeh.github.io/articles/Why-do-we-put-slash-at-the-end-of-URL-kor/) 옵션이 원인이었다. docusaurus.config.js에서 `trailingSlash` 옵션 자체를 없애니 크롤링 및 리다이렉트 이슈가 해결되었다.
 
 ```javascript
 const config = {

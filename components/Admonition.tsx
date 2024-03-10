@@ -65,7 +65,7 @@ const Tip = ({ title, children }) => (
 const Important = ({ title, children }) => (
   <>
     <div
-      className="not-prose mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      className="admonition mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
       style={{
         borderColor: '#8250df',
         display: 'flex',
@@ -97,7 +97,7 @@ const Important = ({ title, children }) => (
 const Warning = ({ title, children }) => (
   <>
     <div
-      className="not-prose mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      className="admonition mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
       style={{
         borderColor: '#9a6700',
         display: 'flex',
@@ -129,7 +129,7 @@ const Warning = ({ title, children }) => (
 const Caution = ({ title, children }) => (
   <>
     <div
-      className="not-prose rounded-r-md border-l-4 py-2 pl-4 pr-10"
+      className="admonition mb-5 rounded-r-md border-l-4 py-2 pl-4 pr-10"
       style={{
         borderColor: '#cf222e',
         display: 'flex',

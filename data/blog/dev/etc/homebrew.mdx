@@ -1,11 +1,17 @@
 ---
 title: "[ETC] Homebrew 명령어"
-tags: ["etc", "homebrew", "command"]
+tags: ["etc", "homebrew", "command", "macos"]
 summary: "Homebrew 명령어 모음집"
 date: 2022-09-12
 draft: false
 images: []
 ---
+
+회사에 입사하면서 메인 노트북이 [MacBook](https://www.apple.com/kr/mac)으로 바뀌었다. 그러면서 [Homebrew](https://brew.sh/)라는 패키지 매니저를 쓰게 되었는데,
+
+<Tip title="MacBook을 처음 사용하시나요?">
+  subicura님이 쓰신 [macOS 안내서](https://subicura.com/mac/)를 참고해보세요! 대부분의 초기 설정 및 개발 환경 설정 내용이 담겨있습니다.
+</Tip>
 
 ## 설치
 
@@ -15,20 +21,50 @@ images: []
 xcode-select --install
 ```
 
-### homebrew 설치 (Intel)
+### Homebrew 설치
+
+내가 사용하는 MacBook의 칩이 어떤 칩인지에 따라 설치 방법이 다르다.
+
+#### Intel 칩인 경우
 
 ```bash
+# Intel 칩인 경우
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### homebrew 설치 (Apple Silicon/M1)
+#### Apple Silicon 칩인 경우
 
 ```bash
-# arm64
+# arm64 터미널인 경우
 arch -arm64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# x86_64
+# x86_64 터미널인 경우
 arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+# homebrew 환경 설정
+cat <<'EOF' >> ~/.zprofile
+CPU=$(uname -m)
+if [[ "$CPU" == "arm64" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  export PATH=/opt/homebrew/bin:$PATH
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+alias ibrew="arch -x86_64 /usr/local/bin/brew"
+alias abrew="arch -arm64 /opt/homebrew/bin/brew"
+
+EOF
+```
+
+### 설치 확인
+
+```bash
+brew
+# Example usage:
+#   brew search TEXT|/REGEX/
+#   brew info [FORMULA|CASK...]
+#   brew install FORMULA|CASK...
 ```
 
 ## 명령어
@@ -37,6 +73,10 @@ arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 
 ```bash
 brew update
+# Updated 3 taps (homebrew/cask-fonts, homebrew/core and homebrew/cask).
+# ==> New Formulae
+# actions-batch                kubeshark                    pkl
+# ...
 ```
 
 ### 패키지 업그레이드
@@ -46,6 +86,11 @@ brew update
 ```bash
 # 전체 패키지 업그레이드
 brew upgrade
+# ==> Upgrading 97 outdated packages:
+# cjson 1.7.16 -> 1.7.17
+# coreutils 9.1 -> 9.4
+# gmp 6.2.1_1 -> 6.3.0
+# ...
 
 # 인자로 넘긴 패키지만 업그레이드
 brew upgrade <패키지명1> <패키지명2> <패키지명3>
@@ -54,40 +99,60 @@ brew upgrade <패키지명1> <패키지명2> <패키지명3>
 ### 업그레이드가 필요한 패키지 확인
 
 ```bash
-brew oudated
+brew outdated
+# aom (3.7.0) < 3.8.1
+# autoconf (2.71) < 2.72
+# bat (0.22.1) < 0.24.0
+# ...
 ```
 
 ### 패키지 검색
 
 ```bash
 brew search <패키지명>
+# ==> Formulae
+# app-engine-python            python-kiwisolver            python-tabulate
+# ...
 ```
 
 ### 패키지 설치
 
 ```bash
 brew install <패키지명>[@버전]
+# ==> Downloading https://ghcr.io/v2/homebrew/core/python/3.12/manifests/3.12.2_1
+# ...
 ```
 
 ### 설치된 패키지 확인
 
 ```bash
-brew list | ls
+brew [list | ls]
+# ==> Formulae
+# aom		gnupg		libtermkey	msgpack		rav1e
+# ...
 
 # 더 간단히
 brew leaves
+# automake
+# bat
+# cmake
+# ...
 ```
 
 ### 패키지 정보 확인
 
 ```bash
 brew info <패키지명>
+# ==> bat: stable 0.24.0 (bottled), HEAD
+# Clone of cat(1) with syntax highlighting and Git integration
+# https://github.com/sharkdp/bat
 ```
 
 ### 패키지 삭제
 
 ```bash
 brew uninstall | remove | rm <패키지명>
+# Uninstalling /usr/local/Cellar/python@3.7/3.7.16... (4,847 files, 76.7MB)
 ```
 
 ### 최신 버전 외 버전의 패키지 삭제
@@ -100,12 +165,24 @@ brew cleanup <패키지명>
 
 ```bash
 brew deps --tree --installed <패키지명>
+# bat
+# ├── libgit2
+# │   ├── libssh2
+# │   │   └── openssl@3
+# │   │       └── ca-certificates
+# │   └── openssl@3
+# │       └── ca-certificates
+# └── oniguruma
 ```
 
 ### 문제 진단
 
 ```bash
 brew doctor
+# Please note that these warnings are just used to help the Homebrew maintainers
+# with debugging if you file an issue. If everything you use Homebrew for is
+# working fine: please don't worry or file an issue; just ignore this. Thanks!
+# ...
 ```
 
 ## 참고 자료

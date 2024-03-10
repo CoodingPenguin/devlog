@@ -7,20 +7,23 @@ draft: false
 images: []
 ---
 
+파이썬 서버 구현 시 MySQL을 사용한다면 어쩔 수 없이 깔게 되는 라이브러리가 있다. 바로 [mysqlclient](https://pypi.org/project/mysqlclient/)이다. 이 라이브러리는 우리 조직에서 악명이 높은데, 그 이유는 **로컬 개발 환경 세팅할 때마다 에러를 뿜어대기 때문**이다. 이를 해결하기 위해 수많은 시간을 쏟았기에 똑같은 어려움을 겪고 있는 사람을 위해 글을 남겨본다.
+
 ## 설치 에러가 발생한 경우
 
-### Intel Mac 해결법
+### 해결 방법
 
 ```bash
+# Intel 칩인 경우
 brew install mysql
-```
 
-### M1 Mac 해결법
-
-```bash
-# Intel 기반 패키지 설치
+# Apple Silicon 칩인 경우
 arch -x86_64 /usr/local/bin/brew install mysql
 ```
+
+<Warning title="arch -x86-64는 무엇인가요?">
+  `arch` 명령어는 특정 아키텍처로 앱을 실행할 수 있게 해주는데, `arch -x86-64`로 해주어야 Intel 기반 앱을 설치할 수 있다. 2022년 당시 mysqlclient는 Apple Silicon 칩에 대한 지원이 없었어서 위와 같이 깔아주어야 이슈 없이 설치된다. 자세한 내용은 [여기](https://subicura.com/mac/dev/apple-silicon.html#apple-silicon-m1)를 참고할 것.
+</Warning>
 
 ## wheel 빌드 에러가 발생한 경우
 
