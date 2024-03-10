@@ -55,7 +55,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 <PageTitle>{title}</PageTitle>
               </div>
               {series && (
-                <div className="my-1 text-gray-500 dark:text-gray-400">
+                <div className="text-gray-500 dark:text-gray-400">
                   🔖{' '}
                   <Link
                     href={`/series/${series}`}

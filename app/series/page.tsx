@@ -9,20 +9,21 @@ export default function Page() {
   return (
     <>
       <SeriesLayout>
-        {Object.keys(postsPerSeries).map((series) => (
-          <Series
-            key={series}
-            title={series}
-            thumbnail={postsPerSeries[series][0]?.images[0] || defaultThumbnail}
-            count={postsPerSeries[series].length}
-            lastCreated={
-              postsPerSeries[series].length === 1
-                ? postsPerSeries[series][0].date
-                : postsPerSeries[series].reduce((a, b) => (a.date > b.date ? a.date : b.date))
-            }
-            href={`/series/${series}`}
-          />
-        ))}
+        {Object.keys(postsPerSeries).map((series) => {
+          const posts = postsPerSeries[series]
+          posts.sort((a, b) => (a.date > b.date ? -1 : 1))
+          const thumbnail = posts.filter((post) => post.images.length > 0)[0]?.images[0]
+          return (
+            <Series
+              key={series}
+              title={series}
+              thumbnail={thumbnail || defaultThumbnail}
+              count={postsPerSeries[series].length}
+              lastCreated={postsPerSeries[series][0].date}
+              href={`/series/${series}`}
+            />
+          )
+        })}
       </SeriesLayout>
     </>
   )

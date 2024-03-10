@@ -51,7 +51,10 @@ const Image = ({ ...rest }: ImageProps) => (
       <div className="flex flex-col items-center justify-center">
         <NextImage {...rest} />
       </div>
-    ) : rest.alt && typeof rest.src === 'string' && rest.src.startsWith('/static/images') ? (
+    ) : rest.alt &&
+      rest.alt !== 'thumbnail' &&
+      typeof rest.src === 'string' &&
+      rest.src.startsWith('/static/images') ? (
       <div className="my-2 flex flex-col items-center justify-center">
         <NextImage {...rest} className="my-0" />
         <FigCaption alt={rest.alt.toString()} />

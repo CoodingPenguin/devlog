@@ -16,7 +16,7 @@ const Series = ({ title, thumbnail, count, lastCreated, href }: SeriesProps) => 
       <div className="relative my-4 aspect-[16/9]">
         <Image
           src={thumbnail}
-          alt={title}
+          alt="thumbnail"
           fill
           style={{ objectFit: 'cover', borderRadius: '0.25rem' }}
         />
