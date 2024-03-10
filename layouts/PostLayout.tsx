@@ -54,17 +54,6 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
-              {series && (
-                <div className="text-gray-500 dark:text-gray-400">
-                  🔖{' '}
-                  <Link
-                    href={`/series/${series}`}
-                    className="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300"
-                  >
-                    {series}
-                  </Link>
-                </div>
-              )}
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
@@ -128,6 +117,16 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+                {series && (
+                  <div className="py-4 xl:py-8">
+                    <h2 className="mb-1.5 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      시리즈
+                    </h2>
+                    <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                      <Link href={`/series/${series}`}>{series}</Link>
+                    </div>
+                  </div>
+                )}
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="mb-1.5 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
