@@ -13,7 +13,7 @@ type SeriesProps = {
 const Series = ({ title, thumbnail, count, lastCreated, href }: SeriesProps) => (
   <div>
     <a href={href}>
-      <div className="relative my-4 aspect-[2/1]">
+      <div className="relative my-4 aspect-[16/9]">
         <Image
           src={thumbnail}
           alt={title}
