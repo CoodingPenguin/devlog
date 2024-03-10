@@ -13,11 +13,7 @@ export default function SeriesLayout({ children }: Props) {
             시리즈
           </h1>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
-            {children}
-          </div>
-        </div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">{children}</div>
       </div>
     </>
   )

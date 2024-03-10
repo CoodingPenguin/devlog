@@ -6,7 +6,7 @@ export default function Page({ params }: { params: { slug: string[] } }) {
   const sortedCoreContents = allCoreContent(sortPosts(allBlogs))
 
   const posts = sortedCoreContents.filter((post) => post.series === slug)
-  posts.sort((a, b) => a.date > b.date ? 1 : -1)
+  posts.sort((a, b) => (a.date > b.date ? 1 : -1))
   console.log(slug, posts)
   return (
     <>
