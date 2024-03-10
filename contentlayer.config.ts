@@ -99,7 +99,7 @@ function createPostsPerSeries(allBlogs) {
       .get(b)
       .reduce((x: { date: number }, y: { date: number }) => (x.date > y.date ? x.date : y.date))
 
-    return recentPostDateA > recentPostDateB ? 1 : -1
+    return recentPostDateA > recentPostDateB ? -1 : 1
   })
 
   const sortedPostsPerSeries = new Map()
