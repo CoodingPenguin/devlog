@@ -1,5 +1,5 @@
 ---
-title: JetBrains 툴에서 Rosetta 터미널로 설정하는 방법
+title: [ETC] JetBrains 툴에서 Rosetta 터미널로 설정하는 방법
 date: 2024-03-23
 lastmod: 2024-03-23
 tags: ["etc", "jetbrains", "rosetta", "terminal"]
@@ -22,7 +22,7 @@ uname -m # x86_64가 아니라 arm 64가 나옴
 
 아무래도 IDE를 Apple Silicon 버전 애플리케이션으로 설치해서 그렇다는 생각이 들었다. 근데 이렇게 되면 IDE에서 터미널을 쓸 때마다 Apple Sillicon 기반으로 빌드가 되어버린다. 그래서 **Rosetta 터미널로 설정하는 방법**을 찾아보았다!
 
-## JetBrains 제품에서 Rosetta 터미널로 설정하는 방법
+## JetBrains 툴에서 Rosetta 터미널로 설정하는 방법
 
 `⌘ ,`을 눌러 설정창으로 가서 **Tools > Terminal > Application Settings >  Shell Path**를 다음과 같이 설정하면 된다.
 
@@ -30,9 +30,9 @@ uname -m # x86_64가 아니라 arm 64가 나옴
 env /usr/bin/arch -x86_64 /bin/zsh --login
 ```
 
-아래는 Webstorm 설정창 화면인데 대부분의 JetBrains 제품에서도 동일한 설정을 지원할테니 잘 모르겠다면 설정창 검색 기능을 활용하면 좋다.
+아래는 Webstorm 설정창 화면인데 대부분의 JetBrains 툴에서도 동일한 설정을 지원할테니 잘 모르겠다면 설정창 검색 기능을 활용하면 좋다.
 
-![Webstorm 설정창](/static/images/dev/etc/run-the-terminal-through-resetta-in-jetbrains/webstorm-settings.png)
+![Webstorm 설정창](/static/images/dev/etc/set-rosetta-terminal-in-jetbrains/webstorm-settings.png)
 
 설정하고 나서 제대로 설정되었는지 보고 싶다면 위에서 사용했던 `uname -m` 명령어를 실행해서 **x86_64**가 나오는지 확인해보자.
 
