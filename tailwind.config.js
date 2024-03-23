@@ -78,8 +78,6 @@ module.exports = {
             },
             img: {
               borderRadius: '0.5rem',
-              borderWidth: '1px',
-              borderColor: theme('colors.gray.200'),
             },
             del: {
               color: theme('colors.gray.500'),
@@ -114,9 +112,6 @@ module.exports = {
             },
             p: {
               color: theme('colors.gray.200'),
-            },
-            img: {
-              borderColor: theme('colors.gray.700'),
             },
           },
         },
