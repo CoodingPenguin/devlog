@@ -46,9 +46,10 @@ const computedFields: ComputedFields = {
 /**
  * Count the occurrences of all tags across blog posts and write to json file
  */
-function createTagCount(allBlogs) {
+function createTagCount(allBlogs, allJournals) {
   const tagCount: Record<string, number> = {}
-  allBlogs.forEach((file) => {
+  const posts = [...allBlogs, ...allJournals]
+  posts.forEach((file) => {
     if (file.tags && (!isProduction || file.draft !== true)) {
       file.tags.forEach((tag) => {
         const formattedTag = slug(tag)
@@ -63,55 +64,16 @@ function createTagCount(allBlogs) {
   writeFileSync('./app/tag-data.json', JSON.stringify(tagCount))
 }
 
-function createSearchIndex(allBlogs) {
+function createSearchIndex(allBlogs, allJournals) {
   if (
     siteMetadata?.search?.provider === 'kbar' &&
     siteMetadata.search.kbarConfig.searchDocumentsPath
   ) {
     writeFileSync(
       `public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`,
-      JSON.stringify(allCoreContent(sortPosts(allBlogs)))
+      JSON.stringify(allCoreContent(sortPosts([...allBlogs, ...allJournals])))
     )
     console.log('Local search index generated...')
-  }
-}
-
-function createPostsPerSeries(allBlogs) {
-  const posts = allCoreContent(sortPosts(allBlogs)).filter((post) => post.series)
-  const series = Array.from(new Set(posts.map((post) => post.series)))
-
-  const postsPerSeries = new Map()
-  posts.forEach((post) => {
-    const key = post.series
-    const value = postsPerSeries.get(key)
-    if (value) {
-      postsPerSeries.set(key, [post, ...value])
-    } else {
-      postsPerSeries.set(key, [post])
-    }
-  })
-
-  series.sort(function (a, b) {
-    const recentPostDateA = postsPerSeries
-      .get(a)
-      .reduce((x: { date: number }, y: { date: number }) => (x.date > y.date ? x.date : y.date))
-    const recentPostDateB = postsPerSeries
-      .get(b)
-      .reduce((x: { date: number }, y: { date: number }) => (x.date > y.date ? x.date : y.date))
-
-    return recentPostDateA > recentPostDateB ? -1 : 1
-  })
-
-  const sortedPostsPerSeries = new Map()
-  series.forEach((_series) => {
-    sortedPostsPerSeries.set(_series, postsPerSeries.get(_series))
-  })
-
-  if (sortedPostsPerSeries.size > 0) {
-    writeFileSync(
-      './app/posts-per-series.json',
-      JSON.stringify(Object.fromEntries(sortedPostsPerSeries.entries()))
-    )
   }
 }
 
@@ -228,8 +190,7 @@ export default makeSource({
   },
   onSuccess: async (importData) => {
     const { allBlogs, allJournals } = await importData()
-    createTagCount(allBlogs)
-    createSearchIndex(allBlogs)
-    createPostsPerSeries(allBlogs)
+    createTagCount(allBlogs, allJournals)
+    createSearchIndex(allBlogs, allJournals)
   },
 })
