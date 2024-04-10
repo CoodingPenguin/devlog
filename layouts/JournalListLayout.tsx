@@ -24,7 +24,7 @@ export default function JournalListLayout({ posts, title }: JournalListLayoutPro
             title={post.title}
             thumbnail={post.images[0]}
             created={post.date}
-            href={post.slug}
+            href={post.path}
           />
         ))}
       </div>
