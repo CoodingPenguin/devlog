@@ -1,4 +1,4 @@
-import { allCoreContent, CoreContent, sortPosts } from "pliny/utils/contentlayer";
+import { allCoreContent, CoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allJournals } from 'contentlayer/generated'
 import JournalListLayout from '@/layouts/JournalListLayout'
 import { genPageMetadata } from '../seo'
