@@ -7,9 +7,10 @@ type JournalProps = {
   thumbnail: string
   created: string
   href: string
+  summary?: string
 }
 
-const Journal = ({ title, thumbnail, created, href }: JournalProps) => (
+const Journal = ({ title, thumbnail, created, href, summary }: JournalProps) => (
   <div>
     <a href={href}>
       <div className="relative my-4 aspect-[16/9]">
@@ -23,11 +24,9 @@ const Journal = ({ title, thumbnail, created, href }: JournalProps) => (
       <div className="my-1">
         <h1 className="text-xl font-bold sm:text-lg">{title}</h1>
       </div>
-      <div className="text-gray-500 dark:text-gray-400">
-        <span className="mx-1">·</span>
-        <span>
-          <time dateTime={created}>{formatDate(created, siteMetadata.locale)}</time> 업데이트
-        </span>
+      <div className="my-1 text-gray-600 dark:text-gray-300">{summary}</div>
+      <div className="my-1 text-xs text-gray-500 dark:text-gray-400">
+        <time dateTime={created}>{formatDate(created, siteMetadata.locale)}</time> 업데이트
       </div>
     </a>
   </div>
