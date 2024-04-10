@@ -5,7 +5,7 @@ lastmod: 2024-03-23
 tags: ["etc", "jetbrains", "rosetta", "terminal"]
 draft: false
 summary: "설치할 때 고통 받고 싶지 않다면 ARM64가 아닌 x86_64 아키텍처로 무조건 돌리자..."
-images: ["/static/images/dev/etc/set-rosetta-terminal-in-jetbrains/thumbnail.png"]
+images: ["/static/images/dev/set-rosetta-terminal-in-jetbrains/thumbnail.png"]
 ---
 
 ## 왜 Rosetta 터미널을 사용해야 하는가?
@@ -32,7 +32,7 @@ env /usr/bin/arch -x86_64 /bin/zsh --login
 
 아래는 Webstorm 설정창 화면인데 대부분의 JetBrains 툴에서도 동일한 설정을 지원할테니 잘 모르겠다면 설정창 검색 기능을 활용하면 좋다.
 
-![Webstorm 설정창](/static/images/dev/etc/set-rosetta-terminal-in-jetbrains/webstorm-settings.png)
+![Webstorm 설정창](/static/images/dev/set-rosetta-terminal-in-jetbrains/webstorm-settings.png)
 
 설정하고 나서 제대로 설정되었는지 보고 싶다면 위에서 사용했던 `uname -m` 명령어를 실행해서 **x86_64**가 나오는지 확인해보자.
 

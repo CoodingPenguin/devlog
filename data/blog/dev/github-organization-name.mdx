@@ -5,12 +5,12 @@ lastmod: 2023-06-21
 tags: ["github", "organization"]
 draft: false
 summary: "공식 문서에도 없던 조직 이름에 관한 비밀"
-images: ["/static/images/dev/github/organization-name/thumbnail.png"]
+images: ["/static/images/dev/github-organization-name/thumbnail.png"]
 ---
 
 GitHub는 여러 프로젝트를 관리하고 공동 작업을 쉽게 하기 위해 [조직 기능](https://docs.github.com/ko/organizations)을 제공하고 있다.
 
-![조직을 생성하고 public으로 설정하면 프로필에서 소속된 조직들이 보인다.](/static/images/dev/github/organization-name/coodingpenguin-organization.png)
+![조직을 생성하고 public으로 설정하면 프로필에서 소속된 조직들이 보인다.](/static/images/dev/github-organization-name/coodingpenguin-organization.png)
 
 ## 조직 이름 변경
 
@@ -19,13 +19,13 @@ GitHub는 여러 프로젝트를 관리하고 공동 작업을 쉽게 하기 위
 GitHub의 여느 버튼이 그렇겠지만은, "이름 변경", "private 설정", "조직/레포지토리 삭제"는 **매우 파괴적인 행위**라 붉은 글씨로 써진 Danger Zone에서 설정을 변경할 수 있다.
 변경을 해야 하니 이름 변경 버튼을 눌렀는데, 아래와 같은 경고창이 떴다.
 
-![](/static/images/dev/github/organization-name/warning-dialog.png)
+![](/static/images/dev/github-organization-name/warning-dialog.png)
 
 근데 보니 가장 첫 번째 줄이 눈에 띄었다. 스타 수가 1000개가 넘은 [ai-tech-interview](https://github.com/boost-devs/ai-tech-interview) 레포지토리가 있는 터라, 조직명이 변경된 후 여기저기 퍼져있는 기존 URL이 404를 띄울까봐 걱정됐다. **근데 리다이렉트를 지원해준다니!** 하지만, 공식 문서에 리다이렉트에 대한 자세한 설명이 없었고 구글링도 했지만 제대로 된 답변을 얻을 수 없었다.
 
 그러다 [ChatGPT](https://chat.openai.com/)에게도 물어봤지만, 결론적으로 여기서 말하는 90일 정책 따위는 존재하지 않는다.
 
-![](/static/images/dev/github/organization-name/chatgpt-answer.png)
+![](/static/images/dev/github-organization-name/chatgpt-answer.png)
 
 계속 찾고 찾다 [GitHub Community에서 GitHub 직원 답변](https://github.com/orgs/community/discussions/22669)을 확인할 수 있었다.
 

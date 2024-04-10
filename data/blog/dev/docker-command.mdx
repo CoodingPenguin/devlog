@@ -5,12 +5,14 @@ lastmod: 2023-05-11
 tags: ["docker", "command"]
 draft: false
 summary: "자주 쓰는 docker 명령어 모음"
-images: ["/static/images/dev/docker/docker-command/thumbnail.png"]
+images: ["/static/images/dev/docker-command/thumbnail.png"]
 ---
 
 > 쓸 때마다 까먹어서 실무에서 자주 쓰는 명령어 위주로 한 번 정리해보았다.
 
 ## 레지스트리 로그인
+
+레지스트리 주소를 넘겨주지 않으면 기본 레지스트리인 [Docker Hub](https://hub.docker.com/)에 로그인된다.
 
 ```bash
 docker login
@@ -31,6 +33,15 @@ docker login -u coodingpenguin -p **** my-registry.com
 
 ```bash
 docker login my-registry.com
+```
+
+## 레지스트리 로그아웃
+
+레지스트리 주소를 인자로 넘겨주면 해당 레지스트리에서 로그아웃된다. 넘겨주지 않는 경우 기본 레지스트리인 [Docker Hub](https://hub.docker.com/)에서 로그아웃된다.
+
+```bash
+docker logout
+# Removing login credentials for https://index.docker.io/v1/
 ```
 
 ## 이미지 검색
@@ -121,6 +132,40 @@ docker images ubuntu:latest
 **docker search**에서 제공된 필터 옵션처럼 필터를 지원하고 있다. (자세한 내용은 [여기](https://docs.docker.com/engine/reference/commandline/images/#filter)를 참고!)  
 예를 들어, `dangling=true`를 주면 태그가 없는 임시 이미지를 조회할 수 있다.
 
+## 이미지 삭제
+
+**이미지 이름 + 태그의 조합** 혹은 **이미지 ID**로 특정 이미지를 삭제할 수 있다.
+
+```bash
+docker rmi ubuntu         # 태그가 없는 경우 latest 태그를 가진 이미지를 삭제
+docker rmi ubuntu:20.04   # 태그가 있는 경우 해당 태그의 이미지를 삭제
+docker rmi 3048ba078595   # 이미지 ID로도 삭제 가능
+```
+
+메모리만 차지 하는 댕글링 이미지를 한 번에 삭제하고 싶다면, `docker prune`을 사용하자.
+
+<Note title="댕글링 이미지(Dangling Image)가 무엇인가?">
+  댕글링 이미지란 **이름이 없는 이미지**를 말하며, 빌드하는 과정에서 에러가 발생한 경우 부산물처럼 생성된다. 댕글링 이미지가 남아 있으면 공간을 차지하기 때문에 보통 주기적으로 삭제해준다.
+</Note>
+
+```bash
+docker image prune
+# WARNING! This will remove all dangling images.
+# Are you sure you want to continue? [y/N] y
+# Total reclaimed space: 0B
+```
+
+더 나아가 컨테이너에서 사용하지 않는 이미지까지 삭제하고 싶다면 `[-a | --all]` 옵션을 추가한다.
+
+```bash
+docker image prune -a
+# WARNING! This will remove all images without at least one container associated to them.
+# Are you sure you want to continue? [y/N] y
+# Total reclaimed space: 0B
+```
+
+## 이미지 빌드
+
 ## 이미지 업로드
 
 우선 이미지를 업로드하기 전에 태깅을 해야 한다. ~~(아니면 Permission Denied가 된다..)~~
@@ -141,3 +186,15 @@ docker push coodingpenguin/ubuntu:v0.0.0
 # b49483f6a0e6: Mounted from library/ubuntu
 # v0.0.0: digest: sha256:9b85f48f0298ec89dcbc46b35edf9b12e5b9b04ca9cc9ea063968933ddba6adf size: 529
 ```
+
+## 컨테이너 실행
+
+## 컨테이너 중단
+
+## 실행 중인 컨테이너 접속
+
+## 실행 중인 컨테이너 조회
+
+## 참고 자료
+
+- https://stackoverflow.com/questions/45142528/what-is-a-dangling-image-and-what-is-an-unused-image
