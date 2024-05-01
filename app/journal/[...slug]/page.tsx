@@ -84,7 +84,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
   // Filter out drafts in production
   const sortedCoreContents = allCoreContent(sortPosts(allJournals))
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
-  console.log(sortedCoreContents)
+
   if (postIndex === -1) {
     return notFound()
   }
